@@ -1,0 +1,182 @@
+.official-gazette-inner {
+  display: grid;
+  gap: 1rem;
+  min-height: 50rem;
+  grid-template-columns: 500px auto;
+}
+
+.official-gazette-topics-container {
+  grid-column:1/1
+  /* background: #000; */
+}
+.official-gazette-topics {
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 0px #b6b6b640;
+  background: #fff;
+}
+.official-gazette-embedded-container {
+  grid-column: 2/-1;
+
+}
+.official-gazette-embedded-container .tab-pane{
+    height: 100%;
+} 
+.official-gazette-topics-input::placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+.official-gazette-topics-input-container {
+  overflow: hidden;
+  border-start-start-radius: 20px;
+  border-start-end-radius: 20px;
+
+  padding: 1.5rem;
+  background: linear-gradient(90deg, #033750 0%, #185978 108.97%);
+}
+.arabic-version .official-gazette-topics-input-container {
+    background: linear-gradient(270deg, #033750 0%, #185978 108.97%);
+}
+.official-gazette-topics-input {
+  box-shadow: 0px 0px 40px 0px #b6b6b626;
+  border: 1px solid #ffffff;
+  opacity: 0.6;
+  border-radius: 8px;
+  padding-inline: 1rem;
+
+  color: #fff;
+  background: #ffffff26;
+  min-height: 50px;
+  width: 100%;
+}
+
+.official-gazette-topics-input:focus,
+.official-gazette-topics-input:focus-visible,
+.official-gazette-topics-input:focus-within {
+  border: 1px solid #fff;
+  box-shadow: none;
+  outline: none;
+}
+
+.official-gazette-topics-scroll::-webkit-scrollbar {
+  padding-block: 5rem;
+  width: 10px; /* Adjust the width of the scrollbar */
+}
+
+/* The part of the scrollbar that can be dragged */
+.official-gazette-topics-scroll::-webkit-scrollbar-thumb {
+  background-color: #0a3d57; /* Dark blue color */
+  border-radius: 10px; /* Round the edges */
+}
+
+/* Optional: adds space around the thumb */
+.official-gazette-topics-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #084a63; /* Slightly lighter on hover */
+}
+
+/* The scrollbar background */
+.official-gazette-topics-scroll::-webkit-scrollbar-track {
+  margin-block: 2rem;
+  background-color: #e1e7ea; /* Light gray color */
+  border-radius: 10px; /* Match the rounded edges */
+}
+.official-gazette-topics-scroll {
+  overflow-y: scroll;
+  padding: 1rem;
+  direction: ltr;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  margin-inline: 1rem;
+  flex-wrap: nowrap;
+}
+.official-gazette-topics-single-scroll {
+  border-bottom: 1px solid #0337504d;
+  align-self: flex-start;
+  padding-block: 1rem;
+}
+.arabic-version .official-gazette-topics-single-scroll {
+    text-align: right;
+    
+    transition: all 0.3s ease-out;
+    width: 100%;
+    align-self: flex-end;
+}
+.official-gazette-topics-single-scroll:hover {
+    transition: all 0.3s ease-out;
+}
+
+.official-gazette-topics-single-scroll button {
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--main-color);
+    width: 100%;
+    text-align: start;
+    transition: all 0.3s ease-out;
+}
+.arabic-version .official-gazette-topics-single-scroll button {
+    text-align: right;
+
+}
+.official-gazette-topics-single-scroll button.active {
+  font-weight: 500;
+  background: transparent !important;
+  color: var(--secondary-color) !important;
+  transition: all 0.3s ease-out;
+}
+.official-gazette-topics-single-scroll:hover button {
+  
+  color: var(--secondary-color);
+  transition: all 0.3s ease-out;
+}
+
+.view-download-button a {
+    display: flex;
+    gap: .5rem;
+    
+    align-items: center;
+    color: var(--main-color);
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+.view-download-button a span{
+    font-weight: 500;
+}
+.view-download-button a img{
+    width: 2.25rem;
+    object-fit: contain;
+}
+.view-download-button a:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease-out;
+}
+
+@media (max-width:1100px){
+    .official-gazette-inner {
+        grid-template-columns: 400px auto;
+
+    }
+}
+@media (max-width:991px){
+    .official-gazette-inner {
+        grid-template-columns: 1fr;
+grid-template-rows: 400px auto;
+    }
+    .official-gazette-topics-container {
+    grid-column: 1/-1;
+    grid-row: 1/1;
+}
+.official-gazette-topics-scroll{
+    height: 300px;
+}
+.official-gazette-embedded-container {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+}        
+}
+@media (max-width:575px){
+    .arabic-version .official-gazette-topics-scroll{
+        margin-inline-start: 0;
+        margin-inline-end: 0.5rem;
+    }
+}

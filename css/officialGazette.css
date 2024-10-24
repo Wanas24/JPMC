@@ -1,0 +1,283 @@
+.ministers-information-container form {
+  padding-top: 1.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.ministers-information-container form input::placeholder {
+  color: var(--main-color);
+  opacity: 1;
+}
+.ministers-information-container form input:not(.date-input)::placeholder {
+  color: rgb(3, 55, 80, 1);
+  opacity: 0.6;
+}
+.ministers-information-container form input:focus,
+.ministers-information-container form input:focus-visible,
+.ministers-information-container form input:focus-within {
+  box-shadow: none;
+  border-color: #076fa0;
+}
+.ministers-information-container form input {
+  min-height: 3.125rem;
+
+  border-radius: 8px;
+  padding-inline: 1.5rem;
+  background-color: #fff;
+  background-image: url("../Assets/Icons/CalendarBlank.svg");
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 40px 0px #b6b6b626;
+  border: 1px solid var(--main-color);
+  color: var(--main-color) !important;
+  background-size: 1.5rem;
+  background-position: 97%;
+}
+.ministers-information-container form button {
+  padding: 1rem 2rem;
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: var(--main-color);
+  border-radius: 8px;
+}
+.ministers-information-container form button span {
+  color: #fff;
+  transition: all 0.3s ease-out;
+
+}
+
+.arabic-version .ministers-information-container form input {
+  background-position: 1rem;
+}
+.ministers-information-container form input:not(.date-input) {
+  background-image: unset;
+}
+.ministers-information-container form button {
+  padding: 1rem 1.5rem;
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border: 1px solid transparent;
+  background: var(--main-color);
+  border-radius: 8px;
+  max-width: max-content;
+  transition: all 0.3s ease-out;
+}
+.ministers-information-container select {
+  appearance: none;
+  min-height: 3.125rem;
+  box-shadow: 0px 0px 40px 0px #b6b6b626;
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
+  color: var(--main-color);
+
+  width: 100%;
+  background: unset;
+  padding-inline: 1.5rem;
+  background-image: url("../Assets/Icons/form-select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1rem);
+}
+.ministers-information-container select {
+  color: rgba(3, 55, 80, 0.6);
+}
+
+.ministers-information-container select option {
+  color: var(--main-color);
+}
+
+.arabic-version .ministers-information-container select {
+  background-position: 1rem;
+}
+.ministers-information-container button:hover{
+  background: transparent;
+  transition: all 0.3s ease-out;
+  border-color:var(--main-color);
+}
+.ministers-information-container button:hover span{
+  transition: all 0.3s ease-out;
+  color: var(--main-color);
+
+}
+.ministers-cards-container {
+  display: grid;
+  gap: 1.5rem;
+  row-gap: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: 3rem;
+}
+
+.minister-single-card {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.minister-single-card h3 {
+  margin-bottom: 0;
+  text-align: center;
+}
+.minister-single-card h4 {
+  margin-bottom: 0;
+  color: var(--secondary-color);
+}
+
+.minister-single-card::after {
+  background: #0337500d;
+  width: 100%;
+  height: 75%;
+  content: "";
+  z-index: -1;
+  transition: all 0.3s ease-out;
+
+  border: 2px solid transparent;
+  position: absolute;
+  border-radius: 20px;
+  bottom: 0;
+  left: 0;
+}
+.minister-single-card picture::before {
+  width: 102.5%;
+  height: 55.25%;
+  content: "";
+  position: absolute;
+  bottom: -16%;
+  border-radius: 100%;
+  border-bottom-left-radius: 99999rem;
+  border-bottom-right-radius: 99999rem;
+  inset-inline-start: -1%;
+  z-index: -2;
+  transition: all 0.3s ease-out;
+  
+  max-width: 240px;
+  background: #fff;
+  border: 2px solid transparent;
+  border-top: transparent;
+}
+.minister-single-card picture::after {
+  transition: all 0.3s ease-out;
+  width: 90%;
+  height: 90%;
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px 0px #b6b6b680;
+  inset-inline-start: 5%;
+  z-index: 20;
+  max-width: 240px;
+  background: #0337500d;
+  opacity: 1;
+  border: 2px solid transparent;
+}
+.minister-single-card picture {
+  width: 100%;
+  z-index: 10;
+  width: 150px;
+  height: 100%;
+  aspect-ratio: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: white;
+}
+
+.minister-single-card img {
+  width: 3.5rem;
+  object-position: center;
+  z-index: 5;
+  position: relative;
+  object-fit: contain;
+  aspect-ratio: 1;
+  max-width: 200px;
+  object-fit: contain;
+  transform: translateY(50%);
+  background: white;
+}
+
+.minister-single-card:hover::after{
+  transition: all 0.3s ease-out;
+  border-color: var(--secondary-color);
+}
+.minister-single-card:hover picture::before{
+  border-color: var(--secondary-color);
+
+}
+.minister-single-card:hover picture::after{
+  border-color: var(--secondary-color);
+
+}
+.minister-single-card--content {
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+.minister-card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.arabic-version .minister-single-card .hover-growing-links:nth-child(2)::after {
+  inset-inline-start: 100%;
+}
+
+
+@media (max-width: 1200.88888px) {
+  .ministers-cards-container {
+     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 991.88888px) {
+  .ministers-information-container form select {
+    max-width: unset;
+  }
+  .ministers-information-container form input {
+    max-width: unset;
+  }
+  .ministers-information-container form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ministers-cards-container{
+/* gap: 1rem; */
+grid-template-columns: repeat(3, 1fr);
+
+  }
+}
+
+@media (max-width: 767.88888px) {
+  .ministers-cards-container {
+    gap: 1rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .ministers-cards-container {
+    gap: 1rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ministers-information-container form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
