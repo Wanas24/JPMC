@@ -90,13 +90,23 @@ h2 {
   color: var(--main-color);
 }
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.4375rem;
   font-weight: 500;
   line-height: 1.2;
   
 }
-p {
+h4{
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2
+}
+h5{
   font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.2
+}
+p {
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
   
@@ -109,7 +119,7 @@ a {
 }
 
 span {
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.6;
 }
@@ -455,12 +465,12 @@ input[type="date"] {
   position: absolute;
   inset-inline-end: 1rem;
   top: 1px;
-  background: url("../Assets/Icons/CalendarBlank.svg") no-repeat center;
+  background: url('../JPMC Assets/Icons svg/CalendarBlank.svg') no-repeat center;
   width: 3rem;
   height: 95%;
   background-size: 1.75rem;
   border-radius: 10px;
-  background-color: #fff;
+  
   content: "";
 }
 
@@ -645,16 +655,36 @@ gap: 0.5rem;
 .official-announcements-wrapper {
   border: none;
   padding-inline: 0;  
-  width: 50%;
+  width: 60%;
   background-color: #F7F8FA;
   padding: 1rem;
+  border-radius: 999px;
+  align-items: center;
+}
+
+@media (max-width:1200px) {
+  .official-announcements-wrapper{
+    width: 80%;
+  }
+}
+@media (max-width:991.888888px) {
+  .official-announcements-wrapper{
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+}
+@media (max-width:767.888888px) {
+  .official-announcements-wrapper{
+   gap: 1rem;
+  }
 }
 
 .official-announcements-wrapper select {
   min-height: 3rem;
-  border: 1px solid var(--main-color);
+  border: 1px solid #14141433;
   border-radius: 8px;
-  color: var(--main-color);
+  color: #14141433;
   padding-inline-start: 1.5rem;
   background: url("../Assets/Icons/arrow-filled.png");
   background-repeat: no-repeat;
@@ -673,14 +703,15 @@ gap: 0.5rem;
 
 .official-announcements-wrapper input {
   padding-inline-start: 1.5rem;
-  border: 1px solid var(--main-color);
-  min-height: 3rem;
-  color: var(--main-color);
-  border-radius: 8px;
+  border: 1px solid #14141433;
+  min-height: 2rem;
+  color: #14141433;
+  border-radius: 50px;
 }
+
 .official-announcements-wrapper input::placeholder {
   opacity: 0.8;
-  color: var(--main-color);
+  color: #14141433;
 }
 .official-announcements-wrapper input:focus {
   box-shadow: none;
