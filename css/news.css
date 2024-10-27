@@ -1,3 +1,6 @@
+.main-stars-header{
+  background-image: url(../Assets/Headers/News.png) !important;
+}
 .latest-news-container{
   margin-top: 3rem;
 }
