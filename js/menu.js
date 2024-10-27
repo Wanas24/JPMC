@@ -31,18 +31,61 @@
           });
 
         multiTg = function () {
-          cssmenu
-            .find(".has-sub")
-            .prepend('<span class="submenu-button"></span>');
-          cssmenu.find(".submenu-button").on("click", function () {
-            $(this).toggleClass("submenu-opened");
-            const parentLi = $(this).closest(".has-sub");
-            if (parentLi.find("ul").hasClass("open")) {
-              parentLi.find("ul").removeClass("open").hide();
+          function updateMenu() {
+            var screenWidth = $(window).width();
+
+            if (screenWidth <= 1200) {
+              // Add icons if they don't already exist
+              if (cssmenu.find(".submenu-button").length === 0) {
+                cssmenu
+                  .find(".has-sub")
+                  .prepend(
+                    '<span class="submenu-button"><i class="fa-solid fa-plus"></i></span>'
+                  );
+              }
             } else {
-              parentLi.find("ul").addClass("open").show();
+              // Remove icons if they exist
+              cssmenu.find(".submenu-button").remove();
             }
-          });
+          }
+
+          // Initialize menu
+          updateMenu();
+
+            cssmenu
+              .find(".has-sub")
+              .prepend('<span class="submenu-button"></span>');
+  
+            cssmenu.find(".submenu-button").on("click", function (e) {
+              e.stopPropagation();
+  
+              $(this)
+                .closest("li")
+                .siblings()
+                .find(".submenu-opened")
+                .removeClass("submenu-opened");
+              $(this)
+                .closest("li")
+                .siblings()
+                .find("ul")
+                .removeClass("open")
+                .slideUp();
+  
+              const parentLi = $(this).closest("li");
+              parentLi
+                .find("ul")
+                .not($(this).siblings("ul"))
+                .removeClass("open")
+                .slideUp();
+  
+              $(this).toggleClass("submenu-opened");
+              const parentUl = $(this).siblings("ul");
+              if (parentUl.hasClass("open")) {
+                parentUl.removeClass("open").slideUp();
+              } else {
+                parentUl.addClass("open").slideDown();
+              }
+            });
         };
 
         if (settings.format === "multitoggle") multiTg();
@@ -104,28 +147,20 @@
   };
 })(jQuery);
 
-
-
-
-
-
 // $(document).ready(function () {
 //   $("a.calculator-sub-toggle").on("click", function (e) {
-//     e.preventDefault(); 
+//     e.preventDefault();
 //     var submenu = $(this).next("ul");
 //     var span = $(this).find("i");
 
-    
 //     if (submenu.hasClass("calculator-sub-closed")) {
 //       submenu.removeClass("calculator-sub-closed").addClass("calculator-sub-open");
 //       $(this).closest("li").removeClass("calculator-closed").addClass("calculator-open");
 //       span.removeClass("fa-chevron-down").addClass("fa-chevron-up");
 //     } else {
 //       submenu.removeClass("calculator-sub-open").addClass("calculator-sub-closed");
-//       $(this).closest("li").removeClass("calculator-open").addClass("calculator-closed"); 
-//       span.removeClass("fa-chevron-up").addClass("fa-chevron-down"); 
+//       $(this).closest("li").removeClass("calculator-open").addClass("calculator-closed");
+//       span.removeClass("fa-chevron-up").addClass("fa-chevron-down");
 //     }
 //   });
 // });
-
-

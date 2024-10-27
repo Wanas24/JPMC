@@ -61,10 +61,10 @@ $(document).ready(function () {
   $(this).find('.fa-plus').show()
   $(this).find('.fa-minus').hide()
 
-  $('.cssmenu2').menumaker({
-    title: '',
-    format: 'multitoggle'
-  })
+  $("#cssmenu").menumaker({
+    title: "",
+    format: "multitoggle",
+  });
 
   // Footer
   $('.toggleButton').click(function () {
