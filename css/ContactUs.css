@@ -1,0 +1,112 @@
+.main-stars-header{
+    background-image: url(../Assets/Headers/Contact\ Us.png) ;
+  }
+  .contact-info div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .contact-info picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    flex-shrink: 0;
+    
+  }
+  .ContactUS-mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 3rem;
+  }
+  .ContactUS-mainContainer form {
+    box-shadow: 0px 0px 40px 0px #B6B6B633;
+    padding: 1.5rem;
+    border: 10px;
+  }
+  .ContactUS-mainContainer form input{
+    padding-inline-start: 1.5rem;
+    border: 1px solid #14141433;
+    min-height: 2.2rem;
+    color: #14141433;
+    border-radius: 50px;
+  }
+  .ContactUS-mainContainer input::placeholder {
+    opacity: 0.8;
+    color: #14141433;
+  }
+  .ContactUS-mainContainer input:focus {
+    box-shadow: none;
+  }
+  .ContactUS-mainContainer select {
+    min-height: 2.2rem;
+    border: 1px solid #14141433;
+    border-radius: 50px;
+    color: #14141433;
+    padding-inline-start: 1.5rem;
+    background: url("../Assets/Icons/arrow-filled.png");
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: 15px center;
+  }
+  .ContactUS-mainContainer textarea{
+    border: 1px solid #14141433;
+
+  }
+  .arabic-version .ContactUS-mainContainer select{
+    background-position: 5% center;
+  }
+  .ContactUS-mainContainer select:focus {
+    box-shadow: none;
+  }
+  .ContactUS-mainContainer select[value=""] {
+    background: #000;
+  }
+  
+  @media (max-width:767px) {
+    .ContactUS-mainContainer{
+        grid-template-columns: 1fr;
+    }
+  }
+  .greenbox{
+    background: linear-gradient(90deg,#488253  0%, #639D6E 100%);
+    color: #fff !important;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .arabic-version .greenbox{
+    background: linear-gradient(90deg, #639D6E 0%, #488253 100%);
+  }
+  .greenbox h2{
+    position: relative;
+    width: fit-content;
+  }
+  .greenbox h2::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 100%;
+    width: 5px;
+    border-radius: 50px;
+    right: -20px;
+    top: 0;
+  }
+  .ContactUS-Content span{
+    color: var(--main-color);
+  }
+  .ContactUS-mainContainer form h3{
+    color: var(--main-color);
+  }
+  .ContactUS-Content a{
+    color: var(--main-color);
+    font-size: 1.25rem;
+    
+  }
+ .contact-info{
+    margin-top: 2rem;
+ }
