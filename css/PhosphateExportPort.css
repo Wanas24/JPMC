@@ -1,0 +1,61 @@
+.main-stars-header{
+    background-image: url(../Assets/Headers/Phosphate\ export\ port.png);
+}
+.PhosphateExportPort-opening h4{
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+.PhosphateExportPort-opening{
+    padding-bottom: 3rem;
+}
+.PhosphateExportPort-main-section{
+    background-color: var(--gray-color);
+    padding-block: 3rem;
+}
+.PhosphateExportPort-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.PhosphateExportPort-main-container img{
+    width: 100%;
+    border-radius: 5px;
+}
+.PhosphateExportPort-main-container h4{
+    color: var(--main-color);
+}
+@media (max-width:767.888px) {
+    .PhosphateExportPort-main-container{
+        grid-template-columns: 1fr;
+    }
+}
+.PhosphateExportPort-2nd-section-container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.PhosphateExportPort-2nd-section-container div{
+    flex: 1;
+}
+.PhosphateExportPort-2nd-section-container picture{
+    flex: 1;
+}
+.PhosphateExportPort-2nd-section-container img{
+    width: 100%;
+    border-radius: 5px;
+}
+.PhosphateExportPort-2nd-section-container h4{
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+.PhosphateExportPort-2nd-section-container:nth-child(odd){
+    flex-direction: row-reverse;
+}
+@media(max-width:767.8888px){
+    .PhosphateExportPort-2nd-section-container{
+        flex-direction: column !important;
+    }
+}

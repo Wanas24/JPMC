@@ -1,0 +1,66 @@
+.main-stars-header{
+    background-image: url(../Assets/Headers/Our\ Product\ _\ Diammonium\ Phosphate.png);
+}
+
+.DiammoniumPhosphate-main-section{
+    padding-block: 3rem;
+}
+.DiammoniumPhosphate-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+@media (max-width:767px) {
+    .DiammoniumPhosphate-main-container{
+        grid-template-columns: 1fr;
+    }
+}
+.DiammoniumPhosphate-main-container img{
+    width: 100%;
+    border-radius: 5px;
+}
+.DiammoniumPhosphate-main-container h4{
+    color: var(--main-color);
+}
+.DiammoniumPhosphate-2nd-section{
+    background-color: var(--gray-color);
+    padding-block: 3rem;
+}
+.DiammoniumPhosphate-2nd-section .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+@media (max-width:767px) {
+    .DiammoniumPhosphate-2nd-section .container{
+        grid-template-columns: 1fr;
+    }
+}
+.DiammoniumPhosphate-card{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.DiammoniumPhosphate-card picture{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+    
+}
+.DiammoniumPhosphate-card h4{
+    color: var(--main-color);
+}
+.DiammoniumPhosphate-card-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
