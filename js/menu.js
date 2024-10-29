@@ -14,7 +14,7 @@
     return this.each(function () {
       cssmenu.find("li ul").parent().addClass("has-sub");
       if (settings.format != "select") {
-        cssmenu.prepend('<div id="menu-button">' + settings.title + "</div>");
+        cssmenu.prepend('<div id="menu-button">' +  '<i class="fa-solid fa-bars"></i> ' +settings.title + "</div>");
         $(this)
           .find("#menu-button")
           .on("click", function () {
@@ -27,6 +27,12 @@
               if (settings.format === "dropdown") {
                 mainmenu.find("ul").show();
               }
+            }
+            var icon = $(this).find("i");
+            if ($(this).hasClass("menu-opened")) {
+              icon.removeClass("fa-bars").addClass("fa-xmark");
+            } else {
+              icon.removeClass("fa-xmark").addClass("fa-bars");
             }
           });
 
@@ -52,9 +58,9 @@
           // Initialize menu
           updateMenu();
 
-            cssmenu
-              .find(".has-sub")
-              .prepend('<span class="submenu-button"></span>');
+            // cssmenu
+            //   .find(".has-sub")
+            //   .prepend('<span class="submenu-button"></span>');
   
             cssmenu.find(".submenu-button").on("click", function (e) {
               e.stopPropagation();
@@ -84,6 +90,12 @@
                 parentUl.removeClass("open").slideUp();
               } else {
                 parentUl.addClass("open").slideDown();
+              }
+              var icon = $(this).find("i");
+              if ($(this).hasClass("submenu-opened")) {
+                icon.removeClass("fa-plus").addClass("fa-minus");
+              } else {
+                icon.removeClass("fa-minus").addClass("fa-plus");
               }
             });
         };

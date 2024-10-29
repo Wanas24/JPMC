@@ -25,6 +25,8 @@
   --searchBarOpen-bg-color: rgba(0, 46, 97, 0.4);
   --navigation-scrolled-background: #ffffff;
   --navigation-boxshadow: 0px 20px 20px 0px #b6b6b640;
+  --animation-transition:all 0.3s ease-out;
+  --navbar-border-color: rgba(20, 20, 20,0.3);
 }
 
 @media (max-width: 991px) {
