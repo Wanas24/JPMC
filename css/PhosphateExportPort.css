@@ -59,3 +59,23 @@
         flex-direction: column !important;
     }
 }
+.parallax{
+    background-image: url("../Assets/Inners/General Page/parallax.png");
+    padding-block: 3rem;background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.parallax .parallax-box{
+    background-color: #ffffffd2;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 70%;
+}
+.parallax .parallax-box h4{
+    color: var(--main-color);
+}
+@media (max-width:991.8888px) {
+    .parallax .parallax-box{
+        width: 100%;
+    }
+}
