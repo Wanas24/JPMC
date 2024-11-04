@@ -1,0 +1,30 @@
+.main-stars-header{
+    background-image: url(../Assets/Headers/Future\ plans.png);
+}
+.FuturePlans-opening h4{
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+.FuturePlans-opening h2{
+    width: 50%
+}
+.FuturePlans-1st-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-block: 3rem;
+}
+.FuturePlans-1st-container img{
+    width: 100%;
+}
+.FuturePlans-1st-container ul li::marker{
+    color: var(--main-color);
+}
+@media (max-width:767.88888px) {
+    .FuturePlans-opening h2{
+        width: 100%;
+    }
+    .FuturePlans-1st-container{
+        grid-template-columns: 1fr;
+    }
+}
