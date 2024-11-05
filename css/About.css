@@ -95,9 +95,7 @@
         grid-template-columns: 1fr ;
         
     }
-    .darkLayer-card{
-        
-    }
+    
 }
 .About-last-section{
     background-color: var(--gray-color);

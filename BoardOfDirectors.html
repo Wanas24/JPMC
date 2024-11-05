@@ -244,7 +244,7 @@
     </section>
    <section>
     <div class="container BoardOFDirectors-container">
-        <div>
+        <div class="content">
             <h4>Private sector representatives</h4>
             <h2>Chairman of the Board of Directors: His Excellency Dr. Mohammed Al-Dhneibat</h2>
             <h5>His Excellency Dr. Mohammad Mahmoud Al-Dhneibat assumed the chairmanship of the Board of Directors of the Jordan Phosphate Mines Company as of 3/28/2017, representing the private sector.</h5>
@@ -274,7 +274,7 @@
         </picture>
     </div>
     <div class="container BoardOFDirectors-container">
-        <div>
+        <div class="content">
             <h4>Private sector representatives</h4>
             <h2>Chairman of the Board of Directors: His Excellency Dr. Mohammed Al-Dhneibat</h2>
             <h5>His Excellency Dr. Mohammad Mahmoud Al-Dhneibat assumed the chairmanship of the Board of Directors of the Jordan Phosphate Mines Company as of 3/28/2017, representing the private sector.</h5>
@@ -296,7 +296,24 @@
         </picture>
     </div>
     <div class="container BoardOFDirectors-container">
-        <div>
+        <div class="content">
+            <h4>Private sector representatives</h4>
+            <h2>Chairman of the Board of Directors: His Excellency Dr. Mohammed Al-Dhneibat</h2>
+            
+            <h5>Election date: 2017/3/28.</h5>
+             <a href="" class="hover-growing-links" data-hover-pos="start">
+              <span class="link"> Read more </span>
+              <span class="arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+              </span>
+            </a>
+        </div>
+        <picture>
+            <img src="./Assets/Inners/Board of Directors/Group 411.png" alt="">
+        </picture>
+    </div>
+    <div class="container BoardOFDirectors-container">
+        <div class="content">
             <h4>Private sector representatives</h4>
             <h2>Chairman of the Board of Directors: His Excellency Dr. Mohammed Al-Dhneibat</h2>
             <h5>His Excellency Dr. Mohammad Mahmoud Al-Dhneibat assumed the chairmanship of the Board of Directors of the Jordan Phosphate Mines Company as of 3/28/2017, representing the private sector.</h5>
@@ -326,7 +343,7 @@
         </picture>
     </div>
     <div class="container BoardOFDirectors-container">
-        <div>
+        <div class="content">
             <h4>Private sector representatives</h4>
             <h2>Chairman of the Board of Directors: His Excellency Dr. Mohammed Al-Dhneibat</h2>
             <h5>His Excellency Dr. Mohammad Mahmoud Al-Dhneibat assumed the chairmanship of the Board of Directors of the Jordan Phosphate Mines Company as of 3/28/2017, representing the private sector.</h5>
@@ -356,7 +373,7 @@
         </picture>
     </div>
     <div class="container BoardOFDirectors-container">
-        <div>
+        <div class="content">
             <h4>Private sector representatives</h4>
             <h2>Chairman of the Board of Directors: His Excellency Dr. Mohammed Al-Dhneibat</h2>
             <h5>His Excellency Dr. Mohammad Mahmoud Al-Dhneibat assumed the chairmanship of the Board of Directors of the Jordan Phosphate Mines Company as of 3/28/2017, representing the private sector.</h5>
@@ -386,7 +403,7 @@
         </picture>
     </div>
     <div class="container BoardOFDirectors-container">
-        <div>
+        <div class="content">
             <h4>Private sector representatives</h4>
             <h2>Chairman of the Board of Directors: His Excellency Dr. Mohammed Al-Dhneibat</h2>
             <h5>His Excellency Dr. Mohammad Mahmoud Al-Dhneibat assumed the chairmanship of the Board of Directors of the Jordan Phosphate Mines Company as of 3/28/2017, representing the private sector.</h5>
@@ -416,7 +433,7 @@
         </picture>
     </div>
     <div class="container BoardOFDirectors-container">
-        <div>
+        <div class="content">
             <h4>Private sector representatives</h4>
             <h2>Chairman of the Board of Directors: His Excellency Dr. Mohammed Al-Dhneibat</h2>
             <h5>His Excellency Dr. Mohammad Mahmoud Al-Dhneibat assumed the chairmanship of the Board of Directors of the Jordan Phosphate Mines Company as of 3/28/2017, representing the private sector.</h5>
@@ -446,37 +463,7 @@
         </picture>
     </div>
     <div class="container BoardOFDirectors-container">
-        <div>
-            <h4>Private sector representatives</h4>
-            <h2>Chairman of the Board of Directors: His Excellency Dr. Mohammed Al-Dhneibat</h2>
-            <h5>His Excellency Dr. Mohammad Mahmoud Al-Dhneibat assumed the chairmanship of the Board of Directors of the Jordan Phosphate Mines Company as of 3/28/2017, representing the private sector.</h5>
-            <ul>
-                <li>Currently holds the position of Chairman of the Board of Trustees of Al-Hussein Bin Talal University.</li>
-                <li>He previously held several official positions, the last of which was Deputy Prime Minister for Services Affairs and Minister of Education.</li>
-                <li>
-                    His studies: He holds the rank of Professor, and has the following academic degrees:
-                </li>
-                <ul>
-                    <li>PhD in Administrative Sciences.</li>
-                    <li>Master of Political Science.</li>
-                    <li>Master of Science in Administrative Sciences.</li>
-                    <li>Bachelor of Economics and Administrative Sciences.</li>
-                </ul>
-            </ul>
-            <h5>Election date: 2017/3/28.</h5>
-             <a href="" class="hover-growing-links" data-hover-pos="start">
-              <span class="link"> Read more </span>
-              <span class="arrow">
-                <i class="fa-solid fa-chevron-right"></i>
-              </span>
-            </a>
-        </div>
-        <picture>
-            <img src="./Assets/Inners/Board of Directors/Group 411.png" alt="">
-        </picture>
-    </div>
-    <div class="container BoardOFDirectors-container">
-        <div>
+        <div class="content">
             <h4>Private sector representatives</h4>
             <h2>Chairman of the Board of Directors: His Excellency Dr. Mohammed Al-Dhneibat</h2>
             <h5>His Excellency Dr. Mohammad Mahmoud Al-Dhneibat assumed the chairmanship of the Board of Directors of the Jordan Phosphate Mines Company as of 3/28/2017, representing the private sector.</h5>
@@ -595,26 +582,37 @@
     </footer>
   </main>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    const containers = document.querySelectorAll(".BoardOFDirectors-container");
+  $(document).ready(function() {
+    $(".BoardOFDirectors-container").each(function() {
+        const $container = $(this);
+        const $content = $container.find(".content");
+        const $image = $container.find("picture img");
+        const $readMoreButton = $container.find(".hover-growing-links");
 
-    containers.forEach(container => {
-        const content = container.querySelector(".content");
-        const image = container.querySelector("picture img");
-        const readMoreButton = container.querySelector(".hover-growing-links");
+        // Check if content and image exist
+        if ($content.length && $image.length && $readMoreButton.length) {
+            // Wait for image to load before checking heights
+            $image.on("load", function() {
+                const contentHeight = $content.outerHeight();
+                const imageHeight = $image.outerHeight();
+                const thresholdHeight = imageHeight * 0.7; // Calculate 70% of image height
 
-        // Wait for image to load before checking heights
-        image.onload = function() {
-            const contentHeight = content.offsetHeight;
-            const imageHeight = image.offsetHeight;
+                // Show "Read more" button only if content height exceeds 70% of image height
+                if (contentHeight > thresholdHeight) {
+                    $readMoreButton.css("display", "flex");
+                } else {
+                    $readMoreButton.css("display", "none"); // Optional: Hide if condition not met
+                }
+            });
 
-            // Show "Read more" button only if content height exceeds image height
-            if (contentHeight > imageHeight) {
-                readMoreButton.style.display = "flex ";
+            // If the image is already cached, manually trigger the load event
+            if ($image[0].complete) {
+                $image.trigger("load");
             }
-        };
+        }
     });
 });
+
 
   </script>
 </body>

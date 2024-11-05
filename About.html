@@ -290,64 +290,72 @@
             </div>
         </section>
         <section class="darkLayer-section">
-            <h2 class="text-center">Phosphate Mines in Numbers</h2>
-            <div class="container">
-                <div class="darkLayer-card">
-                    <picture>
-                        <img src="./Assets/Icons/money 1.svg" alt="">
-                    </picture>
-                    <div class="darkLayer-card-content">
-                        <h1>247.5</h1>
-                        <h5>Million dinars total capital</h5>
-                    </div>
-                </div>
-                <div class="darkLayer-card">
-                    <picture>
-                        <img src="./Assets/Icons/oil-industry 1.svg" alt="">
-                    </picture>
-                    <div class="darkLayer-card-content">
-                        <h1>+11</h1>
-                        <h5>million ton per year production capacity</h5>
-                    </div>
-                </div>
-                <div class="darkLayer-card">
-                    <picture>
-                        <img src="./Assets/Icons/money 1.svg" alt="">
-                    </picture>
-                    <div class="darkLayer-card-content">
-                        <h1>+2300</h1>
-                        <h5>Total number of employees</h5>
-                    </div>
-                </div>
-                <div class="darkLayer-card">
-                    <picture>
-                        <img src="./Assets/Icons/oil-industry 1.svg" alt="">
-                    </picture>
-                    <div class="darkLayer-card-content">
-                        <h1>+75</h1>
-                        <h5>Years since the company was established</h5>
-                    </div>
-                </div>
-                <div class="darkLayer-card">
-                    <picture>
-                        <img src="./Assets/Icons/money 1.svg" alt="">
-                    </picture>
-                    <div class="darkLayer-card-content">
-                        <h1>+1.3</h1>
-                        <h5>Billion net sales for 2023</h5>
-                    </div>
-                </div>
-                <div class="darkLayer-card">
-                    <picture>
-                        <img src="./Assets/Icons/sand (1) 1.svg" alt="">
-                    </picture>
-                    <div class="darkLayer-card-content">
-                        <h1>+1.3</h1>
-                        <h5>phosphate reserve</h5>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <h2 class="text-center">About Phosphate Mines</h2>
+          <div class="container">
+              <div class="darkLayer-card">
+                  <picture>
+                      <img src="./Assets/Icons/money 1.svg" alt="">
+                  </picture>
+                  <div class="darkLayer-card-content">
+                      <h1 class="count" data-target="247.5">0</h1>
+                      <h5>Million dinars total capital</h5>
+                  </div>
+              </div>
+              <div class="darkLayer-card">
+                  <picture>
+                      <img src="./Assets/Icons/oil-industry 1.svg" alt="">
+                  </picture>
+                  <div class="darkLayer-card-content">
+                      <h1 class="count" data-target="11">0</h1>
+                      <h5>million ton per year production capacity</h5>
+                  </div>
+              </div>
+              <div class="darkLayer-card">
+                  <picture>
+                      <img src="./Assets/Icons/money 1.svg" alt="">
+                  </picture>
+                  <div class="darkLayer-card-content">
+                      <h1 class="count" data-target="2300">0</h1>
+                      <h5>Total number of employees</h5>
+                  </div>
+              </div>
+              <div class="darkLayer-card">
+                  <picture>
+                      <img src="./Assets/Icons/oil-industry 1.svg" alt="">
+                  </picture>
+                  <div class="darkLayer-card-content">
+                      <h1 class="count" data-target="75">0</h1>
+                      <h5>Years since the company was established</h5>
+                  </div>
+              </div>
+              <div class="darkLayer-card">
+                  <picture>
+                      <img src="./Assets/Icons/money 1.svg" alt="">
+                  </picture>
+                  <div class="darkLayer-card-content">
+                      <h1 class="count" data-target="1.3">0</h1>
+                      <h5>Billion net sales for 2023</h5>
+                  </div>
+              </div>
+              <div class="darkLayer-card">
+                  <picture>
+                      <img src="./Assets/Icons/sand (1) 1.svg" alt="">
+                  </picture>
+                  <div class="darkLayer-card-content">
+                      <h1 class="count" data-target="1.3">0</h1>
+                      <h5>phosphate reserve</h5>
+                  </div>
+              </div>
+          </div>
+          <div class="container d-flex justify-content-center">
+            <a href="" class="hover-growing-links mt-5" data-hover-pos="start">
+              <span class="link"> Read more </span>
+              <span class="arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+              </span>
+            </a>
+          </div>
+  </section>
         <section>
             <div class="container Employment-main-container">
                 <div class="Employment-main-container-card">
@@ -632,7 +640,42 @@
         </footer>
     </main>
     <script>
+      function animateCounters() {
+      const counters = document.querySelectorAll(".count");
 
+      counters.forEach((counter) => {
+        const updateCount = () => {
+          const target = +counter.getAttribute("data-target");
+          const currentCount = +counter.innerText;
+
+          // Determine how much to increment
+          const increment = target / 200;
+
+          if (currentCount < target) {
+            // Add increment and update the counter text
+            counter.innerText = Math.ceil(currentCount + increment);
+            setTimeout(updateCount, 15);
+          } else {
+            counter.innerText = target; // Ensure the final value is set
+          }
+        };
+
+        updateCount();
+      });
+    }
+
+    // Observe when the element is in view using Intersection Observer
+    const DarkBox = document.querySelector(".darkLayer-section");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCounters(); // Start animation when element is in view
+          observer.disconnect(); // Stop observing after animation starts
+        }
+      });
+    });
+
+    observer.observe(DarkBox);
     </script>
 </body>
 
