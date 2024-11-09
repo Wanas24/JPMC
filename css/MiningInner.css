@@ -1,0 +1,222 @@
+.main-stars-header{
+    background-image: url(../Assets/Headers/Mining\ and\ Mines.png)
+}
+.MiningInner-opening h4{
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+.MiningInner-1st-section{
+    padding-block: 3rem;
+    margin-block: 2rem; 
+    background-color: var(--gray-color);
+
+}
+.MiningInner-1st-section .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+.MiningInner-1st-section .container  img{
+    width: 100%;
+    border-radius: 10px;
+}
+.MiningInner-2nd-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-block: 3rem;
+}
+.MiningInner-2nd-container img{
+    width: 100%;
+    border-radius: 10px;
+}
+.MiningInner-last-section{
+    background-color: var(--gray-color);
+    padding-block: 3rem;
+}
+.MiningInner-last-section img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.MiningInner-last-section img:hover{
+    transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.MiningInner-last-section .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-block: 1rem;
+
+}
+.MiningInner-last-section h2 {
+    text-align: center;
+    color: var(--main-color);
+}
+/* Popup Modal */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 100000000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup-content {
+    margin: auto;
+    display: block;
+    width: 900px;
+    height: 600px;
+    object-fit: contain;
+}
+.popup-content iframe{
+    height: 100%;
+    width: 100%;
+}
+
+.img-container{
+    width: fit-content;
+    margin: auto;
+    position: relative;
+}
+#info-text{
+    position: absolute;
+    color: white;
+    bottom: 5px;
+    left: 25px;
+}
+#caption {
+   
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    
+}
+
+.close {
+    position: absolute;
+    top: -60px;
+    right: 0px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  
+    
+}
+.close picture{
+    background-color: var(--main-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-footer{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: -80px;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+}
+.popup-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 0;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+/* Navigation Arrows */
+.prev, .next {
+    cursor: pointer;
+    /* position: absolute; */
+    bottom: 40px;
+    width: auto;
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-inline: 100px;
+}
+.prev picture, .next picture{
+    background-color: #ECEAE8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.next picture img{
+    transform: rotate(180deg);
+}
+
+.download-info-btn picture {
+    border: #FFFFFF solid 1px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.no-scroll {
+    overflow: hidden;
+}
+
+@media (max-width:991px) {
+    .popup-content {
+        width: 80%;
+        height: auto;
+    }
+    .popup-footer{
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        bottom: -200px;
+        gap: 0;
+        padding-bottom: 2rem;
+    }
+    #info-text{
+        left: 12%;
+    }
+    .close{
+        right:10%;
+    }
+    .MiningInner-1st-section .container{
+        grid-template-columns: 1fr;
+    }
+    .MiningInner-2nd-container{
+        grid-template-columns: 1fr;
+    }
+    .MiningInner-last-section .container{
+    grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:767px) {
+    .MiningInner-last-section .container{
+    grid-template-columns: 1fr;
+    }
+}
