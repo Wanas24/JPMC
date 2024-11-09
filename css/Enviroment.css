@@ -1,21 +1,121 @@
 .main-stars-header{
     background-image: url(../Assets/Headers/Environment.png)
 }
-.Awards-opening h4{
+.Enviroment-opening h4{
     color: var(--main-color);
     margin-bottom: 1rem;
 }
 .Enviroment-1st-section{
     padding-block: 3rem;
     background-color: var(--gray-color);
+    margin-block: 2rem;
 }
 .Enviroment-1st-section .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    align-items: center;
     
 }
 .Enviroment-1st-section .container img{
     width: 100%;
     border-radius: 10px;
 }
+.Enviroment-1st-section h4
+,.Enviroment-2nd-section h4{
+    color: var(--main-color);
+}
+.Enviroment-slider picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    flex-shrink: 0;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.Enviroment-slide{
+    background-color: var(--gray-color);
+    padding: 1.5rem;
+    display: flex !important;
+    flex-direction: column;
+    height: auto;
+}
+.Enviroment-slider .slick-track {
+    display: flex !important;
+    gap: 10px;
+    
+}
+
+.Enviroment-slide h3{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow:hidden;
+    line-height: 2rem;
+}
+.Enviroment-slide-content{
+    height: 100%;
+    display:flex ;
+    flex-direction: column;
+}
+.slick-dots {
+    bottom: -45px;
+ }
+ .slick-dots li button:before {
+    font-size: 10px;
+}
+.slick-dots li.slick-active button:before{
+    color: var(--main-color);
+}
+.slick-dots li button:before{
+    color: var(--main-color);
+}
+.Enviroment-2nd-section{
+    margin-block: 3rem;
+}
+.vertical-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-block: 6rem;
+}
+.home-vertical-card{
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray-color);
+  }
+  .vertical-card-content {
+    padding: 1rem;
+  }
+  .vertical-card-content span{
+    color: var(--main-color);
+    margin-bottom: 1rem;
+    display: block;
+    
+  }
+  .home-vertical-card img{
+    width: 100%;
+  }
+  @media (max-width:1200px) {
+    .vertical-cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media (max-width:991px) {
+    .vertical-cards{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .Enviroment-1st-section .container{
+        grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width:767px) {
+    .vertical-cards{
+        grid-template-columns: 1fr ;
+    }
+  }

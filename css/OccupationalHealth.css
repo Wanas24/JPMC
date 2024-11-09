@@ -1,0 +1,72 @@
+.main-stars-header{
+    background-image: url(../Assets/Headers/Occupational\ Health\ \(Show\ less\).png)
+}
+.OccupationalHealth-opening h4{
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+.OccupationalHealth-1st-section{
+    padding-block: 3rem;
+    background-color: var(--gray-color);
+    margin-block: 2rem;
+}
+.OccupationalHealth-1st-section .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    
+}
+.OccupationalHealth-1st-section .container img{
+    width: 100%;
+    border-radius: 10px;
+}
+.vertical-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-block: 6rem;
+}
+.home-vertical-card{
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray-color);
+  }
+  .vertical-card-content {
+    padding: 1rem;
+  }
+  .vertical-card-content span{
+    color: var(--main-color);
+    margin-bottom: 1rem;
+    display: block;
+    
+  }
+  .home-vertical-card img{
+    width: 100%;
+  }
+  .custom-accordion .accordion-item .accordion-button:last-of-type, .custom-accordion .accordion-item .accordion-button{
+    background-color: var(--gray-color);
+  }
+  @media (max-width:1200px) {
+    .vertical-cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media (max-width:991px) {
+    .vertical-cards{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .Enviroment-1st-section .container{
+        grid-template-columns: 1fr;
+    }
+    .OccupationalHealth-1st-section .container{
+        grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width:767px) {
+    .vertical-cards{
+        grid-template-columns: 1fr ;
+    }
+  }
