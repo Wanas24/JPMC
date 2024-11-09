@@ -1,0 +1,21 @@
+.main-stars-header{
+    background-image: url(../Assets/Headers/Environment.png)
+}
+.Awards-opening h4{
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+.Enviroment-1st-section{
+    padding-block: 3rem;
+    background-color: var(--gray-color);
+}
+.Enviroment-1st-section .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+}
+.Enviroment-1st-section .container img{
+    width: 100%;
+    border-radius: 10px;
+}
