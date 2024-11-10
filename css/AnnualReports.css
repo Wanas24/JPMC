@@ -96,7 +96,7 @@
     position: relative;
     display: flex;
     padding: 3rem 0;
-    margin-inline-start: 4rem;
+    margin-inline-start: 6rem;
   }
   .book-cover-slider .slick-track {
     /* margin-inline: -3rem; */
@@ -111,8 +111,6 @@
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    padding-right: 3rem;
-    padding-left: 1rem;
     text-align: start;
   }
   .arabic-version .book-single-content-slide {
@@ -163,9 +161,13 @@
     padding-top: 2rem;
     display: flex;
     padding-inline: 1rem;
-    gap: 1rem;
+    gap: 23rem;
+    justify-content: center;
+    position: absolute;
+    bottom: 2.7rem;
+    inset-inline-start: -4rem;
 }
-.home-books-arrows p{
+.home-books-arrow p{
       color: var(--main-color);
     margin-bottom: 0;
   }
@@ -175,15 +177,21 @@
     align-items: center;
     gap: 10px;
   }
-  .home-books-arrows i {
-    font-weight: 100;
+  .home-books-arrow i {
     color: var(--main-color);
   }
-  @media (max-width: 991px) {
-    .home-books-arrows {
-      justify-content: center;
-    }
+  .book-content-slider-container #next, .book-content-slider-container #prev{
+    position: absolute;
+    inset-block-start: 0;
   }
+  .book-content-slider-container #next{
+    inset-inline-start: -5rem;
+    
+  }
+  .book-content-slider-container #prev{
+    inset-inline-end: -6rem;
+  }
+  
   /* .home-books-arrow:hover {
     background: white;
     transition: all 0.2s ease-out;
@@ -242,6 +250,15 @@
   }
 
   }
+  .book-content-slider{
+    position: relative;
+  }
+  .book-content-slider h3{
+    text-align: center;
+  }
+
+
+
   .AnnualReports-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -272,4 +289,32 @@
   }
   .downlad-btn:hover{
     color: unset;
+  }
+  @media (max-width:1200px){
+    .AnnualReports-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .book-cover-slider .slick-list.draggable{
+        margin-inline-start: 4rem;
+    }
+  }
+  @media (max-width:991px){
+    .AnnualReports-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .book-cover-slider .slick-list.draggable{
+        margin-inline-start: 2rem;
+    }
+  }
+  @media (max-width:767.88888px){
+    .home-books-arrow{
+        display: none;
+    }
+    
+  }
+  @media (max-width:576px){
+    .AnnualReports-container{
+        grid-template-columns: 1fr ;
+    }
+    
   }
