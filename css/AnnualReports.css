@@ -1,0 +1,275 @@
+.main-stars-header{
+    background-image: url(../Assets/Headers/Annual\ Reports.png)
+}
+
+  
+.book-cover-slider {
+    width: 100%;
+    height: 100%;
+  }
+  .book-cover-slider .book-single-cover-slide {
+    /* margin-inline: -1rem; */
+    height: 100%;
+    transition: all 0.3s ease-out;
+  }
+  .book-cover-slider .book-single-cover-slide img {
+    /* width: 100%; */
+    height: 100%;
+    width: 300px;
+    object-fit: contain;
+  }
+  .book-cover-slider .slick-current.slick-active {
+    display: flex;
+    justify-content: center;
+  }
+  .book-cover-slider .slick-current.slick-active + div img {
+    /* transform: scale(1.2); */
+  }
+  @media (min-width: 767px) {
+    .book-cover-slider .slick-current.slick-active {
+      display: block;
+    }
+    .book-cover-slider .book-single-cover-slide img {
+      width: 100%;
+      height: 100%;
+      /* width: 300px; */
+      object-fit: contain;
+    }
+    .book-cover-slider .slick-slide.slick-active img {
+      filter: blur(0.15rem);
+      transition: all 0.3s ease-out;
+      margin-inline: -7.5rem;
+    }
+    .book-cover-slider .slick-slide.slick-active img {
+      filter: blur(0.15rem);
+      transition: all 0.3s ease-out;
+      margin-inline: -8.5rem;
+      transform: scale(1.1);
+    }
+    .book-cover-slider .slick-current.slick-active img {
+      margin-inline: 8rem;
+    }
+    .book-cover-slider .slick-current.slick-active + div img {
+      margin-inline: 0;
+      transform: scale(1.3);
+      filter: blur(0);
+      transition: all 0.3s ease-out;
+    }
+    /* .book-cover-slider .slick-list.draggable::before {
+      position: absolute;
+      left: 0;
+      background: linear-gradient(to right, #f1f1f1, #f1f1f1 15%, transparent);
+      content: "";
+      display: block;
+      width: 15rem;
+      height: 100%;
+      top: 0;
+      z-index: 9999;
+    }
+    .book-cover-slider .slick-list.draggable::after {
+      position: absolute;
+      right: 0;
+      background: linear-gradient(to left, #f1f1f1, #f1f1f1 15%, transparent);
+      content: "";
+      display: block;
+      width: 12rem;
+      height: 100%;
+      top: 0;
+      z-index: 9999;
+    }
+  } */
+  .book-cover-slider .slick-current.slick-active + div {
+    height: 100%;
+    transition: all 0.3s ease-out;
+    z-index: 500;
+  }
+  
+  .book-cover-slider .slick-slide.slick-active {
+    opacity: 1;
+  }
+  .book-cover-slider .slick-slide {
+    opacity: 0;
+  }
+  
+  .book-cover-slider .slick-list.draggable {
+    height: 100%;
+    position: relative;
+    display: flex;
+    padding: 3rem 0;
+    margin-inline-start: 4rem;
+  }
+  .book-cover-slider .slick-track {
+    /* margin-inline: -3rem; */
+    display: flex;
+    /* height: 50vh; */
+  }
+  
+  
+  .book-single-content-slide {
+    height: 100%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-right: 3rem;
+    padding-left: 1rem;
+    text-align: start;
+  }
+  .arabic-version .book-single-content-slide {
+    align-items: end;
+  }
+  .arabic-version .book-single-content-slide {
+    padding-right: 1rem;
+    padding-left: 3rem;
+  }
+  .book-single-content-slide a button {
+    padding: 0.75rem 2rem;
+    
+  }
+  
+  .book-single-content-slide .book-single-content-slide-writer {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+  }
+  .arabic-version .book-single-content-slide .book-single-content-slide-writer {
+    text-align: right;
+  }
+  
+  .book-content-slider .book-single-content-slide p {
+    
+    position: relative;
+    z-index: 500;
+    color: var(--gray-text-color);
+  
+  }
+  .arabic-version
+    .book-single-content-slide
+    .book-single-content-slide-writer
+    img {
+    order: 1;
+  }
+  .book-single-content-slide .book-single-content-slide-writer a {
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .book-single-content-slide .book-single-content-slide-writer img {
+    width: 50px;
+  }
+  .home-books-arrows {
+    padding-top: 2rem;
+    display: flex;
+    padding-inline: 1rem;
+    gap: 1rem;
+}
+.home-books-arrows p{
+      color: var(--main-color);
+    margin-bottom: 0;
+  }
+  .home-books-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .home-books-arrows i {
+    font-weight: 100;
+    color: var(--main-color);
+  }
+  @media (max-width: 991px) {
+    .home-books-arrows {
+      justify-content: center;
+    }
+  }
+  /* .home-books-arrow:hover {
+    background: white;
+    transition: all 0.2s ease-out;
+    border: 1px solid var(--primary-color);
+  }
+  .home-books-arrow:hover i {
+    color: var(--primary-color);
+  }
+  .home-books-arrow {
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: var(--primary-color);
+    padding: 0.641rem 1rem;
+    border-radius: 100%;
+  } */
+  .book-single-content-slide.slick-slide {
+    text-align: center;
+  }
+  .book-cover-slider .slick-slide.slick-current.slick-active img {
+    /* transform: scale(1.2); */
+    transform: scale(1.1);
+  }
+  @media (max-width: 450px) {
+    .book-cover-slider .slick-slide.slick-current.slick-active img {
+      transform: scale(1);
+    }
+    .book-cover-slider .book-single-cover-slide img {
+      width: 80%;
+      height: 100%;
+      /* width: 300px; */
+      object-fit: contain;
+    }
+  }
+  @media (min-width: 991px) {
+    .book-cover-slider .book-single-cover-slide img {
+      height: 100%;
+      width: 250px;
+      object-fit: contain;
+    }
+    /* .book-content-slider.slick-slider {
+      padding-top: 4rem;
+    } */
+    .book-cover-slider .slick-list.draggable::before {
+      display: none;
+    }
+    .book-cover-slider .slick-list.draggable::after {
+      display: none;
+    }
+    .book-cover-slider .slick-current.slick-active img {
+      margin-inline: 2rem;
+    }
+    .book-cover-slider .slick-current.slick-active + div img {
+      margin-inline: -3.5rem;
+    }
+  }
+
+  }
+  .AnnualReports-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  .AnnualReports-card{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .AnnualReports-card img{
+    width: 100%;
+    border-radius: 10px;
+
+  }
+  .downlad-btn{
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: #141414;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .downlad-btn:hover{
+    color: unset;
+  }
