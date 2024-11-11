@@ -1,39 +1,37 @@
-.main-stars-header{
-    background-image: url(../Assets/Headers/Strategic\ framework.png);
+.main-stars-header {
+  background-image: url(../Assets/Headers/Strategic\ framework.png) !important;
 }
-.StrategicFramework-opening{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-
+.StrategicFramework-opening {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
 }
-.StrategicFramework-opening h4{
-    color: var(--main-color);
-    margin-bottom: 1rem;
+.StrategicFramework-opening h4 {
+  color: var(--main-color);
+  margin-bottom: 1rem;
 }
 .StrategicFramework-opening .hover-growing-links {
-    width: 370px;
+  width: 370px;
 }
-.StrategicFramework-section img{
-    width: 100%;
-}
-
-.StrategicFramework-wrapper{
-    padding-block: 3rem;
-    overflow-y: scroll;
-    scrollbar-width: none;
+.StrategicFramework-section img {
+  width: 100%;
 }
 
-
-@media (max-width:767.88888px) {
-    .StrategicFramework-section img{
-        width: unset;
-        max-width: 936px !important;
-    }
+.StrategicFramework-wrapper {
+  padding-block: 3rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
-@media (max-width:991.88888px) {
-    .StrategicFramework-opening{
-        flex-direction: column;
-    }
+
+@media (max-width: 767.88888px) {
+  .StrategicFramework-section img {
+    width: unset;
+    max-width: 936px !important;
+  }
+}
+@media (max-width: 991.88888px) {
+  .StrategicFramework-opening {
+    flex-direction: column;
+  }
 }

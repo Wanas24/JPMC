@@ -1,183 +1,180 @@
-.main-stars-header{
-    background-image: url(../Assets/Headers/Photo\ Gallery.png);
-  }
-  .photoGallery-opening span{
-    color: var(--main-color);
-    margin-bottom: 1.5rem;
-    display: block;
-  }
+.main-stars-header {
+  background-image: url(../Assets/Headers/Photo\ Gallery.png) !important;
+}
+.photoGallery-opening span {
+  color: var(--main-color);
+  margin-bottom: 1.5rem;
+  display: block;
+}
 /* Gallery */
-.gallery-two-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 10px;
-    margin-top: 5rem;
+.gallery-two-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+  margin-top: 5rem;
 }
 
 .gallery-two-container picture {
-    width: 100%;
-    cursor: pointer;
+  width: 100%;
+  cursor: pointer;
 }
-.gallery-two-container picture img{
-    width: 100%;
-    cursor: pointer;
-    height: 287px;
-    object-fit: contain;
+.gallery-two-container picture img {
+  width: 100%;
+  cursor: pointer;
+  height: 287px;
+  object-fit: contain;
 }
 /* Popup Modal */
 .popup {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .popup-content {
-    margin: auto;
-    display: block;
-    width: 900px;
-    height: 600px;
-    object-fit: contain;
+  margin: auto;
+  display: block;
+  width: 900px;
+  height: 600px;
+  object-fit: contain;
 }
-.popup-content iframe{
-    height: 100%;
-    width: 100%;
+.popup-content iframe {
+  height: 100%;
+  width: 100%;
 }
 
-.img-container{
-    width: fit-content;
-    margin: auto;
-    position: relative;
+.img-container {
+  width: fit-content;
+  margin: auto;
+  position: relative;
 }
-#info-text{
-    position: absolute;
-    color: white;
-    bottom: 5px;
-    left: 25px;
+#info-text {
+  position: absolute;
+  color: white;
+  bottom: 5px;
+  left: 25px;
 }
 #caption {
-   
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    
+  color: white;
+  padding: 10px;
+  font-size: 16px;
 }
 
 .close {
-    position: absolute;
-    top: -60px;
-    right: 0px;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-  
-    
+  position: absolute;
+  top: -60px;
+  right: 0px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
-.close picture{
-    background-color: var(--main-color);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.close picture {
+  background-color: var(--main-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.popup-footer{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    bottom: -80px;
-    width: 100%;
-    align-items: center;
-    gap: 30px;
+.popup-footer {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  bottom: -80px;
+  width: 100%;
+  align-items: center;
+  gap: 30px;
 }
 .popup-controls {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    right: 0;
-    gap: 10px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  right: 0;
+  gap: 10px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
 }
 /* Navigation Arrows */
-.prev, .next {
-    cursor: pointer;
-    /* position: absolute; */
-    bottom: 40px;
-    width: auto;
-    width: 40px;
-    height: 40px;
-    color: white;
-    font-weight: bold;
-    font-size: 24px;
-    user-select: none;
-    -webkit-user-select: none;
-    margin-inline: 100px;
+.prev,
+.next {
+  cursor: pointer;
+  /* position: absolute; */
+  bottom: 40px;
+  width: auto;
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-inline: 100px;
 }
-.prev picture, .next picture{
-    background-color: #ECEAE8;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+.prev picture,
+.next picture {
+  background-color: #eceae8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
-.next picture img{
-    transform: rotate(180deg);
+.next picture img {
+  transform: rotate(180deg);
 }
 
 .download-info-btn picture {
-    border: #FFFFFF solid 1px;
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border: #ffffff solid 1px;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .no-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-@media (max-width:991px) {
-    .popup-content {
-        width: 80%;
-        height: auto;
-    }
-    .popup-footer{
-        width: 80%;
-        left: 50%;
-        transform: translateX(-50%);
-        flex-direction: column;
-        bottom: -200px;
-        gap: 0;
-        padding-bottom: 2rem;
-    }
-    #info-text{
-        left: 12%;
-    }
-    .close{
-        right:10%;
-    }
-    .gallery-two-container{
-        grid-template-columns: 1fr 1fr;
-    }
+@media (max-width: 991px) {
+  .popup-content {
+    width: 80%;
+    height: auto;
+  }
+  .popup-footer {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    bottom: -200px;
+    gap: 0;
+    padding-bottom: 2rem;
+  }
+  #info-text {
+    left: 12%;
+  }
+  .close {
+    right: 10%;
+  }
+  .gallery-two-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-@media (max-width:767px) {
-    .gallery-two-container{
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 767px) {
+  .gallery-two-container {
+    grid-template-columns: 1fr;
+  }
 }
