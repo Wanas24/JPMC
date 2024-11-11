@@ -1,28 +1,28 @@
-.main-stars-header{
-    background-image: url("../Assets/Headers/Welcome\ speech.png");
+.main-stars-header {
+  background-image: url("../Assets/Headers/Welcome\ speech.png") !important;
 }
 
-.WelcomeSpeech-container{
-    display: flex;
-    margin-bottom: 3rem;
-    align-items: center;
-    gap: 20px;
+.WelcomeSpeech-container {
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: center;
+  gap: 20px;
 }
-.WelcomeSpeech-container-content{
-    flex: 1;
-    gap: 1rem;
+.WelcomeSpeech-container-content {
+  flex: 1;
+  gap: 1rem;
 }
-.WelcomeSpeech-container picture{
-    flex: 1;
+.WelcomeSpeech-container picture {
+  flex: 1;
 }
-.WelcomeSpeech-container img{
-    width: 100%;
+.WelcomeSpeech-container img {
+  width: 100%;
 }
-.WelcomeSpeech-container:nth-child(even){
-    flex-direction: row-reverse;
+.WelcomeSpeech-container:nth-child(even) {
+  flex-direction: row-reverse;
 }
-@media (max-width:767.8888px) {
-    .WelcomeSpeech-container{
-        flex-direction: column !important;
-    }
+@media (max-width: 767.8888px) {
+  .WelcomeSpeech-container {
+    flex-direction: column !important;
+  }
 }
