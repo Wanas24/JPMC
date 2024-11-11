@@ -411,6 +411,7 @@ form textarea {
 }
 .hover-growing-links span{
   font-size: 0.8rem;
+  color: var(--main-color);
 }
 .arabic-version .hover-growing-links span{
   font-size: 0.85rem;
@@ -461,6 +462,7 @@ form textarea {
   position: relative;
   z-index: 3;
   transition: all 0.3s ease-out;
+  color: #fff;
 }
 .hover-growing-links > * {
   position: relative;
@@ -487,6 +489,7 @@ form textarea {
   align-items: center;
   aspect-ratio: 1;
   border: 1px solid var(--main-color);
+  background-color: var(--main-color);
 }
 
 /* =========================================================================== */

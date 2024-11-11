@@ -55,6 +55,9 @@
   margin-top: auto;
   z-index: 2;
 }
+.hero-content span{
+  color: white !important;
+}
 .hero-content h1{
   width: 50%;
 }
@@ -252,6 +255,9 @@
   gap: 20px;
   color: #fff;
   
+}
+.darkLayer-section .container span{
+  color: white !important;
 }
 
 .darkLayer-card{
@@ -549,6 +555,9 @@
     color: #fff;
     padding-top: 1.25rem;
   }
+  .flipping-card-back--application span {
+    color: #fff !important;
+  }
   .flipping-card-back--application p {
   
     overflow: hidden;
@@ -841,6 +850,7 @@
     display: flex;
     gap: 10px;
   }
+  
   .locations-container .location-card {
     flex: 1;
     transition: flex 0.5s ease;
@@ -850,6 +860,9 @@
     position: relative;
     overflow: hidden;
     background-color: #fff;
+  }
+  .locations-container .location-card span{
+    color: #fff !important;
   }
   .locations-container .location-card.active {
     flex: 4; 
@@ -971,6 +984,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding-block: 3rem;
+  }
+  .horizontal-cards span{
+    color: white !important;
   }
   .vertical-cards{
     display: grid;
