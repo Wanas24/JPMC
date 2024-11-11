@@ -1,6 +1,6 @@
-.main-stars-header{
-    background-image: url("../Assets/Headers/Welcome\ speech.png");
+.main-stars-header {
+  background-image: url("../Assets/Headers/Welcome\ speech.png") !important;
 }
-.WelcomeSpeech-inner-container img{
-    width: 100%;
+.WelcomeSpeech-inner-container img {
+  width: 100%;
 }

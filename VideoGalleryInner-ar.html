@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="./css/bootstrap/bootstrap.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./js/slick-1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./js/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.css" />
+    <link rel="stylesheet" href="./css/intlTelInput.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link href="./css/regular.css" rel="stylesheet" type="text/css" />
+    <link href="./css/solid.css" rel="stylesheet" type="text/css" />
+    <link href="./css/brands.css" rel="stylesheet" type="text/css" />
+    <link href="./css/fontawesome.css" rel="stylesheet" type="text/css" />
+    <link href="./css/VideoGalleryInner.css" rel="stylesheet" type="text/css" />
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="./css/Layout.css" rel="stylesheet" type="text/css" />
+    <link href="./css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="./css/arabic-styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <script type="text/javascript" src="./js/fancybox.umd.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.7.1.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript" src="./js/bootstrap/popper.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/bootstrap/bootstrap.bundle.min.js"
+    ></script>
+    <script src="./js/carousel.umd.js"></script>
+    <script src="./js/owl.carousel.js"></script>
+    <script src="./js/intlTelInput.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/share-btn.js"></script>
+    <script src="./js/main.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body class="arabic-version">
+    <main id="VideoGallery2">
+      <section class="main-stars-header">
+        <div
+          class="px-3 px-md-5 px-xl-2 px-xxl-5 container-fluid pt-5 main-stars-header-content"
+        >
+          <h1>معرض الفيديو</h1>
+
+          <nav
+            style="--bs-breadcrumb-divider: '>'"
+            aria-label="breadcrumb"
+            class="pt-2"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+              <li class="breadcrumb-item"><a href="#">معرض الفيديو</a></li>
+              <li class="breadcrumb-item" aria-current="page">
+                <a href="#"
+                  >من زيارة الرئيس التنفيذي لمناجم الفوسفات الأردنية شركة
+                  المهندس عبد الوهاب الرواد لشركة افكو براديب شركة</a
+                >
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <section>
+        <div class="gallery-two-container container">
+          <div class="video-card" onclick="openPopup(this)">
+            <picture>
+              <img
+                src="Assets/Inners/Video Gallery/Rectangle 236.png"
+                alt="Image 1"
+                data-video="https://www.youtube.com/embed/imuG23mBHyM?si=hodmNeroJjigbCkD"
+                data-info="03 September 2024"
+              />
+              <img
+                src="./Assets/Icons/youtube 2.svg"
+                alt=""
+                class="play-icon"
+              />
+            </picture>
+            <div>
+              <h3>
+                الأردن ودولة الإمارات يوقعان أربع اتفاقيات لإنشاء مشروع استثماري
+                للسكك الحديدية
+              </h3>
+            </div>
+          </div>
+          <div class="video-card" onclick="openPopup(this)">
+            <picture>
+              <img
+                src="Assets/Inners/Video Gallery/Rectangle 237.png"
+                alt="Image 2"
+                data-info="03 September 2024"
+                data-video="https://www.youtube.com/embed/imuG23mBHyM?si=hodmNeroJjigbCkD"
+              />
+              <img
+                src="./Assets/Icons/youtube 2.svg"
+                alt=""
+                srcset=""
+                class="play-icon"
+              />
+            </picture>
+            <div>
+              <h3>
+                الأردن ودولة الإمارات يوقعان أربع اتفاقيات لإنشاء مشروع استثماري
+                للسكك الحديدية
+              </h3>
+            </div>
+          </div>
+          <div class="video-card" onclick="openPopup(this)">
+            <picture>
+              <img
+                src="Assets/Inners/Video Gallery/Rectangle 238.png"
+                alt="Image 1"
+                data-info="03 September 2024"
+                data-video="https://www.youtube.com/embed/imuG23mBHyM?si=hodmNeroJjigbCkD"
+              />
+              <img
+                src="./Assets/Icons/youtube 2.svg"
+                alt=""
+                srcset=""
+                class="play-icon"
+              />
+            </picture>
+            <div>
+              <h3>
+                الأردن ودولة الإمارات يوقعان أربع اتفاقيات لإنشاء مشروع استثماري
+                للسكك الحديدية
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popup Modal -->
+        <div id="popup-modal" class="popup">
+          <div class="img-container">
+            <span class="close" onclick="closePopup()">
+              <picture
+                ><img src="./assets/Icons/X.svg" alt="" srcset=""
+              /></picture>
+            </span>
+
+            <div class="popup-content" id="popup-img"></div>
+            <!-- Info Text -->
+            <p id="info-text"></p>
+
+            <div class="popup-footer">
+              <p id="caption"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Start Footer -->
+      <footer class="main-footer-container">
+        <div class="container footer-section">
+          <div class="footer-item">
+            <div class="footer-item-header">
+              <a href="">
+                <picture>
+                  <img src="./Assets/Logo.png" alt="" />
+                </picture>
+              </a>
+            </div>
+            <!-- <ul id="about"> -->
+            <h5>
+              شركة مناجم الفوسفات الأردنية هي شركة مساهمة عامة محدودة أردنية
+              تأسست في عام 1949 يبلغ رأس مالها الحالي 247.5 مليون دينار.
+            </h5>
+            <!-- </ul> -->
+          </div>
+          <div class="footer-item">
+            <div class="footer-item-header">
+              <h4>حول الفوسفات</h4>
+              <button
+                class="toggleButton mobile-responsive"
+                data-target="about"
+              >
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus" style="display: none"></i>
+              </button>
+            </div>
+            <ul id="about">
+              <li>
+                <a href=""> عن الشركة</a>
+              </li>
+              <li><a href=""> تاريخنا </a></li>
+              <li><a href=""> الجوائز والإنجازات</a></li>
+              <li><a href=""> دائرة الأبحاث والجودة</a></li>
+              <li><a href=""> الإطار الإستراتيجي</a></li>
+              <li><a href=""> المجمع الصناعي</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <div class="footer-item-header">
+              <h4>منتجاتنا</h4>
+              <button
+                class="toggleButton mobile-responsive"
+                data-target="about"
+              >
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus" style="display: none"></i>
+              </button>
+            </div>
+            <ul id="about">
+              <li>
+                <a href=""> الفوسفات </a>
+              </li>
+              <li><a href="">سماد فوسفات ثنائي </a></li>
+              <li><a href=""> الأمونيوم </a></li>
+              <li><a href=""> حامض الفسفوريك </a></li>
+              <li><a href=""> حامض الكبريتيك </a></li>
+              <li><a href=""> فلوريد الامونيوم </a></li>
+            </ul>
+          </div>
+
+          <div class="footer-item">
+            <div class="footer-item-header">
+              <h4>روابط سريعة</h4>
+              <button
+                class="toggleButton mobile-responsive"
+                data-target="about"
+              >
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus" style="display: none"></i>
+              </button>
+            </div>
+            <ul id="about">
+              <li>
+                <a href=""> تواصل معنا </a>
+              </li>
+              <li><a href="">التوظيف </a></li>
+              <li><a href=""> العطاءات </a></li>
+              <li><a href=""> التقارير السنوية </a></li>
+              <li><a href=""> التشركائنا </a></li>
+              <li><a href=""> بوابة المطالبات الطبية </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-copyright-container">
+          <div class="footer-copyright-container-centered container">
+            <div class="">
+              <a href="">سياسة الخصوصية</a>
+              <a href=""> الشروط والأحكام</a>
+            </div>
+            <div class="">
+              <p>© 2024 تم التطوير بواسطة دوت جو. جميع الحقوق محفوظة.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </body>
+  <script>
+    let currentSlideIndex = 0;
+    // Select all video-card elements that contain data-video images
+    let items = document.querySelectorAll(
+      ".video-card picture img[data-video]"
+    );
+
+    // Open the popup and show the clicked image/video
+    function openPopup(videoCard) {
+      var modal = document.getElementById("popup-modal");
+      var modalImg = document.getElementById("popup-img");
+      var captionText = document.getElementById("caption");
+      var infoText = document.getElementById("info-text");
+
+      // Find the <img> within the clicked .video-card that has the data-video attribute
+      var img = videoCard.querySelector("img[data-video]");
+
+      // Set the current slide index based on the clicked item
+      currentSlideIndex = Array.from(items).indexOf(img);
+
+      // Clear existing content in the modal
+      modalImg.innerHTML = "";
+
+      // Check if the image has a video URL
+      var videoUrl = img.getAttribute("data-video");
+
+      if (videoUrl) {
+        // Show YouTube iframe if there's a video URL
+        modalImg.innerHTML =
+          '<iframe width="100%" height="100%" src="' +
+          videoUrl +
+          '" frameborder="0" allowfullscreen></iframe>';
+      } else {
+        // Otherwise, display the image
+        modalImg.innerHTML =
+          '<img src="' +
+          img.src +
+          '" alt="' +
+          img.alt +
+          '" style="max-width: 100%; max-height: 80%;">';
+      }
+
+      // Display the modal
+      modal.style.display = "block";
+      captionText.innerHTML = img.alt;
+
+      // Update the info text (from data-info attribute)
+      infoText.innerHTML = img.getAttribute("data-info");
+
+      // Prevent body scrolling
+      document.body.classList.add("no-scroll");
+    }
+
+    // Close the popup
+    function closePopup() {
+      var modal = document.getElementById("popup-modal");
+      modal.style.display = "none";
+
+      // Clear content (iframe or image) when closing
+      var modalImg = document.getElementById("popup-img");
+      modalImg.innerHTML = ""; // Clear content
+
+      // Allow scrolling again
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Change to the next or previous slide
+    function changeSlide(direction) {
+      currentSlideIndex += direction;
+
+      // Wrap around when navigating beyond the first or last item
+      if (currentSlideIndex < 0) {
+        currentSlideIndex = items.length - 1; // Go to the last image/video
+      } else if (currentSlideIndex >= items.length) {
+        currentSlideIndex = 0; // Go to the first image/video
+      }
+
+      // Update the popup with the new image or video
+      var newItem = items[currentSlideIndex];
+      var modalImg = document.getElementById("popup-img");
+      var captionText = document.getElementById("caption");
+      var infoText = document.getElementById("info-text");
+
+      // Clear existing content in the modal
+      modalImg.innerHTML = "";
+
+      var videoUrl = newItem.getAttribute("data-video");
+
+      if (videoUrl) {
+        // If it's a video, show the iframe
+        modalImg.innerHTML =
+          '<iframe width="100%" height="100%" src="' +
+          videoUrl +
+          '" frameborder="0" allowfullscreen></iframe>';
+      } else {
+        // Otherwise, show the image
+        modalImg.innerHTML =
+          '<img src="' +
+          newItem.src +
+          '" alt="' +
+          newItem.alt +
+          '" style="max-width: 100%; max-height: 80%;">';
+      }
+
+      // Update caption and info text
+      captionText.innerHTML = newItem.alt;
+      infoText.innerHTML = newItem.getAttribute("data-info");
+    }
+
+    // Select all .video-card elements and add click event listeners
+    const videoCards = document.querySelectorAll(".video-card");
+
+    videoCards.forEach(function (card) {
+      card.addEventListener("click", function () {
+        openPopup(card); // Pass the clicked .video-card to openPopup
+      });
+    });
+  </script>
+  <script>
+    let resizeTimeout;
+
+    $(window)
+      .on("resize orientationchange", function () {
+        clearTimeout(resizeTimeout); // Clear any existing timeouts
+        resizeTimeout = setTimeout(function () {
+          if ($(window).width() > 1200) {
+            if ($(".multiple-items").hasClass("slick-initialized")) {
+              $(".multiple-items").slick("unslick");
+            }
+          } else {
+            if (!$(".multiple-items").hasClass("slick-initialized")) {
+              $(".multiple-items").slick({
+                infinite: false,
+                slidesToShow: 7,
+                slidesToScroll: 1,
+                arrows: true,
+                prevArrow: `<button type="button" class="arrow-prev">
+                      <i class="fa-solid fa-angle-left"></i>
+                    </button>`,
+                nextArrow: `<button type="button" class="arrow-next">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </button>`,
+                responsive: [
+                  {
+                    breakpoint: 1200,
+                    settings: {
+                      slidesToShow: 5,
+                    },
+                  },
+                  {
+                    breakpoint: 991,
+                    settings: {
+                      slidesToShow: 3,
+                    },
+                  },
+                  {
+                    breakpoint: 767,
+                    settings: {
+                      slidesToShow: 1,
+                    },
+                  },
+                ],
+              });
+            }
+          }
+        }, 100); // Small delay to ensure proper detection
+      })
+      .trigger("resize");
+  </script>
+</html>

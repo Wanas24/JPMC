@@ -1,56 +1,56 @@
-.main-stars-header{
-    background-image: url(../Assets/Headers/Careers.png);
+.main-stars-header {
+  background-image: url(../Assets/Headers/Careers.png) !important;
 }
-.Vacancies-opening h4{
-    color: var(--main-color);
-    margin-bottom: 1rem;
+.Vacancies-opening h4 {
+  color: var(--main-color);
+  margin-bottom: 1rem;
 }
-.Vacancies-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-block: 3rem;
+.Vacancies-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-block: 3rem;
 }
-.Vacancies-card{
-    background-color: var(--gray-color);
-    padding: 1rem;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
+.Vacancies-card {
+  background-color: var(--gray-color);
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
-.Vacancies-card span{
-    color: var(--main-color);
-    margin-bottom: 1rem;
+.Vacancies-card span {
+  color: var(--main-color);
+  margin-bottom: 1rem;
 }
-.Vacancies-card h3{
-    margin-bottom: 1rem;
+.Vacancies-card h3 {
+  margin-bottom: 1rem;
 }
-.Vacancies-card h5{
-    margin-bottom: 1rem;
+.Vacancies-card h5 {
+  margin-bottom: 1rem;
 }
-.Vacancies-card-content{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
+.Vacancies-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }
-.Vacancies-card-content span{
-    margin: 0;
+.Vacancies-card-content span {
+  margin: 0;
 }
-@media (max-width:767px) {
-    .Vacancies-container{
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 767px) {
+  .Vacancies-container {
+    grid-template-columns: 1fr;
+  }
 }
-.Vacancies-green-box{
-    background: linear-gradient(90deg,#488253 0%,#639D6E   100%);
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    padding-block: 3rem;
-    align-items: center;
-    gap: 3rem;
-    margin-bottom: 3rem ;
-    border-radius: 10px;
+.Vacancies-green-box {
+  background: linear-gradient(90deg, #488253 0%, #639d6e 100%);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-block: 3rem;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
 }
