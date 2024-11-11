@@ -312,6 +312,7 @@
   scrollbar-width: none;
   padding-top: 1rem;
 }
+
 .home-accordion::-webkit-scrollbar {
   display: none;
 }
@@ -390,7 +391,18 @@
     bottom: 0 !important;
   }
 
-
+@media (max-width:767.88888px) {
+  .home-accordion{
+    position: relative;
+    height: auto;
+    width: 100%;
+    inset-inline-start: 0;
+    
+  }
+  #scroll-arrow{
+    display: none;
+  }
+}
 
   .development-section{
     padding-block: 3rem;
