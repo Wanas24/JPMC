@@ -262,17 +262,28 @@
                 </ul>
             </ul>
             <h5>Election date: 2017/3/28.</h5>
-             <a href="" class="hover-growing-links" data-hover-pos="start">
+             <button onclick="openPopup('popup1')" class="hover-growing-links" data-hover-pos="start">
               <span class="link"> Read more </span>
               <span class="arrow">
                 <i class="fa-solid fa-chevron-right"></i>
               </span>
-            </a>
+            </button>
         </div>
         <picture>
             <img src="./Assets/Inners/Board of Directors/Rectangle 212.png" alt="">
         </picture>
     </div>
+    <div id="popup1" class="popup">
+      <div class="img-container">
+          <span class="close" onclick="closePopup('popup1')">X</span>
+          <picture>
+              <img class="popup-content" src="./Assets/Inners/Board of Directors/Rectangle 212.png" alt="Dr. Mohammed Al-Dhneibat">
+          </picture>
+          <div class="popup-footer">
+              <p>Details about Dr. Mohammed Al-Dhneibat...</p>
+          </div>
+      </div>
+  </div>
     <div class="container BoardOFDirectors-container">
         <div class="content">
             <h4>Private sector representatives</h4>
@@ -284,12 +295,12 @@
                 
             </ul>
             <h5>Election date: 2017/3/28.</h5>
-             <a href="" class="hover-growing-links" data-hover-pos="start">
+             <button href="" class="hover-growing-links" data-hover-pos="start">
               <span class="link"> Read more </span>
               <span class="arrow">
                 <i class="fa-solid fa-chevron-right"></i>
               </span>
-            </a>
+            </button>
         </div>
         <picture>
             <img src="./Assets/Inners/Board of Directors/Group 411.png" alt="">
@@ -301,12 +312,12 @@
             <h2>Chairman of the Board of Directors: His Excellency Dr. Mohammed Al-Dhneibat</h2>
             
             <h5>Election date: 2017/3/28.</h5>
-             <a href="" class="hover-growing-links" data-hover-pos="start">
+             <button href="" class="hover-growing-links" data-hover-pos="start">
               <span class="link"> Read more </span>
               <span class="arrow">
                 <i class="fa-solid fa-chevron-right"></i>
               </span>
-            </a>
+            </button>
         </div>
         <picture>
             <img src="./Assets/Inners/Board of Directors/Group 411.png" alt="">
@@ -331,12 +342,12 @@
                 </ul>
             </ul>
             <h5>Election date: 2017/3/28.</h5>
-             <a href="" class="hover-growing-links" data-hover-pos="start">
+             <button href="" class="hover-growing-links" data-hover-pos="start">
               <span class="link"> Read more </span>
               <span class="arrow">
                 <i class="fa-solid fa-chevron-right"></i>
               </span>
-            </a>
+            </button>
         </div>
         <picture>
             <img src="./Assets/Inners/Board of Directors/Group 411.png" alt="">
@@ -361,12 +372,12 @@
                 </ul>
             </ul>
             <h5>Election date: 2017/3/28.</h5>
-             <a href="" class="hover-growing-links" data-hover-pos="start">
+             <button href="" class="hover-growing-links" data-hover-pos="start">
               <span class="link"> Read more </span>
               <span class="arrow">
                 <i class="fa-solid fa-chevron-right"></i>
               </span>
-            </a>
+            </button>
         </div>
         <picture>
             <img src="./Assets/Inners/Board of Directors/Group 411.png" alt="">
@@ -391,12 +402,12 @@
                 </ul>
             </ul>
             <h5>Election date: 2017/3/28.</h5>
-             <a href="" class="hover-growing-links" data-hover-pos="start">
+             <button href="" class="hover-growing-links" data-hover-pos="start">
               <span class="link"> Read more </span>
               <span class="arrow">
                 <i class="fa-solid fa-chevron-right"></i>
               </span>
-            </a>
+            </button>
         </div>
         <picture>
             <img src="./Assets/Inners/Board of Directors/Group 411.png" alt="">
@@ -421,12 +432,12 @@
                 </ul>
             </ul>
             <h5>Election date: 2017/3/28.</h5>
-             <a href="" class="hover-growing-links" data-hover-pos="start">
+             <button href="" class="hover-growing-links" data-hover-pos="start">
               <span class="link"> Read more </span>
               <span class="arrow">
                 <i class="fa-solid fa-chevron-right"></i>
               </span>
-            </a>
+            </button>
         </div>
         <picture>
             <img src="./Assets/Inners/Board of Directors/Group 411.png" alt="">
@@ -451,12 +462,12 @@
                 </ul>
             </ul>
             <h5>Election date: 2017/3/28.</h5>
-             <a href="" class="hover-growing-links" data-hover-pos="start">
+             <button href="" class="hover-growing-links" data-hover-pos="start">
               <span class="link"> Read more </span>
               <span class="arrow">
                 <i class="fa-solid fa-chevron-right"></i>
               </span>
-            </a>
+            </button>
         </div>
         <picture>
             <img src="./Assets/Inners/Board of Directors/Group 411.png" alt="">
@@ -481,12 +492,12 @@
                 </ul>
             </ul>
             <h5>Election date: 2017/3/28.</h5>
-             <a href="" class="hover-growing-links" data-hover-pos="start">
+             <button href="" class="hover-growing-links" data-hover-pos="start">
               <span class="link"> Read more </span>
               <span class="arrow">
                 <i class="fa-solid fa-chevron-right"></i>
               </span>
-            </a>
+            </button>
         </div>
         <picture>
             <img src="./Assets/Inners/Board of Directors/Rectangle 361.png" alt="">
@@ -582,37 +593,21 @@
     </footer>
   </main>
   <script>
-  $(document).ready(function() {
-    $(".BoardOFDirectors-container").each(function() {
-        const $container = $(this);
-        const $content = $container.find(".content");
-        const $image = $container.find("picture img");
-        const $readMoreButton = $container.find(".hover-growing-links");
+    function openPopup(popupId) {
+    document.getElementById(popupId).style.display = "block";
+    document.body.classList.add("no-scroll");
+}
 
-        // Check if content and image exist
-        if ($content.length && $image.length && $readMoreButton.length) {
-            // Wait for image to load before checking heights
-            $image.on("load", function() {
-                const contentHeight = $content.outerHeight();
-                const imageHeight = $image.outerHeight();
-                const thresholdHeight = imageHeight * 0.7; // Calculate 70% of image height
+function closePopup(popupId) {
+    document.getElementById(popupId).style.display = "none";
+    document.body.classList.remove("no-scroll");
+}
 
-                // Show "Read more" button only if content height exceeds 70% of image height
-                if (contentHeight > thresholdHeight) {
-                    $readMoreButton.css("display", "flex");
-                } else {
-                    $readMoreButton.css("display", "none"); // Optional: Hide if condition not met
-                }
-            });
-
-            // If the image is already cached, manually trigger the load event
-            if ($image[0].complete) {
-                $image.trigger("load");
-            }
-        }
+window.onload = function () {
+    document.querySelectorAll(".popup").forEach(popup => {
+        popup.style.display = "none";
     });
-});
-
+};
 
   </script>
 </body>
