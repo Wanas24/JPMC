@@ -118,33 +118,33 @@ ul li::marker {
 }
 
 h1 {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  line-height: 1.2;
-  color: var(--main-color);
+  line-height: 1.5;
+  
 }
 h2 {
-  font-size: 1.5625rem;
+  font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.6;
 }
 h3 {
-  font-size: 1.4375rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.6;
 }
 h4 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.6;
 }
 h5 {
-  font-size: 1.125rem;
+  font-size: 0.85rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.6;
 }
 p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.6;
 }
@@ -156,8 +156,53 @@ a {
 }
 
 span {
-  font-size: 1.125rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* ar */
+.arabic-version h1 {
+  font-size: 1.65rem;
+  font-weight: 500;
+  line-height: 1.7;
+  
+}
+.arabic-version h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.arabic-version h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.arabic-version h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.arabic-version h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.arabic-version p {
+  font-size: 0.85rem;
   font-weight: 400;
+  line-height: 1.6;
+}
+
+.arabic-version a {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.arabic-version span {
+  font-size: 1rem;
+  font-weight: 500;
   line-height: 1.6;
 }
 
@@ -363,6 +408,12 @@ form textarea {
   outline: none;
   align-items: center;
   width: max-content;
+}
+.hover-growing-links span{
+  font-size: 0.8rem;
+}
+.arabic-version .hover-growing-links span{
+  font-size: 0.85rem;
 }
 .hover-growing-links[data-hover-pos="start"] {
   padding-inline-start: 1rem;

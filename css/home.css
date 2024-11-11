@@ -55,7 +55,7 @@
   margin-top: auto;
   z-index: 2;
 }
-.hero-content h2{
+.hero-content h1{
   width: 50%;
 }
 .hero-card p {
@@ -95,7 +95,7 @@
   }
 }
 @media (max-width:767.888888px) {
-  .hero-content h2{
+  .hero-content h1{
     width: 100%;
   }
   .hero-content{
@@ -476,7 +476,7 @@
   .Development-cards-container
     .Development-card
     .flipping-card--front
-    h3 {
+    h4 {
     position: absolute;
     padding-inline-end: 1rem;
     bottom: 5%;
