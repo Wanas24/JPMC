@@ -1,5 +1,9 @@
 .main-stars-header {
+<<<<<<< HEAD
   background-image: url(../Assets/Headers/Board\ of\ Directors.png) !important;
+=======
+  background-image: url(../Assets/Headers/Board\ of\ Directors.png);
+>>>>>>> f1278d0b96830c80c3d3d632ed5f06361d93a709
 }
 .BoardOFDirectors-opening h4 {
   color: var(--main-color);
@@ -50,6 +54,7 @@
 
 .popup-content {
   margin: auto;
+<<<<<<< HEAD
   display: block;
   width: 900px;
   height: 600px;
@@ -75,12 +80,78 @@
   color: white;
   padding: 10px;
   font-size: 16px;
+=======
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  width: 900px;
+  height: 600px;
+  object-fit: contain;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.popup-content img {
+  width: 100%;
+  object-fit: cover;
+}
+.popup-content-inner {
+  padding: 2rem;
+}
+.popup-content-inner h5 {
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+.popup-content-inner h3 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.popup-content-inner h3::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 5px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  inset-inline-start: 0;
+  inset-block-start: -1.5rem;
+}
+.popup-scrolled-content{
+    height: 400px;
+    overflow-y: scroll;
+    direction: rtl;
+}
+.popup-scrolled-content div{
+    direction: ltr;
+    padding-inline-start: 0.5rem;
+}
+.popup-scrolled-content::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+.popup-scrolled-content::-webkit-scrollbar-track {
+  background: #e2ebe2; /* Background color of the scrollbar track */
+  border-radius: 10px; /* Rounding the track edges */
+}
+.popup-scrolled-content::-webkit-scrollbar-thumb {
+  background-color: var(--main-color); /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounding the thumb */
+  border: 3px solid #e2ebe2; /* Creates space around the thumb */
+}
+.popup-scrolled-content .popup-scrolled-content .img-container {
+  width: fit-content;
+  margin: auto;
+  position: relative;
+>>>>>>> f1278d0b96830c80c3d3d632ed5f06361d93a709
 }
 
 .close {
   position: absolute;
+<<<<<<< HEAD
   top: -60px;
   right: 0px;
+=======
+  top: 1rem;
+  inset-inline-end: 4rem;
+>>>>>>> f1278d0b96830c80c3d3d632ed5f06361d93a709
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
@@ -94,6 +165,7 @@
   justify-content: center;
   align-items: center;
 }
+<<<<<<< HEAD
 .popup-footer {
   display: flex;
   position: absolute;
@@ -154,6 +226,8 @@
   justify-content: center;
   align-items: center;
 }
+=======
+>>>>>>> f1278d0b96830c80c3d3d632ed5f06361d93a709
 
 .no-scroll {
   overflow: hidden;
@@ -163,6 +237,10 @@
   .popup-content {
     width: 80%;
     height: auto;
+<<<<<<< HEAD
+=======
+    grid-template-columns: 1fr;
+>>>>>>> f1278d0b96830c80c3d3d632ed5f06361d93a709
   }
   .popup-footer {
     width: 80%;
@@ -179,6 +257,7 @@
   .close {
     right: 10%;
   }
+<<<<<<< HEAD
   .gallery-two-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -186,5 +265,10 @@
 @media (max-width: 767px) {
   .gallery-two-container {
     grid-template-columns: 1fr;
+=======
+  .BoardOFDirectors-container{
+    flex-direction: column !important;
+>>>>>>> f1278d0b96830c80c3d3d632ed5f06361d93a709
   }
 }
+
