@@ -1014,6 +1014,9 @@
     gap: 2rem;
     padding: 1rem;
   }
+  .home-horizontal-card h4{
+    color: #fff;
+  }
   @media (max-width:991.88888px) {
     .Home-last-container{
       grid-template-columns: 1fr;
@@ -1043,6 +1046,9 @@
   .gif-block:first-child picture{
     align-self: end;
     height: fit-content;
+  }
+  .arabic-version .gif-block .gif img{
+    transform: scaleX(-1);
   }
   .investors-relations-main{
     flex: 1.75;
