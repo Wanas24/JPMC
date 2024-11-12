@@ -18,6 +18,15 @@
     flex-shrink: 0;
     
   }
+   .contact-info h4 span{
+    font-size: 1rem;
+    color: var(--secondary-color);
+    direction: ltr !important;
+    display: inline-block;
+  }
+  .arabic-version .contact-info h4 span{
+    font-size: 1.1rem;
+  }
   .contact-main-section{
     background-image: url("../Assets/Inners/General Page/contact-maps\ 1.png");
     background-position: center bottom;
@@ -60,7 +69,7 @@
     background: url("../Assets/Icons/CaretDown-black.svg");
     background-repeat: no-repeat;
     background-size: 1rem;
-    background-position: 15px center;
+    background-position: 95% center ;
   }
   .ContactUS-mainContainer textarea{
     border: 1px solid #14141433;
@@ -104,8 +113,12 @@
     height: 100%;
     width: 5px;
     border-radius: 50px;
-    right: -20px;
+    left: -20px;
     top: 0;
+  }
+  .arabic-version .greenbox h2::after{
+    right: -20px;
+    left: unset;
   }
   .ContactUS-Content span{
     color: var(--main-color);
