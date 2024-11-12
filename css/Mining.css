@@ -1,59 +1,58 @@
-.main-stars-header{
-    background-image: url(../Assets/Headers/Mining\ and\ Mines.png)
+.main-stars-header {
+  background-image: url(../Assets/Headers/Mining\ and\ Mines.png) !important;
 }
-.Mining-opening h4{
-    color: var(--main-color);
-    margin-bottom: 1rem;
+.Mining-opening h4 {
+  color: var(--main-color);
+  margin-bottom: 1rem;
 }
-.Mining-1st-section{
-    padding-block: 3rem;
-    margin-block: 2rem; 
+.Mining-1st-section {
+  padding-block: 3rem;
+  margin-block: 2rem;
 }
-.Mining-1st-section .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: center;
-    
+.Mining-1st-section .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
 }
-.Mining-1st-section .container img{
-    width: 100%;
-    border-radius: 10px;
+.Mining-1st-section .container img {
+  width: 100%;
+  border-radius: 10px;
 }
-.mining-last-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-block: 3rem;
+.mining-last-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-block: 3rem;
 }
-.mining-last-container img{
-    width: 100%;
-    border-radius: 10px;
+.mining-last-container img {
+  width: 100%;
+  border-radius: 10px;
 }
-.mining-last-container img:hover{
-    transform: scale(1.01);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.mining-last-container img:hover {
+  transform: scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.mining-last-container div{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.mining-last-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.mining-last-container a{
-    text-decoration: none;
-    color: #fff;
-    position: relative;
+.mining-last-container a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
 }
-.mining-last-container h2{
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+.mining-last-container h2 {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 }
-@media (max-width:991.8888px) {
-    .mining-last-container{
-        grid-template-columns: 1fr  ;
-    }
-    .Mining-1st-section .container{
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 991.8888px) {
+  .mining-last-container {
+    grid-template-columns: 1fr;
+  }
+  .Mining-1st-section .container {
+    grid-template-columns: 1fr;
+  }
 }

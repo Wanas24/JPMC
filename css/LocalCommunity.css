@@ -1,13 +1,13 @@
-.main-stars-header{
-    background-image: url(../Assets/Headers/Local\ Community.png)
+.main-stars-header {
+  background-image: url(../Assets/Headers/Local\ Community.png) !important;
 }
-.LocalCommunity-opening h4{
-    color: var(--main-color);
-    margin-bottom: 1rem;
+.LocalCommunity-opening h4 {
+  color: var(--main-color);
+  margin-bottom: 1rem;
 }
-.LocalCommunity-1st-section .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-block: 1rem;
+.LocalCommunity-1st-section .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-block: 1rem;
 }
