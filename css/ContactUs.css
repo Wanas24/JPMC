@@ -5,17 +5,22 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .contact-info picture{
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: var(--main-color);
     flex-shrink: 0;
+    
+  }
+  .contact-main-section{
+    background-image: url("../Assets/Inners/General Page/contact-maps\ 1.png");
+    background-position: center bottom;
     
   }
   .ContactUS-mainContainer {
@@ -23,11 +28,13 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding-bottom: 3rem;
+    
   }
   .ContactUS-mainContainer form {
     box-shadow: 0px 0px 40px 0px #B6B6B633;
     padding: 1.5rem;
     border: 10px;
+    background-color: #fff;
   }
   .ContactUS-mainContainer form input{
     padding-inline-start: 1.5rem;
@@ -49,7 +56,8 @@
     border-radius: 50px;
     color: #14141433;
     padding-inline-start: 1.5rem;
-    background: url("../Assets/Icons/arrow-filled.png");
+    appearance: none;
+    background: url("../Assets/Icons/CaretDown-black.svg");
     background-repeat: no-repeat;
     background-size: 1rem;
     background-position: 15px center;
@@ -66,6 +74,9 @@
   }
   .ContactUS-mainContainer select[value=""] {
     background: #000;
+  }
+  .ContactUS-Content h4{
+    max-width: 400px;
   }
   
   @media (max-width:767px) {
