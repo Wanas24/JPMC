@@ -6,10 +6,13 @@
 div.main-navigation--container {
   position: relative;
   z-index: 9999;
+  transition: all ease;
 }
 header.main-navigation--container {
-  position: sticky !important;
+  position: relative !important;
+  transition: all ease;
   top: 0;
+  width: 100%;
   z-index: 9999;
 }
 .main-navigation--container {
@@ -259,10 +262,15 @@ header.main-navigation--container {
   transition: var(--animation-transition);
 
 }
-
+.tests{
+  top: 0;
+  width: 100%;
+  z-index: 100000;
+  position: fixed;
+}
 .searchBarOpen + div,
 .searchBarOpen + section {
-  transform: translateY(-12.05rem);
+  /* transform: translateY(-12.05rem); */
 }
 .main-navigation-search-container .navigation-search span {
   transition: var(--animation-transition);

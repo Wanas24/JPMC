@@ -1,4 +1,17 @@
 $(document).ready(function () {
+
+  $(window).on("scroll", function() {
+    let scrollValue = $(this).scrollTop(); 
+    if (scrollValue > 95) {
+      $('header.main-navigation--container').css('top', "-95px");
+      $('div.main-navigation--container').css('top', "-95px");
+    }else{
+      $('header.main-navigation--container').css('top', scrollValue * -1);
+      $('div.main-navigation--container').css('top', scrollValue * -1);
+    }
+    // console.log("Scroll position:", scrollValue);
+});
+
   // Cached Selectors
   const $window = $(window);
   const $targetElement = $('.main-navigation--container');
