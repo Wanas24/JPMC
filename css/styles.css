@@ -465,8 +465,12 @@ form textarea {
 }
 .hover-growing-links[data-hover-pos="start"]:hover i {
   color: #fff;
-  transform: translateX(-5px);
+  transform: rotate(-45deg) !important;
+  /* transform: translateX(-5px) !important; */
   transition: all 0.3s ease-out;
+}
+.arabic-version .hover-growing-links[data-hover-pos="start"]:hover i {
+  transform: rotate(-150deg) !important;
 }
 .hover-growing-links i {
   position: relative;
@@ -959,9 +963,9 @@ input[type="date"]::-ms-clear {
 .arabic-version .hover-growing-links:nth-child(1):hover::after {
   inset-inline-start: 0;
 }
-.arabic-version .hover-growing-links:nth-child(2)::after {
+/* .arabic-version .hover-growing-links:nth-child(2)::after {
   inset-inline-start: -100%;
-}
+} */
 .arabic-version .hover-growing-links:nth-child(2):hover::after {
   inset-inline-start: 0;
 }

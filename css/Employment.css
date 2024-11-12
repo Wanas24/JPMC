@@ -11,6 +11,9 @@
 .Employment-opening h4{
     color: var(--main-color);
 }
+.Employment-opening h2{
+    max-width: 750px;
+}
 .Employment-main-container-card{
     display: flex;
     flex-direction: column;
@@ -57,7 +60,8 @@
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .Employment-2nd-section-card img{
     width: 100%;
@@ -68,6 +72,9 @@
 .Employment-2nd-section-card h3 {
     margin-top: 1rem;
     color: var(--main-color);
+}
+.Employment-2nd-section-card a{
+    margin-bottom: 1rem;
 }
 @media (max-width:991.888888888px) {
     .Employment-2nd-section .container{
@@ -95,5 +102,8 @@
     padding-block: 7rem;
 }
 .Employment-last-section h2{
+    color: #fff;
+}
+.Employment-last-section .hover-growing-links span{
     color: #fff;
 }
