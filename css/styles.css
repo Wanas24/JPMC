@@ -162,6 +162,11 @@ span {
   font-weight: 500;
   line-height: 1.6;
 }
+label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
 
 /* ar */
 .arabic-version h1 {
@@ -203,6 +208,11 @@ span {
 }
 
 .arabic-version span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.arabic-version label {
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.6;
