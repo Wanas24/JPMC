@@ -711,12 +711,13 @@ input[type="date"]::-ms-clear {
   z-index: 1;
   color: var(--main-color);
   text-decoration: none;
-  font-size: 1.125rem;
+  font-size: 0.85rem;
   font-weight: 510;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   min-height: 30px;
+  padding-block: 1rem;
 }
 .arabic-version .share-btn {
   flex-direction: row-reverse;
@@ -997,7 +998,7 @@ input[type="date"]::-ms-clear {
 .custom-accordion .accordion-item .accordion-button:last-of-type,
 .custom-accordion .accordion-item .accordion-button {
   border-radius: 55px;
-  color: var(--main-color);
+  font-size: 0.9rem;
 }
 .custom-accordion .accordion-item:last-of-type,
 .custom-accordion .accordion-item:first-child,
@@ -1034,19 +1035,19 @@ input[type="date"]::-ms-clear {
   background: #fff;
   content: "";
   position: absolute;
-  width: 2px;
-  height: 25px;
-  inset: 25% calc(50%);
+  width: 2.2px;
+  height: 19px;
+  inset: 30% calc(47%);
   border-radius: 5px;
 }
 .custom-accordion .accordion-btn::after {
   content: "";
   position: absolute;
   inset-block: calc(50% - 1px);
-  inset-inline: 25%;
+  inset-inline: 27%;
   border-radius: 5px;
-  height: 2px;
-  width: 25px;
+  height: 2.2px;
+  width: 19px;
   background: #fff;
 }
 
