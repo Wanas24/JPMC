@@ -23,6 +23,8 @@
 }
 .book-cover-slider .slick-current.slick-active + div img {
   /* transform: scale(1.2); */
+  box-shadow: 0px 0px 30px 0px #B6B6B64D;
+
 }
 @media (min-width: 767px) {
   .book-cover-slider .slick-current.slick-active {
@@ -114,10 +116,10 @@
   .arabic-version .book-single-content-slide {
     align-items: end;
   }
-  .arabic-version .book-single-content-slide {
-    padding-right: 1rem;
-    padding-left: 3rem;
-  }
+    /* .arabic-version .book-single-content-slide {
+      padding-right: 1rem;
+      padding-left: 3rem;
+    } */
   .book-single-content-slide a button {
     padding: 0.75rem 2rem;
   }
@@ -171,6 +173,10 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
+  }
+  .home-books-arrow:hover{
+    border-bottom: 1px solid var(--main-color);
   }
   .home-books-arrow i {
     color: var(--main-color);
@@ -187,6 +193,9 @@
     inset-inline-end: -6rem;
   }
 
+  .arabic-version .home-books-arrow i{
+    transform: scaleX(-1);
+  }
   /* .home-books-arrow:hover {
     background: white;
     transition: all 0.2s ease-out;
@@ -205,6 +214,7 @@
   } */
   .book-single-content-slide.slick-slide {
     text-align: center;
+    align-items: center;
   }
   .book-cover-slider .slick-slide.slick-current.slick-active img {
     /* transform: scale(1.2); */
@@ -277,9 +287,13 @@
   cursor: pointer;
   justify-content: center;
   margin-top: 1rem;
+  font-size: 0.85rem;
 }
 .downlad-btn:hover {
   color: unset;
+}
+.arabic-version .downlad-btn{
+  flex-direction: row-reverse;
 }
 @media (max-width: 1200px) {
   .AnnualReports-container {
