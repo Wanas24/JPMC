@@ -28,7 +28,9 @@
   --animation-transition: all 0.3s ease-out;
   --navbar-border-color: rgba(20, 20, 20, 0.3);
 }
-
+body {
+  color: #141414 !important; 
+}
 ul li::marker {
   color: var(--main-color);
 }
@@ -184,9 +186,9 @@ span {
   line-height: 1.6;
 }
 .arabic-version h5 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 .arabic-version p {
   font-size: 0.85rem;
@@ -201,7 +203,7 @@ span {
 }
 
 .arabic-version span {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.6;
 }
