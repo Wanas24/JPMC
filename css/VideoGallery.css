@@ -1,3 +1,14 @@
 .main-stars-header {
   background-image: url(../Assets/Headers/Video\ Gallery.png) !important;
 }
+/* Ticket 21 */
+.photoGallery-container {
+  margin-top: 4rem;
+}
+.photoGallery-card-content > span {
+  font-size: 0.9rem;
+}
+.photoGallery-card {
+  border-radius: 8px;
+  overflow: hidden;
+}

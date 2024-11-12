@@ -41,11 +41,14 @@
   flex-direction: column;
   gap: 10px;
 }
-.arabic-version .FuturePlans-1st-container ul li {
-  font-size: 0.9rem;
+.FuturePlans-1st-container ul li {
+  font-size: 0.85rem;
   line-height: 1.8;
   font-weight: 500;
   text-align: justify;
+}
+.arabic-version .FuturePlans-1st-container ul li {
+  font-size: 0.9rem;
 }
 .FuturePlans-1st-container {
   margin-block: 1rem;
