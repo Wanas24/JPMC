@@ -73,7 +73,8 @@
     margin-top: 1rem;
     color: var(--main-color);
 }
-.Employment-2nd-section-card a{
+.Employment-2nd-section-card .hover-growing-links[data-hover-pos="start"]{
+    margin: 0;
     margin-bottom: 1rem;
 }
 @media (max-width:991.888888888px) {
