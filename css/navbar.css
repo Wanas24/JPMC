@@ -262,7 +262,7 @@ header.main-navigation--container {
   transition: var(--animation-transition);
 
 }
-.tests{
+.navigation-container{
   top: 0;
   width: 100%;
   z-index: 100000;
@@ -446,6 +446,7 @@ font-weight: 500;
   border-radius: 40px;
   align-self: center;
   color: #fff;
+  align-items: center;
   min-width: max-content;
   transition: var(--animation-transition);
   text-decoration: none;
@@ -456,6 +457,9 @@ font-weight: 500;
 .employee-portal-container-btn:hover {
   transition: var(--animation-transition);
   filter: brightness(0.8);
+}
+.employee-portal-container-btn:hover p{
+  color: #fff;
 }
 .employee-portal-container-btn span{
   color: #fff;
@@ -582,7 +586,8 @@ color: var(--secondary-color);
 @media (max-width: 576.888888888888px) {
   #cssmenu.small-screen > ul:not(.main-navigation-search-container) {
     width: 100vw;
-    inset-inline-start: -1.75%;
+    inset-inline-start: -.75rem;
+
 
     top: calc(100% + -1px);
   }
@@ -595,12 +600,14 @@ color: var(--secondary-color);
     display: none;
   }
 
-  
+  .main-navigation--container .upper-nav a {
+  padding-inline: .75rem
+  } 
 }
 
 @media (max-width: 500px) {
   .main-navigation--container .upper-nav > div{
-    gap: 0;
+    /* gap: 0; */
     padding-inline: .75rem;
   }
   .main-navigation--container .upper-nav > div a {
@@ -611,7 +618,7 @@ color: var(--secondary-color);
 @media (max-width: 400px) {
   #cssmenu.small-screen > ul:not(.main-navigation-search-container) {
     width: 100vw;
-    inset-inline-start: calc(-166px);
+    /* inset-inline-start: -2.75%; */
     top: calc(100% + 0px);
   }
   
@@ -646,7 +653,7 @@ color: var(--secondary-color);
     width: 20px;
   }
   .main-navigation--container .upper-nav > div {
-    gap: 0.25rem;
+    /* gap: 0.25rem; */
   }
 }
 

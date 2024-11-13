@@ -64,39 +64,24 @@
   
             cssmenu.find(".submenu-button").on("click", function (e) {
               e.stopPropagation();
+              var parentLi = $(this).closest("li");
+              var $submenu = $(this).siblings("ul");
   
-              $(this)
-                .closest("li")
-                .siblings()
-                .find(".submenu-opened")
-                .removeClass("submenu-opened");
-              $(this)
-                .closest("li")
-                .siblings()
-                .find("ul")
-                .removeClass("open")
-                .slideUp();
-  
-              const parentLi = $(this).closest("li");
+              // Close all other submenus and reset icons
+              parentLi.siblings().find("ul").removeClass("open").slideUp();
               parentLi
-                .find("ul")
-                .not($(this).siblings("ul"))
-                .removeClass("open")
-                .slideUp();
+                .siblings()
+                .find(".submenu-button i")
+                .removeClass("fa-minus")
+                .addClass("fa-plus");
   
+              // Toggle the current submenu
+              $submenu.toggleClass("open").slideToggle();
               $(this).toggleClass("submenu-opened");
-              const parentUl = $(this).siblings("ul");
-              if (parentUl.hasClass("open")) {
-                parentUl.removeClass("open").slideUp();
-              } else {
-                parentUl.addClass("open").slideDown();
-              }
+  
+  
               var icon = $(this).find("i");
-              if ($(this).hasClass("submenu-opened")) {
-                icon.removeClass("fa-plus").addClass("fa-minus");
-              } else {
-                icon.removeClass("fa-minus").addClass("fa-plus");
-              }
+              icon.toggleClass("fa-plus fa-minus");
             });
         };
 
