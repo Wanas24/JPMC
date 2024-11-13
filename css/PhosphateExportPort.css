@@ -80,3 +80,13 @@
     width: 100%;
   }
 }
+/* Ticket 52 */
+.PhosphateExportPort-main-section {
+  padding-bottom: 5rem;
+}
+.PhosphateExportPort-2nd-section-container {
+  margin-bottom: 5rem;
+}
+.parallax .parallax-box {
+  width: 55%;
+}
