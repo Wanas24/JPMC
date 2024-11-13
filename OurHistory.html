@@ -32,6 +32,7 @@
     <script src="./js/carousel.umd.js"></script>
     <script src="./js/owl.carousel.js"></script>
     <script src="./js/intlTelInput.min.js"></script>
+    <script src="./js/share-btn.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/main.js"></script>
 </head>
@@ -275,15 +276,15 @@
                         <h2>1982</h2>
                     </div>
                     <div class="">
-                        <h2>hello world</h2>
+                        <h2>2000</h2>
                     </div>
                     <div class="">
-                        <h2>hello world</h2>
+                        <h2>20005</h2>
                     </div>
                 </div>
                 <div id="main-content">
                     <div class="">
-                        <h4>1935</h4>
+                        <h4>1908</h4>
                         <h2>
                             The company was converted into a public joint stock company, and the Rusaifa mine began
                             operating
@@ -309,7 +310,7 @@
                         </picture>
                     </div>
                     <div class="">
-                        <h4>1935</h4>
+                        <h4>1949</h4>
                         <h2>
                             The company was converted into a public joint stock company, and the Rusaifa mine began
                             operating
@@ -322,7 +323,7 @@
                         </picture>
                     </div>
                     <div class="">
-                        <h4>1935</h4>
+                        <h4>1953</h4>
                         <h2>
                             The company was converted into a public joint stock company, and the Rusaifa mine began
                             operating
@@ -335,7 +336,7 @@
                         </picture>
                     </div>
                     <div class="">
-                        <h4>1935</h4>
+                        <h4>1962</h4>
                         <h2>
                             The company was converted into a public joint stock company, and the Rusaifa mine began
                             operating
@@ -348,7 +349,7 @@
                         </picture>
                     </div>
                     <div class="">
-                        <h4>1935</h4>
+                        <h4>1979</h4>
                         <h2>
                             The company was converted into a public joint stock company, and the Rusaifa mine began
                             operating
@@ -361,7 +362,7 @@
                         </picture>
                     </div>
                     <div class="">
-                        <h4>1935</h4>
+                        <h4>1982</h4>
                         <h2>
                             The company was converted into a public joint stock company, and the Rusaifa mine began
                             operating
@@ -374,7 +375,7 @@
                         </picture>
                     </div>
                     <div class="">
-                        <h4>1935</h4>
+                        <h4>2000</h4>
                         <h2>
                             The company was converted into a public joint stock company, and the Rusaifa mine began
                             operating
@@ -387,7 +388,7 @@
                         </picture>
                     </div>
                     <div class="">
-                        <h4>1935</h4>
+                        <h4>2005</h4>
                         <h2>
                             The company was converted into a public joint stock company, and the Rusaifa mine began
                             operating
@@ -412,6 +413,39 @@
             </div>
            
         </section>
+        <div
+                 class="container mt-3 border-top border-bottom border-2 align-self-end  align-items-center d-flex justify-content-start position-relative"
+               >
+                 <div class="share-btn" id="share">
+                   <picture>
+                     <img src="./Assets/Icons/ShareFat.svg" alt="" class="mb-0" />
+                   </picture>
+                   share
+                 </div>
+                 <div
+                   class="share-overlay align-items-center gap-3"
+                   id="share-overlay"
+                 >
+                   <a href="#">
+                     <i class="fa-regular fa-copy"></i>
+                   </a>
+                   <a href="#">
+                     <i class="fa-brands fa-x-twitter"></i>
+                   </a>
+                   <a href="#">
+                     <i class="fa-brands fa-linkedin-in"></i>
+                   </a>
+                   <a href="#">
+                     <i class="fa-brands fa-whatsapp"></i>
+                   </a>
+                   <a href="#">
+                     <i class="fa-brands fa-facebook"></i>
+                   </a>
+                   <div id="close">
+                     <i class="fa-regular fa-circle-xmark"></i>
+                   </div>
+                 </div>
+        </div>
         <footer class="main-footer-container">
             <div class="container footer-section">
                 <div class="footer-item">
@@ -503,7 +537,7 @@
     </main>
     <script>
         $("#main-titles").slick({
-            infinite: false,
+            infinite: true,
             vertical: true,
             verticalSwiping: true,
             slidesToShow: 7,
@@ -533,7 +567,7 @@
             vertical: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            infinite: false,
+            infinite: true,
             arrows: true,
             prevArrow: $("#prev"),
             nextArrow: $("#next"),

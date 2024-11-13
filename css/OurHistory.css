@@ -6,6 +6,10 @@
   color: var(--main-color);
   margin-bottom: 1rem;
 }
+.StrategicFramework-opening h2 {
+  width: 55%;
+  margin-bottom: 1rem;
+}
 
 .OurHistory-section .container {
   display: grid;
@@ -198,7 +202,7 @@
   border-radius: 100%;
   width: 1.45rem;
   height: 1.45rem;
-  background-color: red;
+  background-color: var(--main-color);
   display: none;
 }
 .arabic-version #main-titles div h2::before{
