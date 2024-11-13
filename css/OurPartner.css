@@ -64,3 +64,22 @@
     grid-template-columns: 1fr;
   }
 }
+/* Ticket 50  */
+.OurPartner-card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.OurPartner-card .OurPartner-card-content h3 {
+  color: var(--main-color);
+}
+.OurPartner-container {
+  margin-bottom: 3rem;
+}
+.custom-panel .nav-link {
+  font-size: 0.95rem;
+  font-family: NotoKufiArabic;
+}
+.arabic-version .custom-panel .nav-link {
+  font-size: 0.9rem;
+  font-family: NotoKufiArabic;
+}

@@ -93,3 +93,14 @@
 .parallax-box li::marker {
   color: #000;
 }
+@media (min-width: 1200px) {
+  .PhosphateExportPort-opening {
+    width: 70%;
+  }
+}
+#PhosphateExportPort h5 {
+  font-size: 0.9rem;
+}
+.arabic-version #PhosphateExportPort h5 {
+  font-size: 0.95rem;
+}
