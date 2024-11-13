@@ -595,7 +595,9 @@ color: var(--secondary-color);
     display: none;
   }
 
-  
+  .main-navigation--container .upper-nav a {
+  padding-inline: .75rem
+  } 
 }
 
 @media (max-width: 500px) {
@@ -611,7 +613,7 @@ color: var(--secondary-color);
 @media (max-width: 400px) {
   #cssmenu.small-screen > ul:not(.main-navigation-search-container) {
     width: 100vw;
-    inset-inline-start: calc(-166px);
+    inset-inline-start: -2.75%;
     top: calc(100% + 0px);
   }
   
