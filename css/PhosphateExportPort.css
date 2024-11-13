@@ -90,3 +90,6 @@
 .parallax .parallax-box {
   width: 55%;
 }
+.parallax-box li::marker {
+  color: #000;
+}

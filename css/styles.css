@@ -33,6 +33,10 @@ body {
 }
 ul li::marker {
   color: var(--main-color);
+  font-size: 22px;
+}
+ul {
+  padding-inline-start: 1.4rem;
 }
 @media (max-width: 991px) {
   html {
