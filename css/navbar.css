@@ -582,7 +582,8 @@ color: var(--secondary-color);
 @media (max-width: 576.888888888888px) {
   #cssmenu.small-screen > ul:not(.main-navigation-search-container) {
     width: 100vw;
-    inset-inline-start: -1.75%;
+    inset-inline-start: -.75rem;
+
 
     top: calc(100% + -1px);
   }
