@@ -60,6 +60,7 @@
     color: #fff;
     font-size: 1.9rem !important;
     font-weight: 700 !important;
+    margin-bottom: 0;
 }
 .Employment-main-container{
     display: grid;

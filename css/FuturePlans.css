@@ -90,7 +90,7 @@
   padding: 5px;
   color: #fff;
 }
-.project-card h2:hover {
+.project-card:hover h2{
   color: #fff;
   text-decoration: underline;
 }

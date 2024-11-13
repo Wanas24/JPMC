@@ -1023,6 +1023,7 @@ input[type="date"]::-ms-clear {
 .custom-accordion .accordion-item .accordion-button {
   border-radius: 55px;
   font-size: 0.9rem;
+  text-align: start;
 }
 .custom-accordion .accordion-item:last-of-type,
 .custom-accordion .accordion-item:first-child,
