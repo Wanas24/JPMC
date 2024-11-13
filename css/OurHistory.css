@@ -63,6 +63,10 @@
   background-color: white;
   right: 2.7rem;
 }
+.arabic-version #main-titles::before{
+  left: 2.7rem;
+  right: unset;
+}
 #main-titles {
   z-index: 999;
 }
@@ -191,6 +195,10 @@
   background-color: red;
   display: none;
 }
+.arabic-version #main-titles div h2::before{
+  left: 2rem;
+  right: unset;
+}
 
 #main-titles div h2::after {
   position: absolute;
@@ -203,11 +211,19 @@
   height: 2rem;
   background-color: rgb(157, 155, 155);
 }
+.arabic-version #main-titles div h2::after{
+  right: unset;
+  left: 1.75rem;
+}
 #main-titles .slick-active.slick-current h2::after {
   background-color: white;
   width: 3rem;
   height: 3rem;
   right: 1.25rem;
+}
+.arabic-version #main-titles .slick-active.slick-current h2::after {
+  right:unset;
+  left: 1.25rem;
 }
 #main-titles .slick-active.slick-current h2::before {
   display: block;
@@ -216,11 +232,19 @@
 
 
 @media (max-width: 1024px) {
+   #main-titles div h2::after{
+    display: none;
+  }
   .history-arrows-box{
     gap: 20rem;
     inset-inline-start: 50%;
     transform: translateX(-50%);
     inset-block-start: 3rem;
+  }
+  .arabic-version .history-arrows-box{
+    flex-direction: row-reverse;
+    inset-inline-start:unset;
+    inset-inline-end: 50%;
   }
   .history-arrows-box #prev{
     transform: rotate(270deg);
