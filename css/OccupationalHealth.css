@@ -69,3 +69,13 @@
     grid-template-columns: 1fr;
   }
 }
+/* Ticket 48 */
+.OccupationalHealth-1st-section li {
+  font-size: 0.95rem;
+}
+.OccupationalHealth-1st-section .hover-growing-links {
+  margin-top: 2rem !important;
+}
+.home-vertical-card h4:hover {
+  text-decoration: underline;
+}
