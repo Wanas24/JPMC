@@ -9,15 +9,17 @@
 
 .OurHistory-section .container {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   grid-template-columns: 100%;
-  grid-template-rows: 100px 500px;
+  grid-template-rows: 100px ;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
   background-image: url("../Assets/Inners/Our history/BG.png");
   background-size: cover;
   position: relative;
+  margin-bottom: 1rem;
+  
 }
 .OurHistory-section .container::after{
   content: '';
@@ -26,7 +28,10 @@
   width: 100%;
   background: linear-gradient(0deg,rgba(72, 130, 83, 0.85) 0%, rgba(16, 28, 18, 0.9)  100%);
 }
-
+#main-content img {
+  width: 60%;
+  margin-bottom: 1rem;
+}
 @media (min-width: 1024px) {
   .OurHistory-section .container {
     grid-template-rows: unset;
@@ -53,7 +58,8 @@
   width: 100%;
   /* margin-top: 7rem; */
   position: relative;
-  height: 900px;
+  height: 800px;
+ 
 }
 #main-titles::before {
   position: absolute;
@@ -149,7 +155,7 @@
 @media (min-width: 1024px) {
   .history-arrows-box{
     gap: 1rem;
-    inset-inline-start: 270px;
+    inset-inline-start: 286px;
     inset-block-start: 80px;
   }
   #main-content .slick-list.draggable {
@@ -232,6 +238,12 @@
 
 
 @media (max-width: 1024px) {
+  #main-content h2 {
+  max-width: 100%;
+  }
+  #main-content img {
+    width: 100%;
+  }
    #main-titles div h2::after{
     display: none;
   }
@@ -317,9 +329,7 @@
   }
 }
 
-#main-content img {
-  width: 60%;
-}
+
 
 @media (max-width: 575px) {
   .history-arrows-box{
