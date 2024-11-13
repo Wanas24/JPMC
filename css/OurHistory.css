@@ -12,21 +12,33 @@
   gap: 1rem;
   grid-template-columns: 100%;
   grid-template-rows: 100px 500px;
-  background: linear-gradient(0deg, #488253 -14.8%, #101c12 88.13%);
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-image: url("../Assets/Inners/Our history/BG.png");
+  background-size: cover;
+  position: relative;
+}
+.OurHistory-section .container::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg,rgba(72, 130, 83, 0.85) 0%, rgba(16, 28, 18, 0.9)  100%);
 }
 
 @media (min-width: 1024px) {
   .OurHistory-section .container {
     grid-template-rows: unset;
-
-    grid-template-columns: 300px 9fr;
+    grid-template-columns: 250px 9fr;
   }
 }
 
 @media (max-width: 1024px) {
   #main-titles.slick-slider {
-    height: auto;
+    height: fit-content;
     width: 100%;
+    margin-top: 3rem;
   }
 }
 .OurHistory-section .container .main-titles {
@@ -49,29 +61,46 @@
   height: 100%;
   content: "";
   background-color: white;
-  right: 8.3rem;
+  right: 2.7rem;
 }
 #main-titles {
-  flex: 1;
-  display: flex;
+  z-index: 999;
 }
 #main-content {
-  flex: 2;
+ z-index: 999;
 }
-.shallow {
-  flex: 1;
-}
+
 #main-content .slick-slide {
   min-height: max-content;
 }
 #main-content div h4 {
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-bottom: 1rem;
 }
 #main-content div h2 {
   margin-bottom: 2rem;
 }
+.history-arrows-box{
+  position: absolute;
+  display: flex;
+ 
+  z-index: 999;
+}
+.history-arrow{
+  background-color: #fff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+.history-arrow i {
+  color: var(--main-color);
+}
 @media (min-width: 1024px) {
+
   #main-titles .slick-track {
     width: 100%;
     display: flex;
@@ -114,6 +143,11 @@
   align-items: center;
 }
 @media (min-width: 1024px) {
+  .history-arrows-box{
+    gap: 1rem;
+    inset-inline-start: 270px;
+    inset-block-start: 80px;
+  }
   #main-content .slick-list.draggable {
     height: 100% !important;
   }
@@ -135,6 +169,9 @@
   justify-content: center;
   align-items: center;
 }
+#main-content h2 {
+  max-width: 70%;
+}
 
 #main-titles div h2 {
   position: relative;
@@ -145,7 +182,7 @@
 #main-titles div h2::before {
   position: absolute;
   content: "";
-  right: 1.01rem;
+  right: 2rem;
   z-index: 20;
   top: 0.7rem;
   border-radius: 100%;
@@ -158,51 +195,39 @@
 #main-titles div h2::after {
   position: absolute;
   content: "";
-  right: 0.25rem;
+  right: 1.75rem;
   z-index: 10;
   top: -0.07rem;
   border-radius: 100%;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   background-color: rgb(157, 155, 155);
 }
 #main-titles .slick-active.slick-current h2::after {
   background-color: white;
+  width: 3rem;
+  height: 3rem;
+  right: 1.25rem;
 }
 #main-titles .slick-active.slick-current h2::before {
   display: block;
 }
 
-#main-content .slick-prev:before,
-#main-content .slick-next:before {
-  font-size: 50px !important;
-}
-#main-content .slick-prev,
-#main-content .slick-next {
-  top: 0;
-  width: 50px;
-height: 50px;
-}
-#main-content .slick-next {
-  inset-inline-start0: 0;
-  left: 40px;
-  transform: rotate(90deg);
-}
-#main-content .slick-prev {
-  inset-inline-start: 0;
-  transform: rotate(90deg);
-}
-@media (max-width: 1400px) {
-  #main-titles::before {
-    right: 5.3rem;
-  }
-}
-@media (max-width: 1200px) {
-  #main-titles::before {
-    right: 3.4rem;
-  }
-}
+
+
 @media (max-width: 1024px) {
+  .history-arrows-box{
+    gap: 20rem;
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+    inset-block-start: 3rem;
+  }
+  .history-arrows-box #prev{
+    transform: rotate(270deg);
+  }
+  .history-arrows-box #next{
+    transform: rotate(270deg);
+  }
   #main-content div h4{
     margin-top: 2rem;
   }
@@ -212,13 +237,7 @@ height: 50px;
   #main-content {
     padding-inline: .75rem
   }
-  #main-content .slick-prev{
-    inset-inline-start: .75rem;
-  }
-  #main-titles div h2::after {
-    inset-inline-start: -4rem;
-    top: 0;
-  }
+
   #main-slider {
     flex-direction: column;
   }
@@ -276,4 +295,20 @@ height: 50px;
 
 #main-content img {
   width: 60%;
+}
+
+@media (max-width: 575px) {
+  .history-arrows-box{
+    gap: 15rem;
+   
+  }
+  #main-content h2{
+    max-width: unset;
+  }
+  #main-content img{
+    width: 100%;
+  }
+  .OurHistory-section .container {
+    padding-bottom: 3rem;
+  }
 }

@@ -38,8 +38,7 @@
 
 <body class="">
     <main id="OurHistory">
-        <div class="tests">
-            
+        <div class="tests"> 
         <div class="main-navigation--container">
             <div class="container upper-nav">
                 <!--  -->
@@ -402,10 +401,16 @@
                     </div>
                     
                 </div>
-                <div class="shallow">
-
+                <div class="history-arrows-box">
+                    <div id="next" class="history-arrow">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </div>
+                    <div id="prev" class="history-arrow">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
                 </div>
             </div>
+           
         </section>
         <footer class="main-footer-container">
             <div class="container footer-section">
@@ -508,8 +513,7 @@
             dots: false,
             nav: false,
             asNavFor: "#main-content",
-            prevArrow: $(".prev"),
-            nextArrow: $(".next"),
+            
             responsive: [
                 {
                     breakpoint: 1024,
@@ -531,6 +535,8 @@
             slidesToScroll: 1,
             infinite: false,
             arrows: true,
+            prevArrow: $("#prev"),
+            nextArrow: $("#next"),
             asNavFor: "#main-titles",
             responsive: [
                 {
