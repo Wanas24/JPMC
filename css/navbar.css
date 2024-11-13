@@ -446,6 +446,7 @@ font-weight: 500;
   border-radius: 40px;
   align-self: center;
   color: #fff;
+  align-items: center;
   min-width: max-content;
   transition: var(--animation-transition);
   text-decoration: none;
@@ -456,6 +457,9 @@ font-weight: 500;
 .employee-portal-container-btn:hover {
   transition: var(--animation-transition);
   filter: brightness(0.8);
+}
+.employee-portal-container-btn:hover p{
+  color: #fff;
 }
 .employee-portal-container-btn span{
   color: #fff;
@@ -614,7 +618,7 @@ color: var(--secondary-color);
 @media (max-width: 400px) {
   #cssmenu.small-screen > ul:not(.main-navigation-search-container) {
     width: 100vw;
-    inset-inline-start: -2.75%;
+    inset-inline-start: -.75rem;
     top: calc(100% + 0px);
   }
   

@@ -2,12 +2,24 @@ $(document).ready(function () {
 
   $(window).on("scroll", function() {
     let scrollValue = $(this).scrollTop(); 
-    if (scrollValue > 95) {
-      $('header.main-navigation--container').css('top', "-95px");
-      $('div.main-navigation--container').css('top', "-95px");
+
+    if ($(window).width() <= 767) {
+      if (scrollValue > 152) {
+        $('header.main-navigation--container').css('top', "-152px");
+        $('div.main-navigation--container').css('top', "-152px");
+      }else{
+
+        $('header.main-navigation--container').css('top', scrollValue * -1);
+        $('div.main-navigation--container').css('top', scrollValue * -1);
+      }
     }else{
-      $('header.main-navigation--container').css('top', scrollValue * -1);
-      $('div.main-navigation--container').css('top', scrollValue * -1);
+      if (scrollValue > 95) {
+        $('header.main-navigation--container').css('top', "-95px");
+        $('div.main-navigation--container').css('top', "-95px");
+      }else{
+        $('header.main-navigation--container').css('top', scrollValue * -1);
+        $('div.main-navigation--container').css('top', scrollValue * -1);
+      }
     }
     // console.log("Scroll position:", scrollValue);
 });
@@ -63,7 +75,8 @@ $(document).ready(function () {
   // Search bar toggle
   $searchContainer.on('click', '.navigation-search', () => {
     $('.searchBarOpen').addClass('search-active');
-  }).on('click', '.searchBarOpen--closeBtn', () => {
+  })
+  $(".searchBarOpen--closeBtn").on('click', () => {
     $('.searchBarOpen').removeClass('search-active');
   });
 
