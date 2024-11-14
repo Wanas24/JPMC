@@ -12,3 +12,6 @@
   border-radius: 8px;
   overflow: hidden;
 }
+.photoGallery-card-content .hover-growing-links[data-hover-pos="start"]{
+  margin-bottom: 1.5rem;
+}
