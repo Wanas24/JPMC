@@ -138,3 +138,9 @@
 .Enviroment-1st-section .hover-growing-links {
   margin-top: 1rem !important;
 }
+.Enviroment-slide {
+  border-radius: 8px;
+}
+.slick-dotted.slick-slider {
+  margin-top: 2rem;
+}
