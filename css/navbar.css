@@ -457,6 +457,7 @@ font-weight: 500;
 .employee-portal-container-btn:hover {
   transition: var(--animation-transition);
   filter: brightness(0.8);
+  color: #fff;
 }
 .employee-portal-container-btn:hover p{
   color: #fff;

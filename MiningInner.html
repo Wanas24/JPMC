@@ -41,6 +41,7 @@
       type="text/javascript"
       src="./js/bootstrap/bootstrap.bundle.min.js"
     ></script>
+    <script src="./js/share-btn.js"></script>
 
     <script src="./js/carousel.umd.js"></script>
     <script src="./js/owl.carousel.js"></script>
@@ -385,40 +386,44 @@
       <section class="MiningInner-last-section">
         <h2>Exclusive photos of the Sheidiya mine</h2>
         <div class="container">
-          <picture>
+          <picture
+          data-caption="img name"
+          onclick="openPopup(0)">
             <img
               src="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 219.png"
               alt="Image 1"
               class="mines-img"
-              data-caption="img name"
-              onclick="openPopup(0)"
+
             />
           </picture>
-          <picture>
+          <picture
+          data-caption="img name"
+          onclick="openPopup(1)">
             <img
               src="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 222.png"
               alt="Image 1"
               class="mines-img"
-              data-caption="img name"
-              onclick="openPopup(1)"
+          
             />
           </picture>
-          <picture>
+          <picture
+          data-caption="img name"
+          onclick="openPopup(2)">
             <img
               src="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 224.png"
               alt="Image 1"
               class="mines-img"
-              data-caption="img name"
-              onclick="openPopup(2)"
+        
             />
           </picture>
-          <picture>
+          <picture
+          data-caption="img name"
+          onclick="openPopup(3)">
             <img
               src="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 226.png"
               alt="Image 1"
               class="mines-img"
-              data-caption="img name"
-              onclick="openPopup(3)"
+      
             />
           </picture>
         </div>
@@ -459,7 +464,7 @@
         <div class="container">
           <div class="container my-5">
             <div
-              class="border-top border-bottom border-2 align-self-end align-items-center d-flex justify-content-start position-relative"
+              class="border-top border-bottom border-2 align-self-end align-items-center d-flex justify-content-end position-relative"
             >
               <div class="share-btn" id="share">
                 <picture>

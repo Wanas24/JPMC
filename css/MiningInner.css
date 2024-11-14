@@ -5,6 +5,14 @@
   color: var(--main-color);
   margin-bottom: 1rem;
 }
+.MiningInner-opening h2 {
+  max-width: 60%;
+}
+@media (max-width:991px){
+  .MiningInner-opening h2 {
+max-width: 100%;
+}
+}
 .MiningInner-1st-section {
   padding-block: 3rem;
   margin-block: 2rem;
@@ -35,15 +43,61 @@
   background-color: var(--gray-color);
   padding-block: 3rem;
 }
+.MiningInner-last-section picture {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.MiningInner-last-section> div > picture::before {
+  background: url("../Assets/Icons/MagnifyingGlassPlus.svg");
+  inset: 50%;
+  content: "";
+  transform: translate(-50%, -50%) ;
+  background-size: contain;
+  width: 3.5rem;
+  height: 3.5rem;
+  position: absolute;
+  aspect-ratio: 1;
+  z-index: 11;
+  opacity: 0;
+  transition: all .3s ease-out;
+  visibility: hidden;
+}
+.arabic-version .MiningInner-last-section > div > picture::before {
+  transform: translate(50%, -50%) ;
+}
+.MiningInner-last-section > div > picture::after {
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  content: "";
+  background: rgba(20, 20, 20,0.4);
+  z-index: 10;
+  opacity: 0;
+  transition: all .3s ease-out;
+  visibility: hidden;
+  border-radius: 10px;
+
+}
+.MiningInner-last-section > div > picture:hover::before ,
+.MiningInner-last-section > div > picture:hover::after {
+  transition: all .3s ease-out;
+  opacity:1;
+  visibility: visible;
+}
 .MiningInner-last-section img {
   width: 100%;
   border-radius: 10px;
   cursor: pointer;
 }
-.MiningInner-last-section img:hover {
-  transform: scale(1.01);
+/* .MiningInner-last-section img:hover { 
+   transform: scale(1.01);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+} */
 .MiningInner-last-section .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -113,7 +167,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: .5rem;
 }
+
 .popup-footer {
   display: flex;
   position: absolute;
@@ -158,11 +214,18 @@
   align-items: center;
   width: 100%;
   height: 100%;
+  padding: .75rem;
 }
 .next picture img {
   transform: rotate(180deg);
 }
+.arabic-version .prev img{
 
+  transform: rotate(180deg);
+}
+.arabic-version .next img{
+  transform: rotate(0deg);
+}
 .download-info-btn picture {
   border: #ffffff solid 1px;
   border-radius: 50%;
@@ -178,7 +241,9 @@
 .no-scroll {
   overflow: hidden;
 }
-
+.MiningInner-last-section h2{
+  padding-bottom: 2rem;
+}
 @media (max-width: 991px) {
   .popup-content {
     width: 80%;
@@ -213,4 +278,13 @@
   .MiningInner-last-section .container {
     grid-template-columns: 1fr;
   }
+}
+
+
+.share-btn{
+  flex-direction: row-reverse;
+
+}
+.arabic-version .share-btn{
+  flex-direction: row;
 }
