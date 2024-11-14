@@ -12,11 +12,18 @@
   flex: 1;
   gap: 1rem;
 }
+.WelcomeSpeech-container-content h4{
+  color: var(--main-color);
+}
+.WelcomeSpeech-container-content h2{
+  margin-block: 1rem;
+}
 .WelcomeSpeech-container picture {
   flex: 1;
 }
 .WelcomeSpeech-container img {
   width: 100%;
+  border-radius: 8px;
 }
 .WelcomeSpeech-container:nth-child(even) {
   flex-direction: row-reverse;
