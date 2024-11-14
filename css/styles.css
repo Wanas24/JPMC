@@ -1131,3 +1131,17 @@ input[type="date"]::-ms-clear {
 .arabic-version .see-more-container a {
   font-size: 0.85rem;
 }
+/* Ticket 47 */
+.pagination-share-container {
+  margin-bottom: 2rem !important;
+}
+.pagination-share-container .pagination {
+  gap: 0.5rem !important;
+}
+/* Ticket 42 */
+.hover-growing-links[data-hover-pos="start"] {
+  padding-inline-start: 0rem;
+}
+.hover-growing-links[data-hover-pos="start"]:hover > span:first-child {
+  padding-inline-start: 1rem;
+}
