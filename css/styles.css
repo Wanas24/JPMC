@@ -1069,24 +1069,25 @@ input[type="date"]::-ms-clear {
   border-radius: 100%;
   background: var(--main-color);
 }
-.custom-accordion .accordion-btn::before {
-  background: #fff;
-  content: "";
+.custom-accordion .accordion-btn .fa-plus {
+  color: #fff;
   position: absolute;
-  width: 2.2px;
-  height: 19px;
-  inset: 30% calc(47%);
-  border-radius: 5px;
+  font-size: 22px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
 }
-.custom-accordion .accordion-btn::after {
-  content: "";
+.custom-accordion .accordion-btn .fa-minus {
+  display: none;
+}
+.custom-accordion .accordion-button:not(.collapsed) .fa-minus {
+  color: var(--main-color);
   position: absolute;
-  inset-block: calc(50% - 1px);
-  inset-inline: 27%;
-  border-radius: 5px;
-  height: 2.2px;
-  width: 19px;
-  background: #fff;
+  font-size: 22px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  display: block;
 }
 
 .custom-accordion .accordion-button:not(.collapsed) .accordion-btn::after {
