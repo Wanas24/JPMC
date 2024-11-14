@@ -2,14 +2,25 @@
   background-image: url(../Assets/Headers/Video\ Gallery.png) !important;
 }
 /* Gallery */
+.photoGallery-opening {
+  display: flex;
+  gap: 10px;
+  color: var(--main-color);
+}
+.photoGallery-opening h5{
+  margin-bottom: 0;
+}
 .gallery-two-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
-
+.video-card{
+  border-radius: 8px;
+  overflow: hidden;
+}
 .gallery-two-container picture {
   width: 100%;
   cursor: pointer;
