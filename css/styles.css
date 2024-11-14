@@ -543,7 +543,7 @@ form textarea {
 .arabic-version .breadcrumb-item + .breadcrumb-item::before {
   padding-left: 0.5rem;
   float: right;
-  transform: scale(-1);
+  /* transform: scale(-1); */
 }
 
 .main-stars-header h1 {
@@ -551,7 +551,7 @@ form textarea {
   margin-bottom: 5rem;
 }
 .main-stars-header .breadcrumb-item + .breadcrumb-item::before {
-  color: white;
+  color: #fff;
 }
 .main-stars-header li a {
   font-size: 0.9375rem;
@@ -559,7 +559,7 @@ form textarea {
   color: #fff;
 }
 .main-stars-header li.active {
-  color: #e1b177;
+  color: #fff;
 }
 .arabic-version .main-stars-header {
   background: url("../Assets/Headers/Awards.png");
