@@ -31,6 +31,15 @@
 body {
   color: #141414 !important;
 }
+ul li {
+  font-size: 0.95rem;
+  line-height: 1.8rem;
+}
+.arabic-version ul li {
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+}
+
 ul li::marker {
   color: var(--main-color);
   font-size: 22px;
@@ -144,7 +153,7 @@ h4 {
   line-height: 1.6;
 }
 h5 {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 500;
   line-height: 1.6;
 }
@@ -785,6 +794,10 @@ input[type="date"]::-ms-clear {
 }
 .see-more-container a {
   color: #000;
+  text-decoration: unset;
+}
+.see-more-container a:hover {
+  text-decoration: underline;
 }
 .official-announcements-wrapper {
   border: none;

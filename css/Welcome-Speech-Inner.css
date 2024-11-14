@@ -4,3 +4,17 @@
 .WelcomeSpeech-inner-container img {
   width: 100%;
 }
+
+.welcome-main-section {
+  padding-inline: 18rem;
+}
+.Welcome-Speech-inner-opening{
+  color: var(--main-color);
+}
+.WelcomeSpeech-Inner-content h3{
+  color: var(--main-color);
+}
+.speech-footer h5{
+  color: var(--main-color);
+  margin-top: 1rem;
+}

@@ -110,7 +110,7 @@
     display: flex !important;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+
     text-align: start;
   }
   .arabic-version .book-single-content-slide {
@@ -137,7 +137,7 @@
   .book-content-slider .book-single-content-slide p {
     position: relative;
     z-index: 500;
-    color: var(--gray-text-color);
+    
   }
   .arabic-version
     .book-single-content-slide
@@ -267,6 +267,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
+  margin-bottom: 3rem;
 }
 .AnnualReports-card {
   display: flex;
@@ -291,8 +292,15 @@
   margin-top: 1rem;
   font-size: 0.85rem;
 }
+.downlad-btn svg {
+  fill: #141414;
+}
+.downlad-btn:hover svg {
+  fill: #488253;
+}
+
 .downlad-btn:hover {
-  color: unset;
+  color: #488253;
 }
 .arabic-version .downlad-btn{
   flex-direction: row-reverse;

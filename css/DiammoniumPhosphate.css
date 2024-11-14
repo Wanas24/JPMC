@@ -84,7 +84,8 @@
     border-radius: 50px;
     color: #14141433;
     padding-inline-start: 1.5rem;
-    background: url("../Assets/Icons/arrow-filled.png");
+    appearance: none;
+    background: url("../Assets/Icons/CaretDown-black.svg") #fff;
     background-repeat: no-repeat;
     background-size: 1rem;
     background-position: 15px center;

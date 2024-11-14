@@ -5,6 +5,9 @@
   color: var(--main-color);
   margin-bottom: 1rem;
 }
+.Awards-opening h2 {
+  width: 68%;
+}
 .Awards-container {
   margin-block: 3rem;
   display: grid;
@@ -20,9 +23,13 @@
 }
 .Awards-card picture {
   border: 1px solid #14141433;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .Awards-card img {
-  width: 100%;
+  width: 60%;
 }
 .Awards-card h3 {
   color: var(--main-color);
@@ -30,6 +37,8 @@
 .Awards-cards-content {
   padding: 1.5rem;
   background-color: var(--gray-color);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 @media (max-width: 767px) {
   .Awards-container {
