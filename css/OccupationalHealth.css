@@ -73,9 +73,39 @@
 .OccupationalHealth-1st-section li {
   font-size: 0.95rem;
 }
+.arabic-version .OccupationalHealth-1st-section li {
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
 .OccupationalHealth-1st-section .hover-growing-links {
   margin-top: 2rem !important;
 }
 .home-vertical-card h4:hover {
   text-decoration: underline;
+}
+.OccupationalHealth-2nd-section h4 {
+  color: var(--main-color);
+}
+@media (min-width: 1200px) {
+  .OccupationalHealth-2nd-section h2:first-of-type {
+    width: 650px;
+    margin: auto;
+  }
+  .OccupationalHealth-opening h2 {
+    width: 50%;
+  }
+}
+.custom-accordion .accordion-button:not(.collapsed) {
+  background-color: var(--main-color) !important;
+}
+.custom-accordion .accordion-item .accordion-body p {
+  font-size: 0.9rem;
+}
+
+.custom-accordion .accordion-item .accordion-button:last-of-type,
+.custom-accordion .accordion-item .accordion-button {
+  font-size: 0.95rem;
+}
+.OccupationalHealth-1st-section h4 {
+  color: var(--main-color);
 }
