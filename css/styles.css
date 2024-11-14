@@ -1141,6 +1141,7 @@ input[type="date"]::-ms-clear {
 /* Ticket 42 */
 .hover-growing-links[data-hover-pos="start"] {
   padding-inline-start: 0rem;
+  margin-inline-start: 0;
 }
 .hover-growing-links[data-hover-pos="start"]:hover > span:first-child {
   padding-inline-start: 1rem;

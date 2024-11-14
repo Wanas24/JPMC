@@ -34,3 +34,7 @@
 .ads-card-content span {
   margin: 0;
 }
+/* Ticekt 54 */
+.ads-card picture {
+  margin-bottom: 1rem;
+}

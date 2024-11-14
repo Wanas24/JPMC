@@ -60,11 +60,14 @@
   }
 }
 .parallax {
-  background-image: url("../Assets/Inners/General Page/parallax.png");
+  background-image: url("../Assets/Inners/General Page/parallax-flippng.png");
   padding-block: 3rem;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+.arabic-version .parallax {
+  background-image: url("../Assets/Inners/General Page/parallax.png");
 }
 .parallax .parallax-box {
   background-color: #ffffffd2;
