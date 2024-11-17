@@ -53,6 +53,8 @@
   text-decoration: none;
   color: #fff;
   position: relative;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .mining-last-container h2 {
   position: absolute;
@@ -66,4 +68,8 @@
   .Mining-1st-section .container {
     grid-template-columns: 1fr;
   }
+}
+
+.Mining-1st-section .container ul {
+  padding-inline-start: 2.5rem !important;
 }
