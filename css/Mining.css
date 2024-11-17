@@ -59,7 +59,7 @@
 .mining-last-container h2 {
   position: absolute;
   bottom: 1rem;
-  right: 1rem;
+  inset-inline-start: 1rem;
 }
 @media (max-width: 991.8888px) {
   .mining-last-container {
