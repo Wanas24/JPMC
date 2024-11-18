@@ -87,14 +87,6 @@
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
-}
-
-.arabic-version .close {
-  right: unset;
-  left: 0;
-}
-
-.close picture {
   background-color: var(--main-color);
   border-radius: 50%;
   width: 40px;
@@ -102,6 +94,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.arabic-version .close {
+  right: unset;
+  left: 0;
+}
+
+.close i {
+  color: #fff;
+  font-size: 1.4rem;
 }
 
 .popup-footer {
