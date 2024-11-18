@@ -15,7 +15,7 @@
   outline-color: var(--main-color);
 }
 .custom-panel .nav-link {
-  padding: 0.75rem 2rem;
+  padding: 0.4rem 2rem;
   border-radius: 45px;
   color: var(--main-color);
 }
@@ -43,7 +43,8 @@
   background-color: #fff;
   border: 1px solid #14141433;
   min-height: 300px;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .OurPartner-card img {
   width: 70%;
