@@ -40,7 +40,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-inline-start: 2.5rem;
+}
+.FuturePlans-1st-container ul {
+  
+  padding-inline-start: 3.5rem;
 }
 .FuturePlans-1st-container ul li {
   font-size: 0.85rem;

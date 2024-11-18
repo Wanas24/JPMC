@@ -49,14 +49,19 @@
     padding-inline-start: 1.5rem;
     border: 1px solid #14141433;
     min-height: 2.2rem;
-    color: #14141433;
+    color: #14141489;
     border-radius: 50px;
+    font-size: 0.85rem;
+  }
+  .ContactUS-mainContainer form input:focus-visible {
+    outline: none;
+   
   }
   .ContactUS-mainContainer input::placeholder {
     opacity: 1;
     color: #14141489;
   }
-.arabic-version.ContactUS-mainContainer input::placeholder {
+.arabic-version .ContactUS-mainContainer input::placeholder {
     font-size: 0.85rem;
   }
   .ContactUS-mainContainer input:focus {
@@ -83,6 +88,12 @@
   }
   .ContactUS-mainContainer select:focus {
     box-shadow: none;
+  }
+  .ContactUS-mainContainer select:focus-visible {
+    outline: none;
+  }
+  .ContactUS-mainContainer textarea:focus-visible {
+    outline: none;
   }
   .ContactUS-mainContainer select[value=""] {
     background: #000;
