@@ -54,7 +54,7 @@
   }
   .ContactUS-mainContainer input::placeholder {
     opacity: 1;
-    color: #1414144f;
+    color: #14141489;
   }
 .arabic-version.ContactUS-mainContainer input::placeholder {
     font-size: 0.85rem;
@@ -66,7 +66,7 @@
     min-height: 2.2rem;
     border: 1px solid #14141433;
     border-radius: 50px;
-    color: #1414144f;
+    color: #14141489;
     padding-inline-start: 1.5rem;
     appearance: none;
     background: url("../Assets/Icons/CaretDown-black.svg");
