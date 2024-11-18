@@ -11,6 +11,7 @@
 .PhosphateExportPort-main-section {
   background-color: var(--gray-color);
   padding-block: 3rem;
+  margin-bottom: 3rem;
 }
 .PhosphateExportPort-main-container {
   display: grid;
@@ -97,13 +98,13 @@
   color: #000;
 }
 @media (min-width: 1200px) {
-  .PhosphateExportPort-opening {
+  .PhosphateExportPort-opening h4,
+  .PhosphateExportPort-opening h2,
+  .PhosphateExportPort-opening h5{
     width: 70%;
   }
 }
-#PhosphateExportPort h5 {
-  font-size: 0.9rem;
+#PhosphateExportPort li {
+  font-weight: 500;
 }
-.arabic-version #PhosphateExportPort h5 {
-  font-size: 0.95rem;
-}
+

@@ -43,6 +43,7 @@
   background-color: #fff;
   border: 1px solid #14141433;
   min-height: 300px;
+  border-radius: 10px;
 }
 .OurPartner-card img {
   width: 70%;
