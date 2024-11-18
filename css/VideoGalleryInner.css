@@ -1,6 +1,7 @@
 .main-stars-header {
   background-image: url(../Assets/Headers/Video\ Gallery.png) !important;
 }
+
 /* Gallery */
 .photoGallery-opening {
   display: flex;
@@ -8,9 +9,11 @@
   color: var(--main-color);
   align-items: center;
 }
-.photoGallery-opening h5{
+
+.photoGallery-opening h5 {
   margin-bottom: 0;
 }
+
 .gallery-two-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -18,20 +21,24 @@
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
-.video-card{
+
+.video-card {
   border-radius: 8px;
   overflow: hidden;
 }
+
 .gallery-two-container picture {
   width: 100%;
   cursor: pointer;
 }
+
 .gallery-two-container picture img {
   width: 100%;
   cursor: pointer;
   height: 287px;
   object-fit: cover;
 }
+
 /* Popup Modal */
 .popup {
   display: none;
@@ -58,12 +65,14 @@
   margin: auto;
   position: relative;
 }
+
 #info-text {
   position: absolute;
   color: white;
   bottom: 5px;
   left: 25px;
 }
+
 #caption {
   color: white;
   padding: 10px;
@@ -79,10 +88,12 @@
   font-weight: bold;
   cursor: pointer;
 }
-.arabic-version .close{
+
+.arabic-version .close {
   right: unset;
   left: 0;
 }
+
 .close picture {
   background-color: var(--main-color);
   border-radius: 50%;
@@ -92,6 +103,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .popup-footer {
   display: flex;
   position: absolute;
@@ -101,6 +113,7 @@
   align-items: center;
   gap: 30px;
 }
+
 .popup-controls {
   display: flex;
   align-items: center;
@@ -108,6 +121,7 @@
   right: 0;
   gap: 10px;
 }
+
 /* Navigation Arrows */
 .popup-controls .prev,
 .popup-controls .next {
@@ -123,6 +137,7 @@
   user-select: none;
   -webkit-user-select: none;
 }
+
 .popup-controls .prev picture,
 .popup-controls .next picture {
   background-color: #eceae8;
@@ -133,6 +148,7 @@
   width: 100%;
   height: 100%;
 }
+
 .next picture img {
   transform: rotate(180deg);
 }
@@ -158,6 +174,7 @@
     width: 500px;
     height: 400px;
   }
+
   .popup-footer {
     width: 80%;
     left: 50%;
@@ -167,9 +184,11 @@
     gap: 0;
     padding-bottom: 2rem;
   }
+
   #info-text {
     left: 12%;
   }
+
   /* .close {
     right: 10%;
   } */
@@ -177,41 +196,49 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media (max-width: 767px) {
   .gallery-two-container {
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 575px) {
   .popup-content {
     width: 400px;
     height: 300px;
   }
 }
+
 @media (max-width: 430px) {
   .popup-content {
     width: 300px;
     height: 250px;
   }
 }
+
 .video-card {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
+
 .video-card div {
   color: var(--primary-color);
   padding-block: 1rem;
   display: flex;
   flex-direction: column;
 }
+
 .video-card div span {
   margin-bottom: 1rem;
   display: block;
 }
+
 .video-card picture {
   position: relative;
 }
+
 .play-icon {
   position: absolute !important;
   top: 50%;
@@ -221,3 +248,7 @@
   height: 50px !important;
 }
 
+/* Ticket 25 */
+.popup-footer {
+  bottom: -40px;
+}
