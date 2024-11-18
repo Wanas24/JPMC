@@ -104,9 +104,12 @@
 }
 
 .MiningInner-last-section img {
-  width: 100%;
   border-radius: 10px;
   cursor: pointer;
+}
+.MiningInner-last-section .container img {
+  width: 100%;
+ 
 }
 
 /* .MiningInner-last-section img:hover { 
@@ -142,8 +145,8 @@
 .popup-content {
   margin: auto;
   display: block;
-  width: 900px;
-  height: 600px;
+  width: 500px;
+  /* height: 600px; */
   object-fit: contain;
 }
 
@@ -208,7 +211,7 @@
   right: 0;
   gap: 10px;
   position: absolute;
-  top: 50%;
+  top: 47%;
   width: 100%;
 }
 

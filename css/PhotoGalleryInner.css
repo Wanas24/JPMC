@@ -3,15 +3,14 @@
 }
 .photoGallery-opening span {
   color: var(--main-color);
-  margin-bottom: 1.5rem;
   display: block;
 }
 /* Gallery */
 .gallery-two-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  row-gap: 10px;
-  margin-top: 5rem;
+  gap: 20px;
+  margin-top: 2rem;
 }
 
 .gallery-two-container picture {
@@ -21,7 +20,7 @@
 .gallery-two-container picture img {
   width: 100%;
   cursor: pointer;
-  height: 287px;
+  /* height: 287px; */
   object-fit: contain;
 }
 /* Popup Modal */
