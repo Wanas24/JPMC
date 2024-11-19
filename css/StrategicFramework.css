@@ -4,16 +4,21 @@
 .StrategicFramework-opening {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 50px;
+  margin-top: 3rem;
+}
+.StrategicFramework-opening .hover-growing-links[data-hover-pos="start"]{
+  justify-self: flex-end;
 }
 .StrategicFramework-opening h4 {
   color: var(--main-color);
   margin-bottom: 1rem;
 }
-.StrategicFramework-opening .hover-growing-links {
-  width: 370px;
+.StrategicFramework-opening h2{
+  width: 93%;
 }
+
 .StrategicFramework-section img {
   width: 100%;
 }

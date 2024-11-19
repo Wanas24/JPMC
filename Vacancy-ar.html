@@ -34,6 +34,8 @@
   <script src="./js/intlTelInput.min.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/main.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body class="arabic-version">
@@ -241,7 +243,10 @@
     </section>
     <section>
       <div class="container Vacancies-opening">
-        <span>عمان 17-09-2024</span>
+        <div class="date d-flex align-items-center gap-2">
+          <picture><img src="./Assets/Icons/CalendarDot.svg" alt="" class="m-100 w-100"></picture>
+          <span>عمان 09-17-2024</span>
+        </div>
       </div>
       <div class="container Vacancy-container">
         <div>
@@ -263,7 +268,7 @@
             <li>لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن النهاية هي الشكل.</li>
           </ul>
           <a href="" class="hover-growing-links mt-5" data-hover-pos="start">
-            <span class="link"> Explore </span>
+            <span class="link"> تقدم بطلبك الأن </span>
             <span class="arrow">
               <i class="fa-solid fa-arrow-right"></i>
             </span>
@@ -289,15 +294,15 @@
           <h3>يرجى ملء النموذج</h3>
           <div class="d-flex justify-content-between flex-wrap">
             <div class="d-flex flex-column gap-3 px-2 col-lg-4 col-md-6 col-12">
-              <label for="">الإسم*</label>
+              <label for="">الإسم <span>*</span></label>
               <input type="text" />
             </div>
             <div class="d-flex flex-column gap-3 px-2 col-lg-4 col-md-6 col-12">
-              <label for="">البريد الإلكتروني*</label>
+              <label for="">البريد الإلكتروني<span>*</span></label>
               <input type="text" />
             </div>
             <div class="d-flex flex-column gap-3 px-2 col-lg-4 col-md-6 col-12">
-              <label for="">رقم الهاتف*</label>
+              <label for="">رقم الهاتف<span>*</span></label>
               <input type="text" />
             </div>
           </div>
@@ -307,6 +312,7 @@
               <i class="fa-solid fa-arrow-right"></i>
             </span>
           </a>
+          <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
           <a href="" class="hover-growing-links mt-5" data-hover-pos="start">
             <span class="link"> إرسال </span>
             <span class="arrow">

@@ -34,6 +34,8 @@
   <script src="./js/intlTelInput.min.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/main.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body class="">
@@ -241,7 +243,10 @@
     </section>
     <section>
       <div class="container Vacancies-opening">
-        <span>Amman 17-09-2024</span>
+        <div class="date d-flex align-items-center gap-2">
+          <picture><img src="./Assets/Icons/CalendarDot.svg" alt="" class="m-100 w-100"></picture>
+          <span>Amman 09-17-2024</span>
+        </div>
       </div>
       <div class="container Vacancy-container">
         <div>
@@ -285,15 +290,15 @@
           <h3>Please fill out the form</h3>
           <div class="d-flex justify-content-between flex-wrap ">
             <div class="d-flex flex-column gap-3 px-2 col-lg-4 col-md-6 col-12">
-              <label for="">Name*</label>
+              <label for="">Name <span>*</span></label>
               <input type="text">
             </div>
             <div class="d-flex flex-column gap-3 px-2 col-lg-4 col-md-6 col-12">
-              <label for="">Email*</label>
+              <label for="">Email <span>*</span></label>
               <input type="text">
             </div>
             <div class="d-flex flex-column gap-3 px-2 col-lg-4 col-md-6 col-12">
-              <label for="">Phone*</label>
+              <label for="">Phone <span>*</span></label>
               <input type="text">
             </div>
           </div>
@@ -302,6 +307,8 @@
             <span class="arrow">
               <i class="fa-solid fa-arrow-right"></i> </span>
           </a>
+          <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+
           <a href="" class="hover-growing-links mt-5" data-hover-pos="start">
             <span class="link"> Explore </span>
             <span class="arrow">

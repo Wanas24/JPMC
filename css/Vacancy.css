@@ -3,7 +3,6 @@
 }
 .Vacancies-opening span {
   color: var(--main-color);
-  margin-bottom: 1rem;
 }
 .Vacancy-container {
   display: grid;
@@ -21,10 +20,17 @@
 }
 .Vacancy-container h3 {
   color: var(--main-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+.Vacancy-container p {
+ max-width: 79%;
+}
+.Vacancy-container ul{
+  padding-inline-start: 3.5rem;
 }
 .Vacancy-container ul li {
   margin-bottom: 0.6rem;
+  line-height: 1.6rem;
 }
 .Vacancy-container ul li::marker {
   color: var(--main-color);
@@ -47,4 +53,9 @@
 .vacancy-form {
   background-color: var(--gray-color);
   padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+.vacancy-form span{
+  color: #DD2C3E;
 }

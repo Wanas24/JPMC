@@ -5,6 +5,9 @@
   color: var(--main-color);
   margin-bottom: 1rem;
 }
+.Vacancies-opening h2 {
+  max-width: 70%;
+}
 .Vacancies-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -43,7 +46,7 @@
   }
 }
 .Vacancies-green-box {
-  background: linear-gradient(90deg, #488253 0%, #639d6e 100%);
+  background: linear-gradient(90deg, #639d6e 0%,  #488253 100%);
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -53,4 +56,32 @@
   gap: 3rem;
   margin-bottom: 3rem;
   border-radius: 10px;
+}
+.Vacancies-green-box .hover-growing-links .arrow{
+  border: none;
+  background-color: #fff;
+}
+.Vacancies-green-box .hover-growing-links .arrow svg{
+  fill: var(--main-color);
+}
+.Vacancies-green-box .hover-growing-links span{
+  color: #fff;
+}
+.Vacancies-green-box .hover-growing-links[data-hover-pos="start"]::after, .hover-growing-links::after{
+  background-color: #fff;
+}
+.Vacancies-green-box .hover-growing-links[data-hover-pos="start"]:hover i{
+  color: var(--main-color);
+}
+.Vacancies-green-box .hover-growing-links[data-hover-pos="start"]:hover > span:first-child{
+  color: var(--main-color);
+}
+.arabic-version .Vacancies-green-box {
+  background: linear-gradient(90deg, #488253 0%, #639d6e 100%);
+
+}
+@media (min-width: 1400px){
+  .Vacancies-green-box{
+    max-width: 1295px;
+  }
 }
