@@ -27,7 +27,7 @@
 .popup {
   display: none;
   position: fixed;
-  z-index: 1000;
+  z-index: 999999;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -40,8 +40,7 @@
 .popup-content {
   margin: auto;
   display: block;
-  width: 900px;
-  height: 600px;
+  width: 500px;
   object-fit: contain;
 }
 .popup-content iframe {
@@ -53,6 +52,7 @@
   width: fit-content;
   margin: auto;
   position: relative;
+  
 }
 #info-text {
   position: absolute;
@@ -73,8 +73,6 @@
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
-}
-.close picture {
   background-color: var(--main-color);
   border-radius: 50%;
   width: 40px;
@@ -83,11 +81,15 @@
   justify-content: center;
   align-items: center;
 }
+.close i {
+  color: #fff;
+  font-size: 1.4rem;
+}
 .popup-footer {
   display: flex;
   position: absolute;
   justify-content: center;
-  bottom: -80px;
+  bottom: -110px;
   width: 100%;
   align-items: center;
   gap: 30px;
@@ -131,7 +133,10 @@
 .next picture img {
   transform: rotate(180deg);
 }
-
+.arabic-version .prev,
+.arabic-version .next{
+  transform: scaleX(-1);
+}
 .download-info-btn picture {
   border: #ffffff solid 1px;
   border-radius: 50%;
@@ -149,6 +154,10 @@
 }
 
 @media (max-width: 991px) {
+  .prev,
+.next{
+  display: none;
+}
   .popup-content {
     width: 80%;
     height: auto;
