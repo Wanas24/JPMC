@@ -27,11 +27,15 @@
   margin-block: 6rem;
 }
 .home-vertical-card {
+  text-decoration: none;
   border-radius: 5px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   background-color: var(--gray-color);
+}
+.home-vertical-card h4{
+  color: #141414;
 }
 .vertical-card-content {
   padding: 1rem;

@@ -590,10 +590,10 @@ input[type="date"] {
   position: relative;
 }
 .date-wrapper::after {
-  position: absolute;
+  /* position: absolute; */
   inset-inline-end: 1rem;
   top: 1px;
-  background: url("../Assets/Icons svg/CalendarBlank.svg") no-repeat center;
+  /* background: url("../Assets/Icons svg/CalendarBlank.svg") no-repeat center; */
   width: 3rem;
   height: 95%;
   background-size: 1.75rem;

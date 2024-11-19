@@ -6,23 +6,20 @@ $(document).ready(function () {
     console.log(firstNavigationHight);
 
     if (scrolledValueWithoutDecimal > firstNavigationHight) {
-      $("header.main-navigation--container").css(
+      $("div.navigation-container").css(
         "top",
         `-${firstNavigationHight}px`
       );
-      $("div.main-navigation--container").css(
-        "top",
-        `-${firstNavigationHight}px`
-      );
+      // $("div.main-navigation--container").css(
+      //   "top",
+      //   `-${firstNavigationHight}px`
+      // );
     } else {
-      $("header.main-navigation--container").css(
+      $("div.navigation-container").css(
         "top",
         scrolledValueWithoutDecimal * -1
       );
-      $("div.main-navigation--container").css(
-        "top",
-        scrolledValueWithoutDecimal * -1
-      );
+    
     }
     // console.log("Scroll position:", scrollValue);
   });

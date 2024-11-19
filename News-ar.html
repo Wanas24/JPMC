@@ -30,9 +30,9 @@
     <link href="./css/arabic-styles.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/animate.css" />
 
-    <script type="text/javascript" src="./js/flatpicker.js"></script>
     <script type="text/javascript" src="./js/fancybox.umd.js"></script>
     <script type="text/javascript" src="./js/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="./js/flatpicker.js"></script>
     <script
       type="text/javascript"
       src="./js/slick-1.8.1/slick/slick.min.js"
@@ -94,19 +94,21 @@
                 class="form-control date-input"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
-                placeholder="By Date"
+                placeholder="حسب التاريخ"
               />
-              <!-- <span class="date-icon">
+              <span class="date-icon">
                 <picture
                   ><img src="./Assets/Icons/CalendarBlank.svg" alt=""
                 /></picture>
-              </span> -->
+              </span>
             </div>
             <div class="col-md-2 col-12">
               <a href="" class="hover-growing-links" data-hover-pos="start">
                 <span class="link"> بحث </span>
                 <span class="arrow">
-                  <i class="fa-solid fa-arrow-right"></i>
+                  <picture
+                  ><img src="./Assets/Icons/search-white.svg" alt=""
+                /></picture>
                 </span>
               </a>
             </div>
@@ -382,7 +384,10 @@
             dateFormat: "Y-m-d",
             position: "below", // Open below the input
           });
-
+          $(".date-icon").on("click touchstart", function (e) {
+          e.preventDefault();
+          dateInput.open();
+        });
           // Open Flatpickr when clicking the icon next to the input
           $(this)
             .siblings(".date-icon")

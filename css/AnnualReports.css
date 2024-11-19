@@ -97,7 +97,7 @@
     height: 100%;
     position: relative;
     display: flex;
-    padding: 3rem 0;
+    padding: 4rem 0;
     margin-inline-start: 6rem;
   }
   .book-cover-slider .slick-track {
@@ -296,7 +296,7 @@
 .downlad-btn svg {
   fill: #141414;
 }
-.downlad-btn:hover svg {
+.downlad-btn:hover svg path{
   fill: #488253;
 }
 
