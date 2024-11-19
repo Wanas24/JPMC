@@ -586,8 +586,6 @@
     </main>
     <script>
       $(document).ready(function () {
-        
-        
         $("#main-titles").slick({
           infinite: true,
           vertical: true,
@@ -595,7 +593,9 @@
           slidesToShow: 7,
           arrows: false,
           slidesToScroll: 1,
+          centerMode:true,
           focusOnSelect: true,
+          centerPadding:"0px",
           dots: false,
           nav: false,
           asNavFor: "#main-content",
@@ -640,10 +640,6 @@
             },
           ],
         });
-        // Move to the second slide on initialization
-        
-    
-        
       });
     </script>
   </body>

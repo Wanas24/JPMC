@@ -225,7 +225,7 @@
   right: unset;
   left: 1.75rem;
 }
-#main-titles .slick-active.slick-current +div h2::after {
+#main-titles .slick-active.slick-current    h2::after {
   background-color: white;
   width: 3rem;
   height: 3rem;
@@ -235,10 +235,12 @@
   right:unset;
   left: 1.25rem;
 }
-#main-titles .slick-active.slick-current + div h2::before {
+#main-titles .slick-active.slick-current   h2::before {
   display: block;
 }
-
+.slick-slide.slick-current.slick-active{
+  /* display: none !important; */
+}
 
 
 @media (max-width: 1024px) {
