@@ -363,5 +363,36 @@ opacity: 0.6;
 /*  */
 /*  */
 /*  */
-/* NavBar */
+/* Ticket 77 */
+.arabic-version .main-footer-container .footer-item ul li a {
+  font-size: .9rem;
+}
+
+.footer-section .footer-item h4 {
+  padding-bottom: 0;
+}
+
+.main-footer-container .footer-section ul {
+  padding-inline-start: 0;
+}
+
+.footer-section .footer-item:nth-child(1) h5 {
+  max-width: 45ch;
+}
+
+.footer-section .footer-item h5 {
+  padding-bottom: 0;
+}
+
+.main-footer-container>.footer-section {
+  gap: 1rem;
+}
+
+.arabic-version .main-footer-container>.footer-section {
+  gap: 2rem;
+}
+
+.main-footer-container .footer-copyright-container-centered {
+  padding: 1rem 0;
+}
 

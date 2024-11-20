@@ -815,6 +815,9 @@ display: none;
   text-align: end;
   transition: var(--animation-transition);
 }
+.arabic-version .main-navigation--container .upper-nav > div a p {
+  text-align: end;
+}
 
 .navigation-scrolled.main-navigation--container .upper-nav > div a p {
   transition: var(--animation-transition);
