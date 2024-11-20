@@ -1325,3 +1325,136 @@
 .main-footer-container .footer-copyright-container-centered {
   padding: 1rem 0;
 }
+
+/* Ticket 75 */
+.home-accordion {
+  top: -4rem;
+}
+
+.investors-relations-main h1 {
+  font-weight: 600 !important;
+}
+
+.investors-relations {
+  margin-top: 4rem;
+}
+
+.ImportantWork-slider img {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-end-end-radius: 7px;
+  border-end-start-radius: 7px;
+}
+
+.company-products-opening h2 {
+  width: 54%;
+}
+
+.arabic-version .company-products-opening h2 {
+  width: 44%;
+}
+
+.home-accordion {
+  box-shadow: 0px 0px 60px 0px #B6B6B640;
+  width: 35%;
+  inset-inline-start: 4rem;
+  border-radius: 10px;
+}
+
+.arabic-version .home-accordion {
+  width: 31%;
+  inset-inline-start: 2rem;
+}
+
+.ImportantWork-opening {
+  margin-top: 4rem;
+}
+
+.ImportantWork-opening h2 {
+  width: 80%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.arabic-version .ImportantWork-opening h2 {
+  width: 69%;
+  font-weight: 500;
+}
+
+.ImportantWork-slider .slick-slide {
+  position: relative;
+}
+
+.ImportantWork-slider .slick-slide h4 {
+  position: absolute;
+  bottom: 8%;
+  padding-inline-start: 4%;
+  color: #fff;
+}
+
+/* Ticket 76 */
+.investors-relations-main-card {
+  padding: 1rem 3rem;
+  border-radius: 6px;
+}
+
+.development-section {
+  margin-top: 6rem;
+}
+
+.world-slide .hover-growing-links {
+  margin-top: 2rem !important;
+}
+
+.world-slide {
+  gap: 40px;
+}
+
+.Development-cards-container .Development-card {
+  border-radius: 10px;
+}
+
+.company-loactions-opening h4 {
+  color: var(--main-color);
+}
+
+.company-loactions-opening h2 {
+  font-weight: 600;
+  width: 54%;
+}
+
+.location-card.active .location-content h5 {
+  width: 73%;
+}
+
+/* Ticket 83 */
+.development-opening h2 {
+  width: 54%;
+}
+
+.locations-container {
+  margin-top: 2rem;
+}
+
+.Home-last-container .hover-growing-links {
+  height: fit-content;
+
+}
+
+.Home-last-section-opening {
+  margin-top: 4rem;
+}
+
+.Home-last-section-opening h4 {
+  color: var(--main-color);
+}
+
+.Home-last-section-opening h2 {
+  width: 54%;
+}
+
+.ImportantWork-slider img {
+
+  aspect-ratio: 110 / 57;
+
+}

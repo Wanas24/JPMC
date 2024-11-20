@@ -1,6 +1,7 @@
 .main-stars-header {
   background-image: url(../Assets/Headers/Strategic\ framework.png) !important;
 }
+
 .StrategicFramework-opening {
   display: flex;
   justify-content: space-between;
@@ -8,14 +9,17 @@
   gap: 50px;
   margin-top: 3rem;
 }
-.StrategicFramework-opening .hover-growing-links[data-hover-pos="start"]{
+
+.StrategicFramework-opening .hover-growing-links[data-hover-pos="start"] {
   justify-self: flex-end;
 }
+
 .StrategicFramework-opening h4 {
   color: var(--main-color);
   margin-bottom: 1rem;
 }
-.StrategicFramework-opening h2{
+
+.StrategicFramework-opening h2 {
   width: 93%;
 }
 
@@ -35,8 +39,14 @@
     max-width: 936px !important;
   }
 }
+
 @media (max-width: 991.88888px) {
   .StrategicFramework-opening {
     flex-direction: column;
   }
+}
+
+/* Ticket 91 */
+.StrategicFramework-opening h2 {
+  width: 92%;
 }

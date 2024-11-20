@@ -1,29 +1,35 @@
 .main-stars-header {
   background-image: url(../Assets/Headers/Environment.png);
 }
+
 .Enviroment-opening h4 {
   color: var(--main-color);
   margin-bottom: 1rem;
 }
+
 .Enviroment-1st-section {
   padding-block: 3rem;
   background-color: var(--gray-color);
   margin-block: 2rem;
 }
+
 .Enviroment-1st-section .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   align-items: center;
 }
+
 .Enviroment-1st-section .container img {
   width: 100%;
   border-radius: 10px;
 }
+
 .Enviroment-1st-section h4,
 .Enviroment-2nd-section h4 {
   color: var(--main-color);
 }
+
 .Enviroment-slider picture {
   display: flex;
   justify-content: center;
@@ -35,6 +41,7 @@
   border-radius: 50%;
   margin-bottom: 1rem;
 }
+
 .Enviroment-slide {
   background-color: var(--gray-color);
   padding: 1.5rem;
@@ -42,6 +49,7 @@
   flex-direction: column;
   height: auto;
 }
+
 .Enviroment-slider .slick-track {
   display: flex !important;
   gap: 10px;
@@ -54,32 +62,40 @@
   overflow: hidden;
   line-height: 2rem;
 }
+
 .Enviroment-slide-content {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
+
 .slick-dots {
   bottom: -45px;
 }
+
 .slick-dots li button:before {
   font-size: 10px;
 }
+
 .slick-dots li.slick-active button:before {
   color: var(--main-color);
 }
+
 .slick-dots li button:before {
   color: var(--main-color);
 }
+
 .Enviroment-2nd-section {
   margin-block: 3rem;
 }
+
 .vertical-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
   margin-block: 6rem;
 }
+
 .home-vertical-card {
   border-radius: 5px;
   overflow: hidden;
@@ -87,72 +103,98 @@
   flex-direction: column;
   background-color: var(--gray-color);
 }
+
 .vertical-card-content {
   padding: 1rem;
 }
+
 .vertical-card-content span {
   color: var(--main-color);
   margin-bottom: 1rem;
   display: block;
 }
+
 .home-vertical-card img {
   width: 100%;
 }
+
 @media (max-width: 1200px) {
   .vertical-cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 @media (max-width: 991px) {
   .vertical-cards {
     grid-template-columns: 1fr 1fr;
   }
+
   .Enviroment-1st-section .container {
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 767px) {
   .vertical-cards {
     grid-template-columns: 1fr;
   }
 }
+
 /* Ticket 41 */
 .Enviroment-slider .slick-track {
   gap: 0;
 }
+
 .slick-initialized .slick-slide {
   margin: 0 10px;
 }
+
 @media (min-width: 1200px) {
   .Enviroment-opening h2 {
     width: 50%;
   }
+
   .Enviroment-2nd-section h2 {
     width: 80%;
     margin: auto;
   }
 }
+
 .Enviroment-1st-section .container {
   align-items: flex-start;
 }
+
 .Enviroment-1st-section .hover-growing-links {
   margin-top: 1rem !important;
 }
+
 .Enviroment-slide {
   border-radius: 8px;
 }
+
 .slick-dotted.slick-slider {
   margin-top: 2rem;
 }
+
 .head-vertical-card {
   color: var(--main-color);
   margin-top: 6rem;
 }
+
 .vertical-cards {
   margin-top: 2rem;
   margin-bottom: 6rem;
 }
+
 .home-vertical-card {
   box-shadow: 0px 0px 25px 0px #b6b6b640;
   background-color: #ffffff;
+}
+
+.slick-initialized .slick-slide:not(:first-child) {
+  margin: 0 10px;
+}
+
+.slick-initialized .slick-slide {
+  margin: 0;
 }
