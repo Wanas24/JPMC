@@ -1458,3 +1458,13 @@
   aspect-ratio: 110 / 57;
 
 }
+
+/* Ticket 84 */
+.footer-section .footer-item:nth-child(1) h5 {
+  width: 46ch;
+}
+
+.main-footer-container .footer-copyright-container-centered a,
+.main-footer-container .footer-copyright-container-centered p {
+  font-size: .95rem;
+}

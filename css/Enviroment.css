@@ -193,8 +193,10 @@
 
 .slick-initialized .slick-slide:not(:first-child) {
   margin: 0 10px;
+
 }
 
-.slick-initialized .slick-slide {
-  margin: 0;
+.slick-initialized .slick-slide:first-child {
+  margin-inline-start: 0;
+  margin-inline-end: 10px;
 }
