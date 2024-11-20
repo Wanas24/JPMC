@@ -30,6 +30,8 @@
 }
 .Awards-card img {
   width: 60%;
+  max-height: 250px;
+  object-fit: contain;
 }
 .Awards-card h3 {
   color: var(--main-color);

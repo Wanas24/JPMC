@@ -245,7 +245,7 @@
       </div>
 
     </section>
-    <section>
+    <section class="container">
       <div class="container BoardOFDirectors-container">
         <div class="content">
           <h4>Private sector representatives</h4>
@@ -979,22 +979,35 @@
     </footer>
   </main>
   <script>
-    function openPopup(popupId) {
-      document.getElementById(popupId).style.display = "block";
-      document.body.classList.add("no-scroll");
-    }
-
-    function closePopup(popupId) {
-      document.getElementById(popupId).style.display = "none";
-      document.body.classList.remove("no-scroll");
-    }
-
-    window.onload = function () {
-      document.querySelectorAll(".popup").forEach(popup => {
-        popup.style.display = "none";
+    $(document).ready(function () {
+      // Loop through each BoardOFDirectors-container and assign classes
+      $(".BoardOFDirectors-container").each(function (index) {
+        if ((index + 1) % 2 === 0) {
+          $(this).addClass("row").removeClass("row-reverse");
+        } else {
+          $(this).addClass("row-reverse").removeClass("row");
+        }
       });
-    };
+    });
 
+      // Function to open a popup
+      function openPopup(popupId) {
+        $("#" + popupId).css("display", "block");
+        $("body").addClass("no-scroll");
+      }
+
+      // Function to close a popup
+      function closePopup(popupId) {
+        $("#" + popupId).css("display", "none");
+        $("body").removeClass("no-scroll");
+      }
+
+      // On window load, hide all popups
+      $(window).on("load", function () {
+        $(".popup").each(function () {
+          $(this).css("display", "none");
+        });
+      });
   </script>
 </body>
 

@@ -564,7 +564,7 @@ form textarea {
 }
 .main-stars-header li a {
   font-size: 0.9375rem;
-  text-decoration: none;
+  text-decoration: underline;
   color: #fff;
 }
 .main-stars-header li.active {

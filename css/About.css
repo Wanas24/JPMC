@@ -33,6 +33,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    row-gap: 60px;
     color: #fff;
 }
 
@@ -47,10 +48,11 @@
     padding-inline-start: 5rem;
 }
 .darkLayer-section{
-    background-image: url('../Assets/Inners/About Company/Rectangle\ 179.png');
-    padding-block: 3rem;
+    background-image: url("../Assets/Inners/About Company/Rectangle\ 179.png");
+    background-repeat: no-repeat;
+    padding-block: 5rem;
     background-attachment: fixed;
-    margin-top: 3rem;
+    background-size: cover;
 }
 .darkLayer-section h2 {
     color: #fff;

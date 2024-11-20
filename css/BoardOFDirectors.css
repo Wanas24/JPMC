@@ -35,7 +35,13 @@
   background: none;
 }
 .BoardOFDirectors-container:nth-child(odd) {
+}
+.row-reverse{
   flex-direction: row-reverse;
+
+}
+.row{
+  flex-direction: row;
 }
 
 /* Popup Modal */
