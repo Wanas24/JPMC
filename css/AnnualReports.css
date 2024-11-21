@@ -395,3 +395,7 @@
 .book-content-slider-container #next i {
   transform: scaleX(-1);
 }
+
+.arabic-version .book-content-slider-container .home-books-arrow p {
+  transform: translateY(-2px);
+}

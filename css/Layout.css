@@ -9,15 +9,16 @@
 .main-footer-container picture img {
   width: 100%;
   max-width: 300px;
-}  
+}
 
 
-.footer-section .footer-item:nth-child(1) h5{
+.footer-section .footer-item:nth-child(1) h5 {
   max-width: 35ch;
   padding-top: 2rem;
   min-width: unset;
 
 }
+
 .main-footer-container .footer-item-header {
   position: relative;
 }
@@ -49,19 +50,19 @@
   margin-bottom: 0;
 }
 
-.main-footer-container > .footer-section {
+.main-footer-container>.footer-section {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: space-between;
   padding: 2rem 0;
- }
+}
 
-.footer-container > .footer-section > div {
+.footer-container>.footer-section>div {
   position: relative;
 }
 
-.footer-container > .footer-section > div:last-child::before {
+.footer-container>.footer-section>div:last-child::before {
   display: none;
 }
 
@@ -168,9 +169,7 @@
   width: 1px;
 }
 
-.main-footer-container
-  .footer-copyright-container-centered
-  a:last-child::after {
+.main-footer-container .footer-copyright-container-centered a:last-child::after {
   display: none;
 }
 
@@ -206,29 +205,35 @@
 }
 
 
- .main-footer-container .footer-item ul li a {
-opacity: 0.6;
+.main-footer-container .footer-item ul li a {
+  opacity: 0.6;
 }
+
 @media (max-width: 991px) {
-  .main-footer-container .footer-item ul li{
+  .main-footer-container .footer-item ul li {
     padding: 1rem 0 !important;
   }
-  .footer-item .footer-item-header h4{
+
+  .footer-item .footer-item-header h4 {
     padding-bottom: 0rem;
   }
-  .footer-section .footer-item:nth-child(1) h5{
-  max-width: 100%;
-  min-width: unset;
+
+  .footer-section .footer-item:nth-child(1) h5 {
+    max-width: 100%;
+    min-width: unset;
   }
-  .footer-section .footer-item{
+
+  .footer-section .footer-item {
     width: 100%;
     max-width: 100%;
     min-width: unset;
-    }
-    .main-footer-container .footer-section ul{
-      margin-bottom: 0;
-    }
-  .main-footer-container > .footer-section {
+  }
+
+  .main-footer-container .footer-section ul {
+    margin-bottom: 0;
+  }
+
+  .main-footer-container>.footer-section {
     flex-direction: column;
   }
 
@@ -282,12 +287,13 @@ opacity: 0.6;
 }
 
 @media (max-width: 575px) {
+
   .main-footer-container .footer-bottom-content,
   .main-footer-container .footer-section {
     padding-inline: 0.5rem;
   }
 
- 
+
 }
 
 .footer-contact-content {
@@ -396,3 +402,7 @@ opacity: 0.6;
   padding: 1rem 0;
 }
 
+/* Ticket 77 */
+.arabic-version .footer-section .footer-item h5 {
+  font-size: .95rem;
+}

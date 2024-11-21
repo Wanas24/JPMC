@@ -50,3 +50,8 @@
 .StrategicFramework-opening h2 {
   width: 92%;
 }
+
+#StrategicFramework .hover-growing-links p {
+  margin-bottom: 0;
+  padding-inline-start: .5rem;
+}

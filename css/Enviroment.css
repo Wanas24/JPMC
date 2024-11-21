@@ -200,3 +200,8 @@
   margin-inline-start: 0;
   margin-inline-end: 10px;
 }
+
+/* Ticket 87 */
+.Enviroment-slider {
+  padding: 0;
+}
