@@ -337,6 +337,7 @@ body.arabic-version #cssmenu > ul > li.has-sub > a::after {
   margin: 0;
   text-align: left;
 }
+
 #cssmenu.small-screen > ul > li.has-sub > a:after,
 #cssmenu.small-screen > ul > li.has-sub > a:before,
 #cssmenu.small-screen ul ul > li.has-sub > a:after,
@@ -403,6 +404,9 @@ transition: var(--animation-transition);
 #cssmenu.small-screen .submenu-button i {
   color: var(--secondary-color) !important;
   font-size: 1.1rem;
+}
+#cssmenu.small-screen ul .submenu-button.submenu-opened + a + ul {
+  inset-inline-start: 0;
 }
 /* #cssmenu.small-screen .submenu-button:after {
   position: absolute;

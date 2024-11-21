@@ -318,7 +318,7 @@ transition: var(--animation-transition);
 color: var(--main-color) !important;
 transform: rotate(0deg);
 }
-@media (min-width: 1200.8888px) {
+@media (min-width: 1199.8888px) {
   #cssmenu > ul > li > a {
     padding: 0;
   }
@@ -553,7 +553,10 @@ color: var(--secondary-color);
   }
 }
 
-@media (max-width: 1200.888888888888px) {
+@media (max-width: 1199.888888888888px) {
+  #cssmenu.small-screen ul ul li > a {
+    padding-inline-start: 2.25rem !important;
+  }
   .main-navigation-search-container {
     justify-content: end;
    }
@@ -574,6 +577,9 @@ color: var(--secondary-color);
     width: calc(100% );
     inset-inline-start: 0;
     top: 100%;
+    height: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   .menu-btn-text {
     font-weight: 700;

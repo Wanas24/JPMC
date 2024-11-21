@@ -9,6 +9,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
+  padding-bottom: 2rem;
+
 }
 .ads-card {
   background-color: var(--gray-color);

@@ -126,6 +126,9 @@
     gap: 20px;
     align-items: center;
 }
+.About-last-section .container > div {
+    align-self: self-start;
+}
 @media (max-width:991.88888px) {
     .About-last-section .container{
         grid-template-columns: 1fr;

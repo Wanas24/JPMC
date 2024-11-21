@@ -35,8 +35,8 @@
 
 @media (max-width: 767.88888px) {
   .StrategicFramework-section img {
-    width: unset;
-    max-width: 936px !important;
+    width: 100%;
+    max-width: unset !important;
   }
 }
 

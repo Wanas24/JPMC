@@ -57,6 +57,18 @@
   margin-bottom: 3rem;
   border-radius: 10px;
 }
+@media (max-width:991px){
+  .Vacancies-green-box {
+    gap: 1rem;
+
+}
+}
+.Vacancies-green-box a .link{
+  padding-inline-start: 1rem;
+}
+.Vacancies-green-box a{
+  min-width: max-content;
+}
 .Vacancies-green-box .hover-growing-links .arrow{
   border: none;
   background-color: #fff;
