@@ -177,7 +177,7 @@
   overflow: hidden;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.88888px) {
 
   .prev,
   .next {
@@ -212,7 +212,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.888888888px) {
   .gallery-two-container {
     grid-template-columns: 1fr;
   }
