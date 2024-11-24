@@ -24,7 +24,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
-  margin-block: 6rem;
+  margin-block: 3rem;
 }
 .home-vertical-card {
   text-decoration: none;
@@ -92,11 +92,13 @@
 }
 @media (min-width: 1200px) {
   .OccupationalHealth-2nd-section h2:first-of-type {
-    width: 650px;
     margin: auto;
   }
   .OccupationalHealth-opening h2 {
     width: 50%;
+  }
+  .occ-accordion-heading h2{
+    width: 70%;
   }
 }
 .custom-accordion .accordion-button:not(.collapsed) {
@@ -112,4 +114,9 @@
 }
 .OccupationalHealth-1st-section h4 {
   color: var(--main-color);
+}
+
+.vertical-cards-heading{
+  color: var(--main-color);
+  margin-top: 4rem;
 }
