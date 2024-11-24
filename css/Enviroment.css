@@ -118,13 +118,13 @@
   width: 100%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200.8888888888px) {
   .vertical-cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.888888888px) {
   .vertical-cards {
     grid-template-columns: 1fr 1fr;
   }
@@ -134,7 +134,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.888888888px) {
   .vertical-cards {
     grid-template-columns: 1fr;
   }
@@ -148,11 +148,13 @@
 .slick-initialized .slick-slide {
   margin: 0 10px;
 }
-
-@media (min-width: 1200px) {
+@media (min-width:767px) {
   .Enviroment-opening h2 {
     width: 50%;
   }
+}
+@media (min-width: 1200px) {
+
 
   .Enviroment-2nd-section h2 {
     width: 80%;
@@ -172,9 +174,7 @@
   border-radius: 8px;
 }
 
-.slick-dotted.slick-slider {
-  margin-top: 2rem;
-}
+
 
 .head-vertical-card {
   color: var(--main-color);
@@ -204,4 +204,5 @@
 /* Ticket 87 */
 .Enviroment-slider {
   padding: 0;
+  margin-top: 3rem;
 }
