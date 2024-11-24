@@ -511,7 +511,7 @@ color: var(--secondary-color);
   }
 }
 
-@media (min-width: 991px) and (max-width: 992px) {
+@media (min-width: 991.888888888px) and (max-width: 992px) {
   .arabic-version #cssmenu.head_btm_menu > ul {
     gap: 0;
   }

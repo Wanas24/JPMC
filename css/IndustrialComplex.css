@@ -38,7 +38,7 @@
   color: var(--main-color);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.888888888px) {
   .IndustrialComplex-container {
     grid-template-columns: 1fr;
   }

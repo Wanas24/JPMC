@@ -47,7 +47,7 @@ ul li::marker {
 ul {
   padding-inline-start: 1.5rem;
 }
-@media (max-width: 991px) {
+@media (max-width: 991.888888888px) {
   html {
     font-size: 15px;
   }
@@ -265,7 +265,7 @@ select::-ms-expand {
 .arabic-version .page-header .container h2 {
   font-size: 36px;
 }
-@media (max-width: 767px) {
+@media (max-width: 767.888888888px) {
   .page-header .container h2 {
     font-size: 33px;
   }
@@ -368,7 +368,7 @@ select::-ms-expand {
   transform: rotate(0deg);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.888888888px) {
   .research-report-pagination {
     justify-content: center !important;
   }
@@ -1008,7 +1008,7 @@ input[type="date"]::-ms-clear {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-@media (max-width: 991px) {
+@media (max-width: 991.888888888px) {
   .accordion {
     grid-template-columns: 1fr;
   }

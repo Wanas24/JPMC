@@ -148,7 +148,7 @@
 .slick-initialized .slick-slide {
   margin: 0 10px;
 }
-@media (min-width:767px) {
+@media (min-width:767.888888888px) {
   .Enviroment-opening h2 {
     width: 50%;
   }

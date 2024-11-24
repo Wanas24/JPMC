@@ -32,7 +32,7 @@
 
 }
 
-@media (min-width: 767px) {
+@media (min-width: 767.888888888px) {
   .book-cover-slider .slick-current.slick-active {
     display: block;
   }
@@ -264,7 +264,7 @@
     }
   }
 
-  @media (min-width: 991px) {
+  @media (min-width: 991.888888888px) {
     .book-cover-slider .book-single-cover-slide img {
       height: 100%;
       width: 250px;
@@ -359,7 +359,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.888888888px) {
   .AnnualReports-container {
     grid-template-columns: 1fr 1fr;
   }

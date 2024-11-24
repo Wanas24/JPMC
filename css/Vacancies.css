@@ -40,7 +40,7 @@
 .Vacancies-card-content span {
   margin: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 767.888888888px) {
   .Vacancies-container {
     grid-template-columns: 1fr;
   }
@@ -57,7 +57,7 @@
   margin-bottom: 3rem;
   border-radius: 10px;
 }
-@media (max-width:991px){
+@media (max-width:991.888888888px){
   .Vacancies-green-box {
     gap: 1rem;
 
