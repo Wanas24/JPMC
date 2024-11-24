@@ -1509,6 +1509,7 @@
 .hero-card:hover:after {
   inset-inline-start: 0;
   width: 54%;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .hero-card.active {
@@ -1519,5 +1520,5 @@
 .hero-card.active:after {
   inset-inline-start: 0;
   width: 54%;
-
+  background-color: rgba(255, 255, 255, 1);
 }

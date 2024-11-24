@@ -1,10 +1,12 @@
 .main-stars-header {
   background-image: url(../Assets/Headers/Photo\ Gallery.png) !important;
 }
+
 .photoGallery-opening span {
   color: var(--main-color);
   display: block;
 }
+
 /* Gallery */
 .gallery-two-container {
   display: grid;
@@ -17,12 +19,14 @@
   width: 100%;
   cursor: pointer;
 }
+
 .gallery-two-container picture img {
   width: 100%;
   cursor: pointer;
   /* height: 287px; */
   object-fit: contain;
 }
+
 /* Popup Modal */
 .popup {
   display: none;
@@ -43,6 +47,7 @@
   width: 450px;
   object-fit: contain;
 }
+
 .popup-content iframe {
   height: 100%;
   width: 100%;
@@ -52,20 +57,23 @@
   width: fit-content;
   margin: auto;
   position: relative;
-  
+
 }
+
 #info-text {
   position: absolute;
   color: white;
   bottom: 5px;
   left: 25px;
 }
+
 #caption {
   color: white;
   padding: 10px;
   font-size: 16px;
 }
-.close-container{
+
+.close-container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -75,6 +83,7 @@
   top: 2rem;
   width: 100%;
 }
+
 .close {
   margin-inline: 100px;
   font-size: 40px;
@@ -88,10 +97,12 @@
   justify-content: center;
   align-items: center;
 }
+
 .close i {
   color: #fff;
   font-size: 1.4rem;
 }
+
 .popup-footer {
   display: flex;
   position: absolute;
@@ -101,6 +112,7 @@
   align-items: center;
   gap: 30px;
 }
+
 .popup-controls {
   display: flex;
   align-items: center;
@@ -111,6 +123,7 @@
   top: 40%;
   width: 100%;
 }
+
 /* Navigation Arrows */
 .prev,
 .next {
@@ -127,6 +140,7 @@
   -webkit-user-select: none;
   margin-inline: 100px;
 }
+
 .prev picture,
 .next picture {
   background-color: #eceae8;
@@ -137,13 +151,16 @@
   width: 100%;
   height: 100%;
 }
+
 .next picture img {
   transform: rotate(180deg);
 }
+
 .arabic-version .prev,
-.arabic-version .next{
+.arabic-version .next {
   transform: scaleX(-1);
 }
+
 .download-info-btn picture {
   border: #ffffff solid 1px;
   border-radius: 50%;
@@ -161,14 +178,17 @@
 }
 
 @media (max-width: 991px) {
+
   .prev,
-.next{
-  display: none;
-}
+  .next {
+    display: none;
+  }
+
   .popup-content {
     width: 80%;
     height: auto;
   }
+
   .popup-footer {
     width: 80%;
     left: 50%;
@@ -178,18 +198,35 @@
     gap: 0;
     padding-bottom: 2rem;
   }
+
   #info-text {
     left: 12%;
   }
+
   .close {
     right: 10%;
   }
+
   .gallery-two-container {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media (max-width: 767px) {
   .gallery-two-container {
     grid-template-columns: 1fr;
   }
+}
+
+/* Ticket  66 */
+.popup-footer {
+  position: static;
+}
+
+.popup {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

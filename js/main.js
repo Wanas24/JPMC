@@ -124,16 +124,3 @@ $(document).ready(function () {
     }
   });
 });
-// Hero Card
-// const heroCards = document.querySelectorAll(".hero-card");
-
-// heroCards.forEach((card) => {
-//   card.addEventListener("click", () => {
-//     // Remove 'active' class from all cards
-//     heroCards.forEach((c) => c.classList.remove("active"));
-
-//     // Add 'active' class to the clicked card
-//     card.classList.add("active");
-//   });
-// });
-// console.log(heroCards)
