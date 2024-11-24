@@ -65,6 +65,9 @@
   .OurPartner-container {
     grid-template-columns: 1fr;
   }
+  .OurPartner-card picture {
+    min-height: 340px;
+  }
 }
 /* Ticket 50  */
 .OurPartner-card {
