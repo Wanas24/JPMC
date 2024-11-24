@@ -102,7 +102,7 @@
     max-width: 400px;
   }
   
-  @media (max-width:767px) {
+  @media (max-width:767.888888888px) {
     .ContactUS-mainContainer{
         grid-template-columns: 1fr;
     }
@@ -152,4 +152,7 @@
  }
  .contact-info h4{
   max-width: unset;
+ }
+ .greenbox .row div{
+  padding-inline-start: 2rem;
  }
