@@ -153,3 +153,6 @@
  .contact-info h4{
   max-width: unset;
  }
+ .greenbox .row div{
+  padding-inline-start: 2rem;
+ }
