@@ -388,7 +388,7 @@
 
 .book-content-slider-container #prev,
 .book-content-slider-container #next {
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
 }
 
 .book-content-slider-container #prev i,
