@@ -48,10 +48,21 @@
 
 /* Ticket 91 */
 .StrategicFramework-opening h2 {
-  width: 92%;
+  width: 81%;
 }
 
 #StrategicFramework .hover-growing-links p {
   margin-bottom: 0;
   padding-inline-start: .5rem;
+}
+
+.StrategicFramework-wrapper,
+.StrategicFramework-wrapper picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.StrategicFramework-section img {
+  width: 80%;
 }
