@@ -300,3 +300,25 @@
     width: 100%;
   }
 }
+
+/* Ticket 96 */
+.content ul {
+  list-style-type: none;
+
+}
+
+.content ul li {
+  position: relative;
+  padding-inline-start: 1rem;
+}
+
+.content ul li::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  inset-inline-start: 0%;
+  top: 30%;
+}
