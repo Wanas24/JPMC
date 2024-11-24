@@ -863,3 +863,17 @@ color: var(--secondary-color);
     padding: 0;
     }
   }
+  @media (min-width:1200px) {
+    #cssmenu.head_btm_menu ul li a{
+      gap: 0.3rem;
+    }
+    .main-navigation-search-container .navigation-search span{
+      display: none;
+    }
+    .navigation-last-content{
+      gap: 0;
+    }
+    .main-navigation-search-container > li > .navigation-search{
+      padding-inline-start: 0 !important;
+    }
+  }

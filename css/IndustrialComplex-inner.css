@@ -32,6 +32,6 @@
   background-color: #f2f4f7;
 }
 .IndustrialComplex-inner-container {
-  padding: 0 !important;
+  /* padding: 0 !important; */
   gap: 30px;
 }
