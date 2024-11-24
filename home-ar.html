@@ -826,7 +826,7 @@
             </div>
           </div>
 
-          
+
         </div>
 
 
@@ -1432,8 +1432,8 @@
     });
 
 
-    
-     $(document).ready(function () {
+
+    $(document).ready(function () {
       $(".ImportantWork-slider").slick({
         centerMode: true,
         centerPadding: "500px",
@@ -1521,6 +1521,16 @@
     });
 
     observer.observe(DarkBox);
+  </script>
+  <script>
+    $(".hero-card").on("click", function () {
+      // Remove 'active' class from all cards
+      $(".hero-card").removeClass("active");
+
+      // Add 'active' class to the clicked card
+      $(this).addClass("active");
+    });
+
   </script>
 </body>
 

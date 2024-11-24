@@ -6,10 +6,7 @@ $(document).ready(function () {
     console.log(firstNavigationHight);
 
     if (scrolledValueWithoutDecimal > firstNavigationHight) {
-      $("div.navigation-container").css(
-        "top",
-        `-${firstNavigationHight}px`
-      );
+      $("div.navigation-container").css("top", `-${firstNavigationHight}px`);
       // $("div.main-navigation--container").css(
       //   "top",
       //   `-${firstNavigationHight}px`
@@ -19,7 +16,6 @@ $(document).ready(function () {
         "top",
         scrolledValueWithoutDecimal * -1
       );
-    
     }
     // console.log("Scroll position:", scrollValue);
   });
@@ -128,3 +124,16 @@ $(document).ready(function () {
     }
   });
 });
+// Hero Card
+// const heroCards = document.querySelectorAll(".hero-card");
+
+// heroCards.forEach((card) => {
+//   card.addEventListener("click", () => {
+//     // Remove 'active' class from all cards
+//     heroCards.forEach((c) => c.classList.remove("active"));
+
+//     // Add 'active' class to the clicked card
+//     card.classList.add("active");
+//   });
+// });
+// console.log(heroCards)
