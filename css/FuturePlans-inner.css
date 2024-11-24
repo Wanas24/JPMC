@@ -20,7 +20,7 @@
 .FuturePlans-1st-container ul li::marker {
   color: var(--main-color);
 }
-@media (max-width: 767.88888px) {
+@media (max-width: 991.88888px) {
   .FuturePlans-opening h2 {
     width: 100%;
   }

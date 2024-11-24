@@ -37,7 +37,7 @@
     margin-bottom: 1rem;
     color: var(--main-color);
 }
-@media (max-width:575.88888px) {
+@media (max-width:767.88888px) {
     .Employment-main-container{
         grid-template-columns: 1fr;
     }
@@ -85,16 +85,11 @@
 }
 @media (max-width:767.888888888px) {
     .Employment-2nd-section .container{
-        grid-template-columns: 1fr 1fr  ;
-    }
-
-}
-@media (max-width:575.888888888px) {
-    .Employment-2nd-section .container{
         grid-template-columns: 1fr   ;
     }
 
 }
+
 .Employment-last-section{
     background-image:url("../Assets/Inners/General Page/Rectangle\ 288.png") ;
     background-position: center center;

@@ -13,7 +13,8 @@
 }
 @media (max-width:767.888888888px) {
     .DiammoniumPhosphate-main-container{
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 .DiammoniumPhosphate-main-container img{
