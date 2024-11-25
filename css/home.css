@@ -1608,3 +1608,11 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 57.99%, #FFFFFF 94.
    margin-top: -8rem;
   }
 }
+
+@media (max-width:575.888888px) {
+  .darkLayer-card img {
+    width: 70px;
+    padding-inline-start: 2rem;
+
+  }
+}
