@@ -433,7 +433,7 @@
 }
 
 #scroll-arrow {
-  position: absolute;
+  position: sticky;
   background-color: var(--main-color);
   bottom: 4rem;
   left: 50%;
@@ -461,6 +461,9 @@
   transform: translateX(-50%) rotate(180deg) !important;
   /* Flips the arrow */
  
+}
+.home-accordion::after{
+  content: '';
 }
 
 @media (max-width: 767.88888px) {
