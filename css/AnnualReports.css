@@ -18,6 +18,7 @@
   height: 100%;
   width: 300px;
   object-fit: contain;
+  border-radius: 10px;
 }
 
 .book-cover-slider .slick-current.slick-active {
@@ -378,6 +379,15 @@
 @media (max-width: 576px) {
   .AnnualReports-container {
     grid-template-columns: 1fr;
+  }
+  .AnnualReports-card img{
+    width: 50%;
+  }
+}
+@media (max-width: 400px) {
+ 
+  .AnnualReports-card img{
+    width: 65%;
   }
 }
 

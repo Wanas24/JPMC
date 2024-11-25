@@ -29,6 +29,10 @@
 
 .Vacancy-container p {
   max-width: 79%;
+  font-size: 0.9rem !important;
+}
+.arabic-version .Vacancy-container p {
+  font-size: 0.85rem !important;
 }
 
 .Vacancy-container ul {

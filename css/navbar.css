@@ -814,6 +814,14 @@ header.main-navigation--container {
   outline: none;
   border-radius: 10px;
 }
+@media (max-width:575.888px) {
+  .searchBarOpen.search-active>.searchBarOpen--input input {
+    width: 70%;
+  }
+  .searchBarOpen.search-active>.searchBarOpen--input>div {
+    justify-content: center;
+  }
+}
 
 .arabic-version .main-navigation--container .upper-nav>div a:nth-child(2)>picture img {
   height: 20px;
