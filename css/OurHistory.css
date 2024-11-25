@@ -422,3 +422,10 @@
 .StrategicFramework-opening {
   padding: 0;
 }
+
+/* Ticket 95 */
+@media (max-width: 991.888888888888px) {
+  .StrategicFramework-opening h2 {
+    width: 100%;
+  }
+}

@@ -107,9 +107,10 @@
   border-radius: 10px;
   cursor: pointer;
 }
+
 .MiningInner-last-section .container img {
   width: 100%;
- 
+
 }
 
 /* .MiningInner-last-section img:hover { 
@@ -187,6 +188,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .close i {
   color: #fff;
   font-size: 1.4rem;
@@ -332,4 +334,27 @@
 /* Start 43 */
 .MiningInner-last-section .popup-content {
   border-radius: 0;
+}
+
+/* Ticket 96 */
+ul {
+  list-style-type: none;
+
+}
+
+ul li {
+  position: relative;
+  padding-inline-start: 1rem;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  inset-inline-start: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

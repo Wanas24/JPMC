@@ -104,3 +104,7 @@
 .news-inner-last {
   padding-bottom: 6rem;
 }
+
+.news-inner-card-content h4 {
+  margin-top: .5rem;
+}
