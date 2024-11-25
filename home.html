@@ -246,7 +246,9 @@
       <span class="searchBarOpen--closeBtn"><i class="fa-solid fa-x"></i></span>
     </div>
     <section class="hero-section">
-      <div class="parallax-background"></div>
+      <div class="parallax-background">
+        <video src="./Assets/home-video.mp4" autoplay="" loop="" muted="muted"></video>
+      </div>
       <div class="hero-content container">
         <div>
           <h4>Discover phosphate mines</h4>
@@ -1616,26 +1618,26 @@
     observer.observe(DarkBox);
   </script>
 
-<script>
-  $(document).ready(function () {
-    const cards = $(".hero-card");
-    let currentIndex = 0; // Start from the first card (index 0)
+  <script>
+    $(document).ready(function () {
+      const cards = $(".hero-card");
+      let currentIndex = 0; // Start from the first card (index 0)
 
-    function toggleActiveClass() {
-      // Remove 'active' class from all cards
-      cards.removeClass("active");
+      function toggleActiveClass() {
+        // Remove 'active' class from all cards
+        cards.removeClass("active");
 
-      // Add 'active' class to the current card
-      $(cards[currentIndex]).addClass("active");
+        // Add 'active' class to the current card
+        $(cards[currentIndex]).addClass("active");
 
-      // Move to the next card or loop back to the first
-      currentIndex = (currentIndex + 1) % cards.length;
-    }
+        // Move to the next card or loop back to the first
+        currentIndex = (currentIndex + 1) % cards.length;
+      }
 
-    // Set an interval to toggle the active class every 1 second
-    setInterval(toggleActiveClass, 2000);
-  });
-</script>
+      // Set an interval to toggle the active class every 1 second
+      setInterval(toggleActiveClass, 2000);
+    });
+  </script>
 
 
 
