@@ -1540,3 +1540,29 @@
   z-index: 9999;
   margin-top: -13rem;
 }
+
+
+.yamafelgrabyahawy {
+  height: 100%;
+  overflow: scroll;
+  scrollbar-width: none;
+  position: relative;
+}
+.home-accordion{
+  overflow: hidden;
+
+}
+
+
+
+.home-accordion::after{
+/* .home-accordion-wrapper::after{ */
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  height: 100px;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 57.99%, #FFFFFF 94.22%);
+  z-index: 11;
+  left: 0;
+}
