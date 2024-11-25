@@ -1,9 +1,11 @@
 .main-stars-header {
   background-image: url(../Assets/Headers/Careers.png) !important;
 }
+
 .Vacancies-opening span {
   color: var(--main-color);
 }
+
 .Vacancy-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -13,28 +15,35 @@
   border-radius: 10px;
   padding: 2rem;
 }
+
 @media (max-width: 767.888888px) {
   .Vacancy-container {
     grid-template-columns: 1fr;
   }
 }
+
 .Vacancy-container h3 {
   color: var(--main-color);
   margin-bottom: 0.8rem;
 }
+
 .Vacancy-container p {
- max-width: 79%;
+  max-width: 79%;
 }
-.Vacancy-container ul{
+
+.Vacancy-container ul {
   padding-inline-start: 3.5rem;
 }
+
 .Vacancy-container ul li {
   margin-bottom: 0.6rem;
   line-height: 1.6rem;
 }
+
 .Vacancy-container ul li::marker {
   color: var(--main-color);
 }
+
 .vacancy-form form input {
   padding-inline-start: 1.5rem;
   border: 1px solid #14141433;
@@ -43,25 +52,51 @@
   border-radius: 50px;
   margin-bottom: 1rem;
 }
+
 .vacancy-form input::placeholder {
   opacity: 0.8;
   color: #14141433;
 }
+
 .vacancy-form input:focus {
   box-shadow: none;
 }
+
 .vacancy-form {
   background-color: var(--gray-color);
   padding: 2rem;
   border-radius: 10px;
   margin-bottom: 3rem;
 }
-.vacancy-form span{
+
+.vacancy-form span {
   color: #DD2C3E;
 }
+
 ul li {
   font-size: 0.9rem !important;
 }
+
 .arabic-version ul li {
   font-size: 0.85rem !important;
+}
+
+/* Ticket 65 */
+.vacancy-form h3 {
+  color: var(--main-color);
+}
+
+
+.vacancy-form form input::placeholder,
+.vacancy-form form input {
+  color: #141414;
+}
+
+.vacancy-form form .file-form .arrow {
+  background-color: #ECAF65;
+  border: 1px solid #ECAF65;
+}
+
+.vacancy-form form .file-form:hover[data-hover-pos="start"]::after {
+  background: #ECAF65;
 }
