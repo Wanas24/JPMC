@@ -59,3 +59,9 @@
 .vacancy-form span{
   color: #DD2C3E;
 }
+ul li {
+  font-size: 0.9rem !important;
+}
+.arabic-version ul li {
+  font-size: 0.85rem !important;
+}

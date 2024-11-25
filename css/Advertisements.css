@@ -40,3 +40,13 @@
 .ads-card picture {
   margin-bottom: 1rem;
 }
+@media (max-width:991.8888888px) {
+  .ads-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width:767.8888888px) {
+  .ads-container{
+    grid-template-columns: 1fr;
+  }
+}

@@ -79,11 +79,7 @@
 .parallax .parallax-box h4 {
   color: var(--main-color);
 }
-@media (max-width: 991.8888px) {
-  .parallax .parallax-box {
-    width: 100%;
-  }
-}
+
 /* Ticket 52 */
 .PhosphateExportPort-main-section {
   padding-bottom: 5rem;
@@ -108,3 +104,8 @@
   font-weight: 500;
 }
 
+@media (max-width: 991.8888px) {
+  .parallax .parallax-box {
+    width: 100%;
+  }
+}

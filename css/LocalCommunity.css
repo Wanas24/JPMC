@@ -15,3 +15,12 @@
   margin-block: 1rem;
   text-align: justify;
 }
+
+@media (max-width:767.88888px) {
+  .LocalCommunity-opening h2{
+    width: 100%;
+  }
+  .LocalCommunity-1st-section .container{
+    grid-template-columns: 1fr;
+  }
+}
