@@ -391,7 +391,7 @@
 
 .custom-accordion .accordion-button {
   /* max-height: 30px !important; */
-  padding-block: 1rem !important;
+  padding-block: 0.7rem !important;
   border-bottom: 1px solid #2424243a !important;
   border-radius: 0% !important;
 }
@@ -435,8 +435,8 @@
 #scroll-arrow {
   position: absolute;
   background-color: var(--main-color);
-  bottom: 0.5rem;
-  right: 45%;
+  bottom: 4rem;
+  left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
   display: flex;
@@ -447,6 +447,10 @@
   border: none;
   z-index: 9999;
 }
+.arabic-version #scroll-arrow{
+  left: unset;
+  right: 50%;
+}
 
 #scroll-arrow img {
   margin: 0;
@@ -456,7 +460,7 @@
 .scroll-up {
   transform: translateX(-50%) rotate(180deg) !important;
   /* Flips the arrow */
-  bottom: 0 !important;
+ 
 }
 
 @media (max-width: 767.88888px) {
@@ -1521,4 +1525,15 @@
   inset-inline-start: 0;
   width: 54%;
   background-color: rgba(255, 255, 255, 1);
+}
+
+.chart-1-position{
+  position: relative;
+  z-index: 9999;
+  margin-bottom: -13rem;
+}
+.chart-2-position{
+  position: relative;
+  z-index: 9999;
+  margin-top: -13rem;
 }
