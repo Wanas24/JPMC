@@ -1,5 +1,5 @@
 .hero-section {
-  min-height: 90vh;
+  min-height: 99vh;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -60,6 +60,7 @@
   min-height: 50vh;
   margin-top: auto;
   z-index: 2;
+  gap: 5rem;
 }
 
 .hero-content span {
@@ -1569,4 +1570,41 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 57.99%, #FFFFFF 94.
 .home-accordion.scrolled::after {
   background: none;
   display: none;
+}
+
+
+
+
+
+/* Home responsive tickets */
+
+@media (max-width:767.8888888px) {
+  .ImportantWork-opening h2{
+    width: 100% !important;
+  }
+  .company-products-opening h2{
+    width: 100% !important;
+  }
+  .world-slider-container{
+   display: flex !important;
+   flex-direction: column-reverse;
+  }
+  .company-loactions-opening h2{
+    width: 100%;
+  }
+  .Home-last-section-opening h2{
+    width: 100%;
+  }
+  .darkLayer-card img{
+    width: 60px;
+  }
+  .investors-relations-main-cards{
+    grid-template-columns: 1fr;
+  }
+  .chart-1-position {
+   margin-bottom: -8rem;
+  }
+  .chart-2-position {
+   margin-top: -8rem;
+  }
 }
