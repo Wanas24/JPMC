@@ -119,10 +119,10 @@ $(document).ready(function () {
 
   // Submenu toggle in the navigation
   $(".has-sub").click(function () {
-    const $submenu = $(this).find("ul");
-    const isOpen = $submenu.hasClass("open");
-    $("li.has-sub > span.submenu-button").removeClass("submenu-opened");
-    $("li.has-sub > ul").removeClass("open").css("display", "");
+    // const $submenu = $(this).find("ul");
+    // const isOpen = $submenu.hasClass("open");
+    // $("li.has-sub > span.submenu-button").removeClass("submenu-opened");
+    // $("li.has-sub > ul").removeClass("open").css("display", "");
 
     if (!isOpen) {
       $submenu.addClass("open").css("display", "block");

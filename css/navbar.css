@@ -668,7 +668,7 @@ header.main-navigation--container {
     /* inset-inline-start: -.75rem; */
 
 
-    top: calc(100% + -1px);
+    top: calc(100% );
   }
 
   #cssmenu.head_btm_menu.small-screen ul li a {
@@ -681,7 +681,13 @@ header.main-navigation--container {
   }
 
   .main-navigation--container .upper-nav a {
-    padding-inline: .75rem
+    padding-inline: 0rem
+  }
+  .main-navigation--container .upper-nav{
+    padding-inline: .75rem;
+  }
+  .navigation-container .container.upper-nav .language-switcher{
+    min-width: max-content;
   }
 }
 
@@ -711,7 +717,6 @@ header.main-navigation--container {
   .menu-btn-text {
     font-size: 0.8rem;
   }
-
 
   .header-menu {
     gap: 0rem;
@@ -922,29 +927,60 @@ header.main-navigation--container {
 
   }
 }
-
+.smaller-screens-only {
+  display: none !important;
+}
 @media (max-width :768px) {
   .main-navigation--container .logo-container span {
     width: 250px;
     height: 60px;
 
   }
+  .language-switcher{
+    align-items: center;
+  }
+  .language-switcher span{
+    align-self: center !important;
+  }
 
   .main-navigation--container .upper-nav {
     gap: .5rem;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
-
+.smaller-screens-only p {
+margin-bottom: 0;
+}
+ 
+ li.smaller-screens-only   a {
+  gap: 1rem !important;
+ }
+ li.smaller-screens-only   a.facilities .icon-container {
+  width: 24px;
+  height: 24px;
+  background: url("../Assets/Icons/virtual-tour-black.svg") no-repeat;
+  transition: var(--animation-transition);
+  background-size: contain;
+}
+ li.smaller-screens-only   a.contact .icon-container {
+   width: 24px;
+   height: 24px;
+  background: url("../Assets/Icons/phone-nav-black.svg") no-repeat;
+  transition: var(--animation-transition);
+  background-size: contain;
+}
+.smaller-screens-only {
+  display: block !important;
+}
+  .main-navigation--container .upper-nav>div a:not(.language-switcher) {
+    display: none;
+  }
   .main-navigation--container .upper-nav>div {
     justify-content: space-between;
   }
 }
 
-@media (max-width :576px) {
-  .main-navigation--container .upper-nav {
-    padding: 0;
-  }
-}
+
+
 
 @media (min-width:1200px) {
   #cssmenu.head_btm_menu ul li a {
@@ -968,5 +1004,11 @@ header.main-navigation--container {
 @media (max-width: 991.88888889px) {
   .main-navigation--container .upper-nav>div a {
     padding-inline: .3rem;
+  }
+}
+
+@media (max-width:400px){
+  .main-navigation--container .logo-container span{
+    height: 40px;
   }
 }
