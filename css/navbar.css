@@ -58,7 +58,7 @@ header.main-navigation--container {
   gap: 1rem;
 }
 
-.arabic-version .main-navigation--container .upper-nav>div a {
+.main-navigation--container .upper-nav>div a {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -664,8 +664,8 @@ header.main-navigation--container {
 
 @media (max-width: 576.888888888888px) {
   #cssmenu.small-screen>ul:not(.main-navigation-search-container) {
-    width: 100vw;
-    inset-inline-start: -.75rem;
+    /* width: 100vw; */
+    /* inset-inline-start: -.75rem; */
 
 
     top: calc(100% + -1px);
@@ -700,7 +700,7 @@ header.main-navigation--container {
 @media (max-width: 400px) {
   #cssmenu.small-screen>ul:not(.main-navigation-search-container) {
     width: 100vw;
-    /* inset-inline-start: -2.75%; */
+    inset-inline-start: -2.75%;
     top: calc(100% + 0px);
   }
 

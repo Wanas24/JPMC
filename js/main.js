@@ -39,7 +39,12 @@ $(document).ready(function () {
     if ($window.scrollTop() > 0) {
       $targetElement.addClass("navigation-scrolled");
       isScrolled = true;
-    } else if (isScrolled) {
+    } 
+    else if (($(window).scrollTop() === 0) && ($("#menu-button").hasClass("menu-opened"))) {
+      isScrolled = true;
+      $targetElement.hasClass("navigation-scrolled") ? null : $targetElement.addClass("navigation-scrolled");
+    }
+    else if (isScrolled) {
       $targetElement.removeClass("navigation-scrolled");
       isScrolled = false;
     }
@@ -50,23 +55,24 @@ $(document).ready(function () {
   $window.scroll(updateOpacity);
 
   // Toggle navigation-scrolled on #menu-button click
-  $menuButton.on("click", function () {
-    if ($window.scrollTop() === 0 && !isScrolled) {
-      $targetElement.toggleClass("navigation-scrolled");
-    }
-  });
 
+  
   // Hover effect for submenu items
-  $cssMenu.find("li.has-sub").hover(
+  $cssMenu.find("li").hover(
+
+    $window.innerWidth() > 1199 ?
     function () {
       $targetElement.addClass("navigation-scrolled");
-    },
+    }:null,
+    $window.innerWidth() > 1199 ?
+
     function () {
       if ($window.scrollTop() === 0) {
         $targetElement.removeClass("navigation-scrolled");
       }
-    }
+    }:null
   );
+
 
   // Search bar toggle
   $searchContainer.on("click", ".navigation-search", () => {

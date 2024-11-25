@@ -21,9 +21,15 @@
             $(this).toggleClass("menu-opened");
             var mainmenu = $(this).siblings("ul"); // Change here to find sibling ul            console.log(mainmenu)
             if (mainmenu.hasClass("open")) {
-              mainmenu.hide().removeClass("open");
+              mainmenu.hide().removeClass("open"); 
+            if ($(window).scrollTop() === 0 ) {
+              $(".main-navigation--container").removeClass("navigation-scrolled");
+            }
             } else {
-              mainmenu.show().addClass("open");
+              mainmenu.show().addClass("open"); 
+            if ($(window).scrollTop() === 0 ) {
+              $(".main-navigation--container").addClass("navigation-scrolled");
+            }
               if (settings.format === "dropdown") {
                 mainmenu.find("ul").show();
               }
