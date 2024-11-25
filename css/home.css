@@ -363,14 +363,11 @@
   width: 40%;
   background-color: #fff;
   height: 100%;
-  padding-top: 1rem;
-}
-.home-accordion-wrapper{
   overflow: scroll;
   scrollbar-width: none;
-  position: relative;
-  height: 100%;
+  padding-top: 1rem;
 }
+
 .home-accordion::-webkit-scrollbar {
   display: none;
 }
@@ -436,7 +433,7 @@
 }
 
 #scroll-arrow {
-  position: absolute;
+  position: sticky;
   background-color: var(--main-color);
   bottom: 4rem;
   left: 50%;
