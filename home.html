@@ -1459,18 +1459,20 @@
 
     $(document).ready(function () {
       const scrollAmount = 300; // Adjust scroll distance as needed
-      const $scrollableContainer = $('.home-accordion-wrapper');
-      const $scrollArrow = $('#scroll-arrow');
-
-      $scrollArrow.on('click', function () {
-        if ($scrollArrow.hasClass('scroll-down')) {
+      const $scrollableContainer = $(".home-accordion-wrapper");
+      const $scrollArrow = $("#scroll-arrow");
+      const $homeAccordion=$(".home-accordion")
+      $scrollArrow.on("click", function () {
+        if ($scrollArrow.hasClass("scroll-down")) {
           // Scroll down and rotate arrow up
-          $scrollableContainer.animate({ scrollTop: scrollAmount }, 'slow');
-          $scrollArrow.removeClass('scroll-down').addClass('scroll-up');
+          $scrollableContainer.animate({ scrollTop: scrollAmount }, "slow");
+          $scrollArrow.removeClass("scroll-down").addClass("scroll-up");
+          $homeAccordion.addClass("scrolled");
         } else {
           // Scroll up and rotate arrow down
-          $scrollableContainer.animate({ scrollTop: 0 }, 'slow');
-          $scrollArrow.removeClass('scroll-up').addClass('scroll-down');
+          $scrollableContainer.animate({ scrollTop: 0 }, "slow");
+          $scrollArrow.removeClass("scroll-up").addClass("scroll-down");
+          $homeAccordion.removeClass("scrolled");
         }
       });
     });

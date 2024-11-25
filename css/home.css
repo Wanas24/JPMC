@@ -1566,3 +1566,7 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 57.99%, #FFFFFF 94.
   z-index: 11;
   left: 0;
 }
+.home-accordion.scrolled::after {
+  background: none;
+  display: none;
+}
