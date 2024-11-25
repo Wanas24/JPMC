@@ -388,8 +388,8 @@ transition: var(--animation-transition);
   top: 0;
   display: block;
   border-inline-start: 1px solid rgba(120, 120, 120, 0.2);
-  height: 46px;
-  width: 46px;
+  height: 44px;
+  width: 44px;
   cursor: pointer;
 }
 #cssmenu.small-screen .submenu-button.submenu-opened {
