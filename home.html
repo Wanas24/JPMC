@@ -260,7 +260,7 @@
           </a>
         </div>
         <div class="hero-cards-box">
-          <div class="hero-card">
+          <div class="hero-card active">
             <h5>Discover phosphate mines</h5>
             <p>The company owns and operates three ports, two for exporting phosphate
               And one for exporting fertilizers.</p>
@@ -402,8 +402,8 @@
           <div class="Faqs-acc-splited-div">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
+                <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne"
                   data-image="./Assets/Home/المنتجات/Rectangle 119-1.png">
                   <span class="accordion-btn"> <svg width="30" height="30" viewBox="0 0 30 30"
                       xmlns="http://www.w3.org/2000/svg">
@@ -440,7 +440,7 @@
                   <h5>Phosphate</h5>
                 </button>
               </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne"
                 data-bs-parent="#faqsFlushExample">
                 <div class="accordion-body">
                   <p>Lorem ipsum dolor sit amet ut labore et dolore magna aliqua.</p>
@@ -593,7 +593,7 @@
           <img src="./Assets/Home/Gif/Gif new (2).gif" alt="">
 
         </picture>
-        <picture>
+        <picture class="chart-2-position">
           <img src="./Assets/Home/علاقات المستثمرين/Group 227.png" alt="">
         </picture>
       </div>
@@ -625,7 +625,7 @@
         </a>
       </div>
       <div class="gif-block">
-        <picture>
+        <picture class="chart-1-position">
           <img src="./Assets/Home/علاقات المستثمرين/Group 168.png" alt="">
         </picture>
         <picture class="gif">
@@ -1615,16 +1615,29 @@
 
     observer.observe(DarkBox);
   </script>
-  <script>
-    $(".hero-card").on("click", function () {
+
+<script>
+  $(document).ready(function () {
+    const cards = $(".hero-card");
+    let currentIndex = 0; // Start from the first card (index 0)
+
+    function toggleActiveClass() {
       // Remove 'active' class from all cards
-      $(".hero-card").removeClass("active");
+      cards.removeClass("active");
 
-      // Add 'active' class to the clicked card
-      $(this).addClass("active");
-    });
+      // Add 'active' class to the current card
+      $(cards[currentIndex]).addClass("active");
 
-  </script>
+      // Move to the next card or loop back to the first
+      currentIndex = (currentIndex + 1) % cards.length;
+    }
+
+    // Set an interval to toggle the active class every 1 second
+    setInterval(toggleActiveClass, 2000);
+  });
+</script>
+
+
 
 </body>
 
