@@ -3,8 +3,8 @@ $(document).ready(function () {
     let scrollValue = $(this).scrollTop();
     let scrolledValueWithoutDecimal = scrollValue.toFixed(0);
     let firstNavigationHight = $("div.main-navigation--container").height();
-    console.log(firstNavigationHight);
-
+    if ($(window).innerWidth() > 1199) {
+      
     if (scrolledValueWithoutDecimal > firstNavigationHight) {
       $("div.navigation-container").css("top", `-${firstNavigationHight}px`);
       // $("div.main-navigation--container").css(
@@ -17,6 +17,8 @@ $(document).ready(function () {
         scrolledValueWithoutDecimal * -1
       );
     }
+  }
+
     // console.log("Scroll position:", scrollValue);
   });
 
