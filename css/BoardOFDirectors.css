@@ -117,6 +117,7 @@
   overflow-y: scroll;
   direction: rtl;
 }
+
 .arabic-version .popup-scrolled-content {
   direction: ltr;
 }
@@ -125,7 +126,8 @@
   direction: ltr;
   padding-inline-start: 0.5rem;
 }
-.arabic-version .popup-scrolled-content div{
+
+.arabic-version .popup-scrolled-content div {
   direction: rtl;
 }
 
@@ -311,25 +313,38 @@
 }
 
 /* Ticket 96 */
-.content ul {
+.content ul,
+.popup-scrolled-content ul {
   list-style-type: none;
 
 }
 
-.content ul li {
+.content ul li,
+.popup-scrolled-content ul li {
   position: relative;
   padding-inline-start: 1rem;
 }
 
-.content ul li::before {
+.content ul li::before,
+.popup-scrolled-content ul li::before {
   content: "";
   position: absolute;
   width: 9px;
   height: 9px;
   background-color: var(--main-color);
   border-radius: 50%;
-  inset-inline-start: 0%;
-  top: 31%;
+  inset-inline-start: 0;
+  transform: translateY(9px);
+}
+
+@media (max-width: 575.888888888px) {
+
+  .content ul li::before,
+  .popup-scrolled-content ul li::before {
+    width: 7px;
+    height: 7px;
+    transform: translateY(7px);
+  }
 }
 
 /* Ticket 94 */

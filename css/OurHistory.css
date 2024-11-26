@@ -429,3 +429,12 @@
     width: 100%;
   }
 }
+
+@media (max-width: 575.8889px) {
+
+  .container {
+    max-width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
