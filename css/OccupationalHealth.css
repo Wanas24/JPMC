@@ -172,3 +172,13 @@
   inset-inline-start: 0;
   transform: translateY(9px);
 }
+
+@media (max-width: 575.888888888px) {
+
+  .OccupationalHealth-1st-section ul li::before,
+  .OccupationalHealth-2nd-section ul li::before {
+    width: 7px;
+    height: 7px;
+    transform: translateY(7px);
+  }
+}

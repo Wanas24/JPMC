@@ -337,6 +337,16 @@
   transform: translateY(9px);
 }
 
+@media (max-width: 575.888888888px) {
+
+  .content ul li::before,
+  .popup-scrolled-content ul li::before {
+    width: 7px;
+    height: 7px;
+    transform: translateY(7px);
+  }
+}
+
 /* Ticket 94 */
 @media (max-width: 991.89px) {
   .BoardOFDirectors-container {
