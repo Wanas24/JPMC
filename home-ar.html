@@ -348,14 +348,17 @@
       </div>
     </section>
     <section class="darkLayer-section">
-      <h2 class="text-center">حول مناجم الفوسفات</h2>
+      <h2 class="text-center">مناجم الفوسفات بالأرقام</h2>
       <div class="container">
         <div class="darkLayer-card">
           <picture>
             <img src="./Assets/Icons/money 1.svg" alt="" />
           </picture>
           <div class="darkLayer-card-content">
-            <h1 class="count" data-target="247.5">0</h1>
+            <div class="d-flex gap-2">
+              <h1 class="count" data-target="247.5"></h1>
+              <h1>+</h1>
+            </div>
             <h5>مليون دينار إجمالي رأس مال</h5>
           </div>
         </div>
@@ -364,7 +367,10 @@
             <img src="./Assets/Icons/oil-industry 1.svg" alt="" />
           </picture>
           <div class="darkLayer-card-content">
-            <h1 class="count" data-target="11">0</h1>
+            <div class="d-flex gap-2">
+              <h1 class="count" data-target="11"></h1>
+              <h1>+</h1>
+            </div>
             <h5>مليون طن سنوياً طاقة إنتاجية</h5>
           </div>
         </div>
@@ -373,7 +379,10 @@
             <img src="./Assets/Icons/money 1.svg" alt="" />
           </picture>
           <div class="darkLayer-card-content">
-            <h1 class="count" data-target="2300">0</h1>
+            <div class="d-flex gap-2">
+              <h1 class="count" data-target="2300"></h1>
+              <h1>+</h1>
+            </div>
             <h5>إجمالي عدد الموظفين</h5>
           </div>
         </div>
@@ -382,7 +391,10 @@
             <img src="./Assets/Icons/oil-industry 1.svg" alt="" />
           </picture>
           <div class="darkLayer-card-content">
-            <h1 class="count" data-target="75">0</h1>
+            <div class="d-flex gap-2">
+              <h1 class="count" data-target="75"></h1>
+              <h1>+</h1>
+            </div>
             <h5>عاماً منذ تاريخ تأسيس الشركة</h5>
           </div>
         </div>
@@ -391,20 +403,27 @@
             <img src="./Assets/Icons/money 1.svg" alt="" />
           </picture>
           <div class="darkLayer-card-content">
-            <h1 class="count" data-target="1.3">0</h1>
+            <div class="d-flex gap-2">
+              <h1 class="count" data-target="1.3"></h1>
+              <h1>+</h1>
+            </div>
             <h5>مليار صافي المبيعات لعام 2023</h5>
           </div>
         </div>
         <div class="darkLayer-card">
           <picture>
-            <img src="./Assets/Icons/sand (1) 1.svg" alt="" />
+            <img src="./Assets/Icons/new-icon.svg" alt="" />
           </picture>
           <div class="darkLayer-card-content">
-            <h1 class="count" data-target="1.3">0</h1>
+            <div class="d-flex gap-2">
+              <h1 class="count" data-target="1.3"></h1>
+              <h1>+</h1>
+            </div>
             <h5>المخزون الاحتياطي من الفوسفات</h5>
           </div>
         </div>
       </div>
+      
       <div class="container d-flex justify-content-center">
         <a href="" class="hover-growing-links" data-hover-pos="start">
           <span class="link"> إكتشف المزيد حول الشركة </span>
@@ -1431,24 +1450,34 @@
     });
 
     $(document).ready(function () {
-      const scrollAmount = 300; // Adjust scroll distance as needed
-      const $scrollableContainer = $(".home-accordion-wrapper");
-      const $scrollArrow = $("#scroll-arrow");
-      const $homeAccordion=$(".home-accordion")
-      $scrollArrow.on("click", function () {
+    const scrollAmount = 300; // Adjust scroll distance as needed
+    const $scrollableContainer = $(".home-accordion-wrapper");
+    const $scrollArrow = $("#scroll-arrow");
+    const $homeAccordion = $(".home-accordion");
+    const $lastAccordionItem = $(".Faqs-acc-splited-div .accordion-item:last-child .collapse");
+
+    $scrollArrow.on("click", function () {
         if ($scrollArrow.hasClass("scroll-down")) {
-          // Scroll down and rotate arrow up
-          $scrollableContainer.animate({ scrollTop: scrollAmount }, "slow");
-          $scrollArrow.removeClass("scroll-down").addClass("scroll-up");
-          $homeAccordion.addClass("scrolled");
+            // Scroll down and rotate arrow up
+            $scrollableContainer.animate({ scrollTop: scrollAmount }, "slow");
+            $scrollArrow.removeClass("scroll-down").addClass("scroll-up");
+            $homeAccordion.addClass("scrolled");
         } else {
-          // Scroll up and rotate arrow down
-          $scrollableContainer.animate({ scrollTop: 0 }, "slow");
-          $scrollArrow.removeClass("scroll-up").addClass("scroll-down");
-          $homeAccordion.removeClass("scrolled");
+            // Scroll up and rotate arrow down
+            $scrollableContainer.animate({ scrollTop: 0 }, "slow");
+            $scrollArrow.removeClass("scroll-up").addClass("scroll-down");
+            $homeAccordion.removeClass("scrolled");
         }
-      });
     });
+
+    // Scroll to the bottom when clicking the last accordion item
+    $lastAccordionItem.on('show.bs.collapse', function () {
+        $scrollableContainer.animate({
+            scrollTop: $scrollableContainer.prop("scrollHeight")
+        }, 500);
+    });
+});
+
 
     document.addEventListener("DOMContentLoaded", function () {
       const defaultImage = "./Assets/Home/المنتجات/Rectangle 119.png"; // Path to the default image

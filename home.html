@@ -329,55 +329,73 @@
       <div class="container">
         <div class="darkLayer-card">
           <picture>
-            <img src="./Assets/Icons/money 1.svg" alt="">
+            <img src="./Assets/Icons/money 1.svg" alt="" />
           </picture>
           <div class="darkLayer-card-content">
-            <h1 class="count" data-target="247.5">0</h1>
+            <div class="d-flex gap-2">
+              <h1 class="count" data-target="247.5">0</h1>
+              <h1>+</h1>
+            </div>
             <h5>Million dinars total capital</h5>
           </div>
         </div>
         <div class="darkLayer-card">
           <picture>
-            <img src="./Assets/Icons/oil-industry 1.svg" alt="">
+            <img src="./Assets/Icons/oil-industry 1.svg" alt="" />
           </picture>
           <div class="darkLayer-card-content">
-            <h1 class="count" data-target="11">0</h1>
+            <div class="d-flex gap-2">
+              <h1 class="count" data-target="11">0</h1>
+              <h1>+</h1>
+            </div>
             <h5>million ton per year production capacity</h5>
           </div>
         </div>
         <div class="darkLayer-card">
           <picture>
-            <img src="./Assets/Icons/money 1.svg" alt="">
+            <img src="./Assets/Icons/money 1.svg" alt="" />
           </picture>
           <div class="darkLayer-card-content">
-            <h1 class="count" data-target="2300">0</h1>
+            <div class="d-flex gap-2">
+              <h1 class="count" data-target="2300">0</h1>
+              <h1>+</h1>
+            </div>
             <h5>Total number of employees</h5>
           </div>
         </div>
         <div class="darkLayer-card">
           <picture>
-            <img src="./Assets/Icons/oil-industry 1.svg" alt="">
+            <img src="./Assets/Icons/oil-industry 1.svg" alt="" />
           </picture>
           <div class="darkLayer-card-content">
-            <h1 class="count" data-target="75">0</h1>
+            <div class="d-flex gap-2">
+              <h1 class="count" data-target="75">0</h1>
+              <h1>+</h1>
+            </div>
             <h5>Years since the company was established</h5>
           </div>
         </div>
         <div class="darkLayer-card">
           <picture>
-            <img src="./Assets/Icons/money 1.svg" alt="">
+            <img src="./Assets/Icons/money 1.svg" alt="" />
           </picture>
           <div class="darkLayer-card-content">
-            <h1 class="count" data-target="1.3">0</h1>
+            <div class="d-flex gap-2">
+              <h1 class="count" data-target="1.3">0</h1>
+              <h1>+</h1>
+            </div>
             <h5>Billion net sales for 2023</h5>
           </div>
         </div>
         <div class="darkLayer-card">
           <picture>
-            <img src="./Assets/Icons/sand (1) 1.svg" alt="">
+            <img src="./Assets/Icons/new-icon.svg" alt="" />
           </picture>
           <div class="darkLayer-card-content">
-            <h1 class="count" data-target="1.3">0</h1>
+            <div class="d-flex gap-2">
+              <h1 class="count" data-target="1.3">0</h1>
+              <h1>+</h1>
+            </div>
             <h5>phosphate reserve</h5>
           </div>
         </div>
@@ -1497,24 +1515,34 @@
 
 
     $(document).ready(function () {
-      const scrollAmount = 300; // Adjust scroll distance as needed
-      const $scrollableContainer = $(".home-accordion-wrapper");
-      const $scrollArrow = $("#scroll-arrow");
-      const $homeAccordion=$(".home-accordion")
-      $scrollArrow.on("click", function () {
+    const scrollAmount = 300; // Adjust scroll distance as needed
+    const $scrollableContainer = $(".home-accordion-wrapper");
+    const $scrollArrow = $("#scroll-arrow");
+    const $homeAccordion = $(".home-accordion");
+    const $lastAccordionItem = $(".Faqs-acc-splited-div .accordion-item:last-child .collapse");
+
+    $scrollArrow.on("click", function () {
         if ($scrollArrow.hasClass("scroll-down")) {
-          // Scroll down and rotate arrow up
-          $scrollableContainer.animate({ scrollTop: scrollAmount }, "slow");
-          $scrollArrow.removeClass("scroll-down").addClass("scroll-up");
-          $homeAccordion.addClass("scrolled");
+            // Scroll down and rotate arrow up
+            $scrollableContainer.animate({ scrollTop: scrollAmount }, "slow");
+            $scrollArrow.removeClass("scroll-down").addClass("scroll-up");
+            $homeAccordion.addClass("scrolled");
         } else {
-          // Scroll up and rotate arrow down
-          $scrollableContainer.animate({ scrollTop: 0 }, "slow");
-          $scrollArrow.removeClass("scroll-up").addClass("scroll-down");
-          $homeAccordion.removeClass("scrolled");
+            // Scroll up and rotate arrow down
+            $scrollableContainer.animate({ scrollTop: 0 }, "slow");
+            $scrollArrow.removeClass("scroll-up").addClass("scroll-down");
+            $homeAccordion.removeClass("scrolled");
         }
-      });
     });
+
+    // Scroll to the bottom when clicking the last accordion item
+    $lastAccordionItem.on('show.bs.collapse', function () {
+        $scrollableContainer.animate({
+            scrollTop: $scrollableContainer.prop("scrollHeight")
+        }, 500);
+    });
+});
+
 
 
 

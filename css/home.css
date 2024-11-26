@@ -312,6 +312,10 @@
   align-items: center;
   gap: 20px;
 }
+.darkLayer-card img{
+  height: 75px;
+  padding-inline-start: 5rem;
+}
 
 .darkLayer-section {
   background-image: url("../Assets/Inners/About Company/Rectangle\ 179.png");
@@ -374,6 +378,7 @@
   scrollbar-width: none;
   padding-top: 1rem;
 }
+
 
 .home-accordion::-webkit-scrollbar {
   display: none;
@@ -443,7 +448,7 @@
   position: sticky;
   background-color: var(--main-color);
   bottom: 4rem;
-  left: 50%;
+  left: 95%;
   transform: translateX(-50%);
   border-radius: 50%;
   display: flex;
@@ -457,7 +462,7 @@
 
 .arabic-version #scroll-arrow {
   left: unset;
-  right: 50%;
+  right: 75%;
 }
 
 #scroll-arrow img {
@@ -1554,7 +1559,7 @@
 
 .home-accordion-wrapper {
   height: 100%;
-  overflow: scroll;
+  overflow: hidden;
   scrollbar-width: none;
   position: relative;
 }
@@ -1588,7 +1593,11 @@
 
 
 /* Home responsive tickets */
-
+@media (max-width:991.888888px){
+  .darkLayer-card img {
+    height: 60px;
+  }
+}
 @media (max-width:767.8888888px) {
   .ImportantWork-opening h2 {
     width: 100% !important;
@@ -1611,9 +1620,7 @@
     width: 100%;
   }
 
-  .darkLayer-card img {
-    width: 60px;
-  }
+ 
 
   .investors-relations-main-cards {
     grid-template-columns: 1fr;
@@ -1630,7 +1637,7 @@
 
 @media (max-width:575.888888px) {
   .darkLayer-card img {
-    width: 70px;
+    height: 50px;
     padding-inline-start: 2rem;
 
   }

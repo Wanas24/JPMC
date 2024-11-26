@@ -108,7 +108,11 @@
     .About-1st-container{
         grid-template-columns: 1fr ;
     }
+    .darkLayer-card img {
+        height: 60px;
+      }
 }
+
 @media (max-width:575.88888px) {
     .Employment-main-container{
         grid-template-columns: 1fr;
@@ -117,6 +121,11 @@
         grid-template-columns: 1fr ;
         
     }
+    .darkLayer-card img {
+        height: 50px;
+        padding-inline-start: 2rem;
+    
+      }
     
 }
 .About-last-section{
