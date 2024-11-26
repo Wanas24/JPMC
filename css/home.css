@@ -1718,4 +1718,7 @@
   .development-opening h2 {
     width: 100%;
   }
+  .home-accordion {
+    width: 75%;
+  }
 }
