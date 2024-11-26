@@ -32,6 +32,58 @@
     0px 3px 6px 0px rgba(0, 0, 0, 0.23);
 
 }
+.home-books-arrows {
+  padding-top: 2rem;
+  display: flex;
+  padding-inline: 1rem;
+  gap: 23rem;
+  justify-content: center;
+  position: absolute;
+  bottom: 2.7rem;
+  inset-inline-start: -4rem;
+}
+
+.home-books-arrow p {
+  color: var(--main-color);
+  margin-bottom: 0;
+}
+
+.home-books-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.home-books-arrow:hover {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.home-books-arrow i {
+  color: var(--main-color);
+}
+.book-content-slider-container #next,
+.book-content-slider-container #prev {
+  position: absolute;
+  inset-block-start: 0;
+}
+
+.book-content-slider-container #prev {
+  inset-inline-start: -5rem;
+}
+
+.book-content-slider-container #next {
+  inset-inline-end: -6rem;
+}
+
+.home-books-arrow i {
+  transform: scaleX(-1);
+}
+
+.arabic-version .home-books-arrow i {
+  transform: unset;
+}
 
 @media (min-width: 767.888888888px) {
   .book-cover-slider .slick-current.slick-active {
@@ -172,59 +224,9 @@
     width: 50px;
   }
 
-  .home-books-arrows {
-    padding-top: 2rem;
-    display: flex;
-    padding-inline: 1rem;
-    gap: 23rem;
-    justify-content: center;
-    position: absolute;
-    bottom: 2.7rem;
-    inset-inline-start: -4rem;
-  }
+ 
 
-  .home-books-arrow p {
-    color: var(--main-color);
-    margin-bottom: 0;
-  }
-
-  .home-books-arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-  }
-
-  .home-books-arrow:hover {
-    border-bottom: 1px solid var(--main-color);
-  }
-
-  .home-books-arrow i {
-    color: var(--main-color);
-  }
-
-  .book-content-slider-container #next,
-  .book-content-slider-container #prev {
-    position: absolute;
-    inset-block-start: 0;
-  }
-
-  .book-content-slider-container #prev {
-    inset-inline-start: -5rem;
-  }
-
-  .book-content-slider-container #next {
-    inset-inline-end: -6rem;
-  }
-
-  .home-books-arrow i {
-    transform: scaleX(-1);
-  }
-
-  .arabic-version .home-books-arrow i {
-    transform: unset;
-  }
+ 
 
   /* .home-books-arrow:hover {
     background: white;
@@ -371,9 +373,9 @@
 }
 
 @media (max-width: 767.88888px) {
-  .home-books-arrow {
+  /* .home-books-arrow {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 576px) {

@@ -62,6 +62,17 @@ ul {
     font-size: 13px;
   }
 }
+@media (min-width: 1600px){
+  .container,
+  .container-fluid{
+      max-width: 80%;
+  }
+  .container .container,
+  .container .container-fluid,
+  .container-fluid .container,
+  .container-fluid .container-fluid{
+      max-width: 100%;
+  }}
 /* english fonts  */
 
 @font-face {

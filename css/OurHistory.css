@@ -40,14 +40,14 @@
   margin-bottom: 1rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024.88888888888px) {
   .OurHistory-section .container {
     grid-template-rows: unset;
     grid-template-columns: 250px 9fr;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024.88888888888px) {
   #main-titles.slick-slider {
     height: fit-content;
     width: 100%;
@@ -130,7 +130,7 @@
   color: var(--main-color);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024.88888888888px) {
 
   #main-titles .slick-track {
     width: 100%;
@@ -180,7 +180,7 @@
   align-items: center;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024.88888888888px) {
   .history-arrows-box {
     gap: 1rem;
     inset-inline-start: 286px;
@@ -278,7 +278,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1024.88888888888px) {
   #main-content h2 {
     max-width: 100%;
   }

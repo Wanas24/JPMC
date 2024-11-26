@@ -117,6 +117,9 @@
   overflow-y: scroll;
   direction: rtl;
 }
+.arabic-version .popup-scrolled-content {
+  direction: ltr;
+}
 
 .popup-scrolled-content div {
   direction: ltr;
