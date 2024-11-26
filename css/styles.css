@@ -1172,3 +1172,13 @@ input[type="date"]::-ms-clear {
 .hover-growing-links[data-hover-pos="start"]:hover > span:first-child {
   padding-inline-start: 1rem;
 }
+
+
+
+
+/*  */
+@media (max-width:767.88888px) {
+  .close{
+    margin-inline: 20px;
+  }
+}

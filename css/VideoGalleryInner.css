@@ -197,6 +197,9 @@
   .gallery-two-container {
     grid-template-columns: 1fr 1fr;
   }
+  #caption {
+  bottom: -5rem;
+  }
 }
 
 @media (max-width: 767.888888888px) {
