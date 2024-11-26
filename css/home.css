@@ -332,6 +332,9 @@
 
 .darkLayer-section h1 {
   color: #fff;
+  font-size: 1.9rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0;
 }
 
 @media (max-width: 991.88888px) {
