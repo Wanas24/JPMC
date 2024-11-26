@@ -1709,6 +1709,16 @@
 }
 
 /* Ticket 151 */
+@media (max-width: 991.888888px) {
+  .home-accordion {
+    height: 480px;
+    width: 50%;
+    z-index: 9;
+  }
+  .investors-relations {
+    margin-top: 10rem;
+  }
+}
 @media (max-width: 767.889px) {
   .investors-relations picture {
     width: 100%;
@@ -1720,5 +1730,23 @@
   }
   .home-accordion {
     width: 75%;
+  }
+  #scroll-arrow {
+    display: block;
+  }
+  .home-accordion {
+    position: absolute;
+    top: 4rem;
+    inset-inline-start: 2rem;
+    height: 480px;
+    width: 60%;
+  }
+  .investors-relations {
+    margin-top: 25rem;
+  }
+}
+@media (max-width: 499.8888889px) {
+  .home-accordion {
+    width: 85%;
   }
 }
