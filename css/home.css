@@ -1643,3 +1643,15 @@
     margin-top: 12rem;
   }
 }
+
+/* Ticket 151 */
+@media (max-width: 767.889px) {
+  .investors-relations picture {
+    width: 100%;
+    justify-self: center;
+  }
+
+  .development-opening h2 {
+    width: 100%;
+  }
+}
