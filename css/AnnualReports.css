@@ -86,6 +86,7 @@
 }
 
 @media (min-width: 767.888888888px) {
+
   .book-cover-slider .slick-current.slick-active {
     display: block;
   }
@@ -376,6 +377,11 @@
   /* .home-books-arrow {
     display: none;
   } */
+  .book-cover-slider .slick-current.slick-active+div img {
+  
+    box-shadow: none;
+  
+  }
 }
 
 @media (max-width: 576px) {
