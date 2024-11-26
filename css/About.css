@@ -155,9 +155,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.darkLayer-section .container {
-  grid-template-columns: 1fr 1fr;
-}
 
 .About-1st-container {
   grid-template-columns: 1fr;
