@@ -1637,13 +1637,9 @@
 }
 
 /* Tickets 150 */
-@media (min-width: 992px) and (max-width: 1334.888889px) {
-  .hero-section {
-    height: 115vh;
-
-  }
+@media (min-width: 992px) {
 
   .hero-section .hero-content {
-    gap: 1rem;
+    margin-top: 12rem;
   }
 }
