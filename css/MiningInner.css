@@ -337,7 +337,7 @@
 }
 
 /* Ticket 96 */
-ul {
+/* ul {
   list-style-type: none;
 
 }
@@ -357,4 +357,4 @@ ul li::before {
   inset-inline-start: 0;
   top: 50%;
   transform: translate(-50%, -50%);
-}
+} */

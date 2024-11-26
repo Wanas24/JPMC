@@ -51,7 +51,8 @@
   transform: translateY(0);
   /* Starting position */
 }
-.parallax-background video{
+
+.parallax-background video {
   width: 100%;
 }
 
@@ -451,7 +452,8 @@
   border: none;
   z-index: 9999;
 }
-.arabic-version #scroll-arrow{
+
+.arabic-version #scroll-arrow {
   left: unset;
   right: 50%;
 }
@@ -464,9 +466,10 @@
 .scroll-up {
   transform: translateX(-50%) rotate(180deg) !important;
   /* Flips the arrow */
- 
+
 }
-.home-accordion::after{
+
+.home-accordion::after {
   content: '';
 }
 
@@ -1534,12 +1537,13 @@
   background-color: rgba(255, 255, 255, 1);
 }
 
-.chart-1-position{
+.chart-1-position {
   position: relative;
   z-index: 9999;
   margin-bottom: -13rem;
 }
-.chart-2-position{
+
+.chart-2-position {
   position: relative;
   z-index: 9999;
   margin-top: -13rem;
@@ -1552,24 +1556,26 @@
   scrollbar-width: none;
   position: relative;
 }
-.home-accordion{
+
+.home-accordion {
   overflow: hidden;
 
 }
 
 
 
-.home-accordion::after{
-/* .home-accordion-wrapper::after{ */
+.home-accordion::after {
+  /* .home-accordion-wrapper::after{ */
   position: absolute;
   content: "";
   width: 100%;
   bottom: 0;
   height: 100px;
-background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 57.99%, #FFFFFF 94.22%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 57.99%, #FFFFFF 94.22%);
   z-index: 11;
   left: 0;
 }
+
 .home-accordion.scrolled::after {
   background: none;
   display: none;
@@ -1582,33 +1588,41 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 57.99%, #FFFFFF 94.
 /* Home responsive tickets */
 
 @media (max-width:767.8888888px) {
-  .ImportantWork-opening h2{
+  .ImportantWork-opening h2 {
     width: 100% !important;
   }
-  .company-products-opening h2{
+
+  .company-products-opening h2 {
     width: 100% !important;
   }
-  .world-slider-container{
-   display: flex !important;
-   flex-direction: column-reverse;
+
+  .world-slider-container {
+    display: flex !important;
+    flex-direction: column-reverse;
   }
-  .company-loactions-opening h2{
+
+  .company-loactions-opening h2 {
     width: 100%;
   }
-  .Home-last-section-opening h2{
+
+  .Home-last-section-opening h2 {
     width: 100%;
   }
-  .darkLayer-card img{
+
+  .darkLayer-card img {
     width: 60px;
   }
-  .investors-relations-main-cards{
+
+  .investors-relations-main-cards {
     grid-template-columns: 1fr;
   }
+
   .chart-1-position {
-   margin-bottom: -8rem;
+    margin-bottom: -8rem;
   }
+
   .chart-2-position {
-   margin-top: -8rem;
+    margin-top: -8rem;
   }
 }
 
@@ -1617,5 +1631,17 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 57.99%, #FFFFFF 94.
     width: 70px;
     padding-inline-start: 2rem;
 
+  }
+}
+
+/* Tickets 150 */
+@media (min-width: 992px) and (max-width: 1334.888889px) {
+  .hero-section {
+    height: 115vh;
+
+  }
+
+  .hero-section .hero-content {
+    gap: 1rem;
   }
 }
