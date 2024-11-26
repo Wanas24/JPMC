@@ -1916,6 +1916,87 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
 }
+@-webkit-keyframes rotateInRight {
+  0% {
+ 
+    -webkit-transform: translateX(600px) rotate(180deg);
+    transform: translateX(600px) rotate(180deg);
+    opacity: 0;
+  }
+
+  100% {
+     -webkit-transform: translateX(calc(0px)) rotate(0deg);
+    transform: translateX(calc(0px)) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateInRight {
+  0% {
+  
+    -webkit-transform: translateX(600px) rotate(180deg);
+    transform: translateX(600px) rotate(180deg);
+
+    opacity: 0;
+  }
+
+  100% {
+ 
+    -webkit-transform: translateX(calc(0px)) rotate(0deg);
+    transform: translateX(calc(0px)) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.rotateInRight {
+  -webkit-animation-name: rotateInRight;
+  animation-name: rotateInRight;
+
+  
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes rotateInLeft {
+  0% {
+ 
+    -webkit-transform: translateX(-600px) rotate(180deg);
+    transform: translateX(-600px) rotate(180deg);
+    opacity: 0;
+  }
+
+  100% {
+     -webkit-transform: translateX(calc(0px)) rotate(0deg);
+    transform: translateX(calc(0px)) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateInLeft {
+  0% {
+  
+    -webkit-transform: translateX(-600px) rotate(180deg);
+    transform: translateX(-600px) rotate(180deg);
+
+    opacity: 0;
+  }
+
+  100% {
+ 
+    -webkit-transform: translateX(calc(0px)) rotate(0deg);
+    transform: translateX(calc(0px)) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.rotateInLeft {
+  -webkit-animation-name: rotateInRight;
+  animation-name: rotateInRight;
+
+  
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
 
 @-webkit-keyframes rotateIn {
   0% {

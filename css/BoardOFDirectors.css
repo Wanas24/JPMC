@@ -214,7 +214,7 @@
 
 /* Ticket 32 */
 .BoardOFDirectors-container {
-  align-items: flex-start;
+  align-items: stretch;
   background-color: unset;
   gap: 0;
 }
@@ -224,7 +224,7 @@
   .BoardOFDirectors-container .content {
     position: relative;
     z-index: 2;
-    height: 100%;
+    height: auto;
 
   }
 
@@ -234,6 +234,7 @@
 
   .BoardOFDirectors-container.row-reverse .content {
     padding-inline-end: 2rem;
+    height: auto;
   }
 
   .BoardOFDirectors-container .content h4,
@@ -353,4 +354,16 @@
     flex-direction: column !important;
     border-radius: 8px;
   }
+}
+.filled-doted{
+  padding-inline-start: .5rem !important;
+  
+  /* background: #000; */
+}
+.outlined-doted  {
+padding-inline-start: 1.5rem !important;
+}
+.outlined-doted  li::before{
+  background-color: transparent !important;
+  border: 1px solid var(--main-color);
 }
