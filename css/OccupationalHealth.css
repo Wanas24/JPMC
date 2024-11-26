@@ -1,31 +1,37 @@
 .main-stars-header {
   background-image: url(../Assets/Headers/Occupational-Health-\(Show-less\).png) !important;
 }
+
 .OccupationalHealth-opening h4 {
   color: var(--main-color);
   margin-bottom: 1rem;
 }
+
 .OccupationalHealth-1st-section {
   padding-block: 3rem;
   background-color: var(--gray-color);
   margin-block: 2rem;
 }
+
 .OccupationalHealth-1st-section .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   align-items: center;
 }
+
 .OccupationalHealth-1st-section .container img {
   width: 100%;
   border-radius: 10px;
 }
+
 .vertical-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
   margin-block: 3rem;
 }
+
 .home-vertical-card {
   text-decoration: none;
   border-radius: 5px;
@@ -34,76 +40,96 @@
   flex-direction: column;
   background-color: var(--gray-color);
 }
-.home-vertical-card h4{
+
+.home-vertical-card h4 {
   color: #141414;
 }
+
 .vertical-card-content {
   padding: 1rem;
 }
+
 .vertical-card-content span {
   color: var(--main-color);
   margin-bottom: 1rem;
   display: block;
 }
+
 .home-vertical-card img {
   width: 100%;
 }
+
 .custom-accordion .accordion-item .accordion-button:last-of-type,
 .custom-accordion .accordion-item .accordion-button {
   background-color: var(--gray-color);
 }
+
 @media (max-width: 1200px) {
   .vertical-cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 @media (max-width: 991.888888888px) {
   .vertical-cards {
     grid-template-columns: 1fr 1fr;
   }
+
   .Enviroment-1st-section .container {
     grid-template-columns: 1fr;
   }
+
   .OccupationalHealth-1st-section .container {
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 767.888888888px) {
   .vertical-cards {
     grid-template-columns: 1fr;
   }
 }
+
 /* Ticket 48 */
 .OccupationalHealth-1st-section li {
   font-size: 0.95rem;
 }
+
 .arabic-version .OccupationalHealth-1st-section li {
   font-size: 0.9rem;
   line-height: 1.8;
 }
+
 .OccupationalHealth-1st-section .hover-growing-links {
   margin-top: 2rem !important;
 }
+
 .home-vertical-card h4:hover {
   text-decoration: underline;
 }
+
 .OccupationalHealth-2nd-section h4 {
   color: var(--main-color);
 }
+
 @media (min-width: 1200px) {
   .OccupationalHealth-2nd-section h2:first-of-type {
     margin: auto;
   }
+
   .OccupationalHealth-opening h2 {
     width: 50%;
   }
-  .occ-accordion-heading h2{
+
+  .occ-accordion-heading h2 {
     width: 70%;
   }
 }
+
 .custom-accordion .accordion-button:not(.collapsed) {
   background-color: var(--main-color) !important;
 }
+
 .custom-accordion .accordion-item .accordion-body p {
   font-size: 0.9rem;
 }
@@ -112,11 +138,37 @@
 .custom-accordion .accordion-item .accordion-button {
   font-size: 0.95rem;
 }
+
 .OccupationalHealth-1st-section h4 {
   color: var(--main-color);
 }
 
-.vertical-cards-heading{
+.vertical-cards-heading {
   color: var(--main-color);
   margin-top: 4rem;
+}
+
+/* Ticket 96 */
+.OccupationalHealth-1st-section ul,
+.OccupationalHealth-2nd-section ul {
+  list-style-type: none;
+
+}
+
+.OccupationalHealth-1st-section ul li,
+.OccupationalHealth-2nd-section ul li {
+  position: relative;
+  padding-inline-start: 1rem;
+}
+
+.OccupationalHealth-1st-section ul li::before,
+.OccupationalHealth-2nd-section ul li::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  inset-inline-start: 0;
+  transform: translateY(9px);
 }
