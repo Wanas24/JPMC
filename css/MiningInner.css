@@ -358,3 +358,51 @@ ul li::before {
   top: 50%;
   transform: translate(-50%, -50%);
 } */
+
+/* Ticket  66 */
+.popup-footer {
+  position: static;
+}
+
+.popup {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .popup-content {
+    height: auto;
+  }
+
+
+
+  .popup-footer {
+    transform: unset;
+  }
+}
+
+@media (min-width: 992px) {
+  #caption {
+    width: 90%;
+  }
+}
+
+.img-container {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: calc(100vh - 80px - 100px);
+}
+
+#caption {
+  text-align: center;
+
+}
+
+.popup-footer {
+  margin: auto;
+}
