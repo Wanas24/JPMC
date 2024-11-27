@@ -57,15 +57,18 @@
 .carousel__button.is-next
 ,.carousel__button.is-prev{
     background-color: #fff;
+    background-image: url(../Assets/Icons/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.carousel__button.is-next{
+    transform: scaleX(-1);
 }
 .carousel__button.is-next svg
 ,.carousel__button.is-prev svg{
-    stroke: var(--main-color);
+    display: none;
 }
 
-  
-
-  
 
 @media (max-width: 991.88888px) {
   .gallery-two-container {
