@@ -68,6 +68,32 @@
 ,.carousel__button.is-prev svg{
     display: none;
 }
+/* fancybox caption scroll  */
+.fancybox__caption {
+   height: 5rem;
+    overflow-y: auto; /* Default to no scrollbar */
+}
+
+.fancybox__caption::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+  }
+  
+  .fancybox__caption::-webkit-scrollbar-track {
+    background: #e2ebe2;
+    /* Background color of the scrollbar track */
+    border-radius: 10px;
+    /* Rounding the track edges */
+  }
+  
+  .fancybox__caption::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    /* Scrollbar thumb color */
+    border-radius: 10px;
+    /* Rounding the thumb */
+    border: 3px solid #e2ebe2;
+    /* Creates space around the thumb */
+  }
 
 
 @media (max-width: 991.88888px) {

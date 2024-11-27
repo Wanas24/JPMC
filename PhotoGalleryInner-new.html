@@ -269,7 +269,7 @@
             <div class="gallery-two-container container">
                 <!-- FancyBox Items -->
                 <a href="./Assets/Inners/Image gallery/Rectangle 364.png" data-fancybox="gallery"
-                    data-caption="Caption #1">
+                    data-caption="Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1Caption #1">
                     <picture>
                         <img src="./Assets/Inners/Image gallery/Rectangle 364.png" />
                     </picture>
@@ -463,44 +463,13 @@
     </main>
 </body>
 <script>
-    $(document).ready(function() {
-      // Bind FancyBox and initialize gallery
-      Fancybox.bind("[data-fancybox]", {
-        afterShow: function(instance, current) {
-          // Remove the default navigation arrows (SVG)
-          $('.fancybox__nav button').remove();
-  
-          // Add custom navigation arrows with your HTML structure
-          var customNav = `
-            <div class="fancybox__nav">
-              <button title="Next" class="carousel__button is-next" tabindex="0">
-                <picture>
-                  <img src="./Assets/Icons/Vector.svg" alt="Next" />
-                </picture>
-              </button>
-              <button title="Previous" class="carousel__button is-prev" tabindex="0">
-                <picture>
-                  <img src="./Assets/Icons/Vector.svg" alt="Previous" />
-                </picture>
-              </button>
-            </div>
-          `;
-          
-          // Insert custom navigation HTML into the FancyBox container
-          $(instance.$refs.container).append(customNav);
-  
-          // Handle the click events for next/prev buttons
-          $('.carousel__button.is-next').on('click', function() {
-            instance.next(); // Go to the next slide
-          });
-  
-          $('.carousel__button.is-prev').on('click', function() {
-            instance.prev(); // Go to the previous slide
-          });
-        }
-      });
-    });
-  </script>
+
+
+
+
+
+
+</script>
   
   
 
