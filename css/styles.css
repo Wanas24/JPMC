@@ -47,7 +47,7 @@ ul li::marker {
 ul {
   padding-inline-start: 1.5rem;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1800px) {
   html {
     font-size: 18px;
   }
