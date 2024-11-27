@@ -79,6 +79,7 @@
 
 .hero-content h1 {
   width: 50%;
+  padding-bottom: .5rem;
 }
 
 .hero-card p {
@@ -1054,12 +1055,13 @@
 .locations-container {
   display: flex;
   gap: 10px;
+  height: 100%;
 }
 
 .locations-container .location-card {
   flex: 1;
   transition: flex 0.5s ease;
-  height: auto;
+  height: 100%;
   cursor: pointer;
   border-radius: 10px;
   position: relative;
@@ -1644,11 +1646,7 @@
   width: 100%;
   bottom: 0;
   height: 100px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.1) 57.99%,
-    #ffffff 94.22%
-  );
+  background: linear-gradient( 180deg, rgba(255, 255, 255, 0.3) 57.99%, #fff 94.22% );
   z-index: 11;
   left: 0;
 }

@@ -32,6 +32,7 @@
 .BoardOFDirectors-container img {
   width: 100%;
   border-radius: 8px;
+  aspect-ratio: 259 / 210;
 }
 
 .BoardOFDirectors-container h4 {
@@ -181,7 +182,11 @@
 .no-scroll {
   overflow: hidden;
 }
-
+@media (min-width:991px) and (max-width: 1199.8888888888px) {
+:root{
+  font-size: 13px;
+}
+}
 @media (max-width: 991.888888888px) {
   .popup-content {
     width: 80%;

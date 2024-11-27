@@ -12,11 +12,12 @@
   border-radius: 5px;
   overflow: hidden;
   margin-top: 1rem;
-  align-items: center;
+  align-items: stretch;
+  flex-direction: row-reverse;
 }
 
 .latest-news-card:nth-child(odd) {
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .latest-news-card picture {
@@ -46,7 +47,7 @@
   position: absolute;
   top: -1px;
   display: block;
-  inset-inline-end: -9px;
+  inset-inline-start: -9px;
   border-start-start-radius: 6px;
   border-end-start-radius: 6px;
 }
@@ -57,18 +58,26 @@
   aspect-ratio: 1;
   position: absolute;
   top: 30%;
-  inset-inline-end: -20px;
   z-index: 100;
-  background: #f2f4f7;
-  transform: rotate(45deg);
+  inset-inline-start: 0px;
+  background: #F7F8FA;
+  transform: rotate(45deg) translateX(-100%);
   color: var(--gray-color);
 }
+.arabic-version  .latest-news-card-content::after {
 
-.latest-news-card:nth-child(odd) .latest-news-card-content::after {
-  inset-inline-start: -29px;
-  transform: rotate(45deg);
+  transform: rotate(45deg) translateX(100%);
 }
+.latest-news-card:nth-child(odd) .latest-news-card-content::after {
+  inset-inline-end: -0px;
+  inset-inline-start: unset;
+  transform: rotate(45deg) translateX(100%);
+}
+.arabic-version  .latest-news-card:nth-child(odd) .latest-news-card-content::after {
+  
+  transform: rotate(45deg) translateX(-100%);
 
+}
 .latest-news-card:nth-child(odd) .latest-news-card-content::before {
   content: "";
   height: 101%;
@@ -77,10 +86,10 @@
   position: absolute;
   top: -1px;
   display: block;
-  inset-inline-end: unset;
-  inset-inline-start: -9px;
-  border-start-start-radius: 6px;
-  border-end-start-radius: 6px;
+  inset-inline-start: unset;
+  inset-inline-end: -9px;
+  border-start-end-radius: 6px;
+  border-end-end-radius: 6px;
 }
 
 .latest-news-card-content span {
@@ -117,7 +126,7 @@
   top: 6px;
   aspect-ratio: 1;
   cursor: pointer;
-  inset-inline-end: 1.5rem;
+  inset-inline-end: 1.75rem;
 }
 
 .date-wrapper:hover .date-icon {
@@ -136,9 +145,11 @@
 
   padding-inline-end: 2.5rem;
 }
-
+#report-title{
+padding-inline-start: 2.5rem;
+}
 .arabic-version .official-announcements-wrapper>div:nth-child(1) input {
-  background-position: calc(100% - 0.75rem) center;
+  background-position: calc(100% - 1rem) center;
   padding-inline-start: 2.5rem;
   padding-inline-end: 0.75rem;
 }
