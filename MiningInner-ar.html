@@ -475,8 +475,18 @@
     <!-- End Footer -->
   </main>
   <script>
-
-  </script>
+    $(document).ready(function () {
+      Fancybox.bind('[data-fancybox]', {
+        Image: {
+          wheel: false // Disable zoom on scroll
+        },
+        toolbar: {
+          display: ["prev", "infobar", "next"] // Toolbar items to display
+        }
+      });
+    });
+    
+      </script>
 </body>
 
 </html>
