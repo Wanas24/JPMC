@@ -61,66 +61,51 @@
         <h5>عمان 17-09-2024</h5>
       </div>
       <div class="gallery-two-container container">
-        <div class="video-card" onclick="openPopup(this)">
-          <picture>
-            <img src="Assets/Inners/Video Gallery/Rectangle 236.png"
-              alt="الأردن ودولة الإمارات يوقعان أربع اتفاقيات لإنشاء مشروع استثماري للسكك الحديدية"
-              data-video="https://www.youtube.com/embed/imuG23mBHyM?si=hodmNeroJjigbCkD" />
-            <img src="./Assets/Icons/youtube 2.svg" alt="" class="play-icon" />
-          </picture>
+        <div class="video-card">
+          <a href="https://www.youtube.com/embed/imuG23mBHyM?si=hodmNeroJjigbCkD" data-fancybox="video-gallery"
+            data-caption="Jordan and the UAE sign four agreements to establish a railway investment project">
+            <picture>
+              <img src="Assets/Inners/Video Gallery/Rectangle 236.png"
+                alt="Jordan and the UAE sign four agreements to establish a railway investment project" />
+              <img src="./Assets/Icons/youtube 2.svg" alt="" class="play-icon" />
+            </picture>
+          </a>
           <div>
-            <h3>
-              الأردن ودولة الإمارات يوقعان أربع اتفاقيات لإنشاء مشروع استثماري
-              للسكك الحديدية
-            </h3>
+            <h3>الأردن ودولة الإمارات يوقعان أربع اتفاقيات لإنشاء
+              مشروع استثماري للسكك الحديدية</h3>
           </div>
         </div>
-        <div class="video-card" onclick="openPopup(this)">
-          <picture>
-            <img src="Assets/Inners/Video Gallery/Rectangle 237.png"
-              alt="الأردن ودولة الإمارات يوقعان أربع اتفاقيات لإنشاء مشروع استثماري للسكك الحديدية"
-              data-video="https://www.youtube.com/embed/imuG23mBHyM?si=hodmNeroJjigbCkD" />
-            <img src="./Assets/Icons/youtube 2.svg" alt="" srcset="" class="play-icon" />
-          </picture>
+        <div class="video-card">
+          <a href="https://www.youtube.com/embed/imuG23mBHyM?si=hodmNeroJjigbCkD" data-fancybox="video-gallery"
+            data-caption="Jordan and the UAE sign four agreements to establish a railway investment project">
+            <picture>
+              <img src="Assets/Inners/Video Gallery/Rectangle 237.png"
+                alt="Jordan and the UAE sign four agreements to establish a railway investment project" />
+              <img src="./Assets/Icons/youtube 2.svg" alt="" class="play-icon" />
+            </picture>
+          </a>
           <div>
-            <h3>
-              الأردن ودولة الإمارات يوقعان أربع اتفاقيات لإنشاء مشروع استثماري
-              للسكك الحديدية
-            </h3>
+            <h3>الأردن ودولة الإمارات يوقعان أربع اتفاقيات لإنشاء
+              مشروع استثماري للسكك الحديدية</h3>
           </div>
         </div>
-        <div class="video-card" onclick="openPopup(this)">
-          <picture>
-            <img src="Assets/Inners/Video Gallery/Rectangle 238.png"
-              alt="الأردن ودولة الإمارات يوقعان أربع اتفاقيات لإنشاء مشروع استثماري للسكك الحديدية"
-              data-video="https://www.youtube.com/embed/imuG23mBHyM?si=hodmNeroJjigbCkD" />
-            <img src="./Assets/Icons/youtube 2.svg" alt="" srcset="" class="play-icon" />
-          </picture>
+        <div class="video-card">
+          <a href="https://www.youtube.com/embed/imuG23mBHyM?si=hodmNeroJjigbCkD" data-fancybox="video-gallery"
+            data-caption="Jordan and the UAE sign four agreements to establish a railway investment project">
+            <picture>
+              <img src="Assets/Inners/Video Gallery/Rectangle 238.png"
+                alt="Jordan and the UAE sign four agreements to establish a railway investment project" />
+              <img src="./Assets/Icons/youtube 2.svg" alt="" class="play-icon" />
+            </picture>
+          </a>
           <div>
-            <h3>
-              الأردن ودولة الإمارات يوقعان أربع اتفاقيات لإنشاء مشروع استثماري
-              للسكك الحديدية
-            </h3>
+            <h3>الأردن ودولة الإمارات يوقعان أربع اتفاقيات لإنشاء
+              مشروع استثماري للسكك الحديدية</h3>
           </div>
         </div>
       </div>
 
-      <!-- Popup Modal -->
-      <div id="popup-modal" class="popup">
-        <div class="img-container">
-          <span class="close" onclick="closePopup()">
-            <i class="fa-solid fa-xmark"></i>
-          </span>
 
-          <div class="popup-content" id="popup-img"></div>
-          <!-- Info Text -->
-          <p id="info-text"></p>
-
-          <div class="popup-footer">
-            <p id="caption"></p>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- Start Footer -->
     <footer class="main-footer-container">
@@ -216,173 +201,8 @@
   </main>
 </body>
 <script>
-  let currentSlideIndex = 0;
-  // Select all video-card elements that contain data-video images
-  let items = document.querySelectorAll(
-    ".video-card picture img[data-video]"
-  );
 
-  // Open the popup and show the clicked image/video
-  function openPopup(videoCard) {
-    var modal = document.getElementById("popup-modal");
-    var modalImg = document.getElementById("popup-img");
-    var captionText = document.getElementById("caption");
-    var infoText = document.getElementById("info-text");
-
-    // Find the <img> within the clicked .video-card that has the data-video attribute
-    var img = videoCard.querySelector("img[data-video]");
-
-    // Set the current slide index based on the clicked item
-    currentSlideIndex = Array.from(items).indexOf(img);
-
-    // Clear existing content in the modal
-    modalImg.innerHTML = "";
-
-    // Check if the image has a video URL
-    var videoUrl = img.getAttribute("data-video");
-
-    if (videoUrl) {
-      // Show YouTube iframe if there's a video URL
-      modalImg.innerHTML =
-        '<iframe width="100%" height="100%" src="' +
-        videoUrl +
-        '" frameborder="0" allowfullscreen></iframe>';
-    } else {
-      // Otherwise, display the image
-      modalImg.innerHTML =
-        '<img src="' +
-        img.src +
-        '" alt="' +
-        img.alt +
-        '" style="max-width: 100%; max-height: 80%;">';
-    }
-
-    // Display the modal
-    modal.style.display = "block";
-    captionText.innerHTML = img.alt;
-
-    // Update the info text (from data-info attribute)
-    infoText.innerHTML = img.getAttribute("data-info");
-
-    // Prevent body scrolling
-    document.body.classList.add("no-scroll");
-  }
-
-  // Close the popup
-  function closePopup() {
-    var modal = document.getElementById("popup-modal");
-    modal.style.display = "none";
-
-    // Clear content (iframe or image) when closing
-    var modalImg = document.getElementById("popup-img");
-    modalImg.innerHTML = ""; // Clear content
-
-    // Allow scrolling again
-    document.body.classList.remove("no-scroll");
-  }
-
-  // Change to the next or previous slide
-  function changeSlide(direction) {
-    currentSlideIndex += direction;
-
-    // Wrap around when navigating beyond the first or last item
-    if (currentSlideIndex < 0) {
-      currentSlideIndex = items.length - 1; // Go to the last image/video
-    } else if (currentSlideIndex >= items.length) {
-      currentSlideIndex = 0; // Go to the first image/video
-    }
-
-    // Update the popup with the new image or video
-    var newItem = items[currentSlideIndex];
-    var modalImg = document.getElementById("popup-img");
-    var captionText = document.getElementById("caption");
-    var infoText = document.getElementById("info-text");
-
-    // Clear existing content in the modal
-    modalImg.innerHTML = "";
-
-    var videoUrl = newItem.getAttribute("data-video");
-
-    if (videoUrl) {
-      // If it's a video, show the iframe
-      modalImg.innerHTML =
-        '<iframe width="100%" height="100%" src="' +
-        videoUrl +
-        '" frameborder="0" allowfullscreen></iframe>';
-    } else {
-      // Otherwise, show the image
-      modalImg.innerHTML =
-        '<img src="' +
-        newItem.src +
-        '" alt="' +
-        newItem.alt +
-        '" style="max-width: 100%; max-height: 80%;">';
-    }
-
-    // Update caption and info text
-    captionText.innerHTML = newItem.alt;
-    infoText.innerHTML = newItem.getAttribute("data-info");
-  }
-
-  // Select all .video-card elements and add click event listeners
-  const videoCards = document.querySelectorAll(".video-card");
-
-  videoCards.forEach(function (card) {
-    card.addEventListener("click", function () {
-      openPopup(card); // Pass the clicked .video-card to openPopup
-    });
-  });
 </script>
-<script>
-  let resizeTimeout;
 
-  $(window)
-    .on("resize orientationchange", function () {
-      clearTimeout(resizeTimeout); // Clear any existing timeouts
-      resizeTimeout = setTimeout(function () {
-        if ($(window).width() > 1200) {
-          if ($(".multiple-items").hasClass("slick-initialized")) {
-            $(".multiple-items").slick("unslick");
-          }
-        } else {
-          if (!$(".multiple-items").hasClass("slick-initialized")) {
-            $(".multiple-items").slick({
-              infinite: false,
-              slidesToShow: 7,
-              slidesToScroll: 1,
-              arrows: true,
-              prevArrow: `<button type="button" class="arrow-prev">
-                      <i class="fa-solid fa-angle-left"></i>
-                    </button>`,
-              nextArrow: `<button type="button" class="arrow-next">
-                      <i class="fa-solid fa-angle-right"></i>
-                    </button>`,
-              responsive: [
-                {
-                  breakpoint: 1200,
-                  settings: {
-                    slidesToShow: 5,
-                  },
-                },
-                {
-                  breakpoint: 991,
-                  settings: {
-                    slidesToShow: 3,
-                  },
-                },
-                {
-                  breakpoint: 767,
-                  settings: {
-                    slidesToShow: 1,
-                  },
-                },
-              ],
-            });
-          }
-        }
-      }, 100); // Small delay to ensure proper detection
-    })
-    .trigger("resize");
-</script>
 
 </html>
