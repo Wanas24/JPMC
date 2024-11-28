@@ -733,12 +733,7 @@ input[type="date"]::-ms-clear {
   background-color: var(--main-color);
   top: -3rem;
 }
-#VideoGalleryInner .fancybox__carousel .carousel__button.is-prev {
-  display: none !important;
-}
-#VideoGalleryInner .fancybox__carousel .carousel__button.is-next {
-  display: none !important;
-}
+
 
 @media (max-width:767.8888px) {
   .fancybox__button--close {
