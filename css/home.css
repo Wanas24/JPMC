@@ -356,6 +356,7 @@
 
 .company-products-section {
   padding-block: 3rem;
+  overflow-x: clip;
   background-color: #f6f6f6;
 }
 
