@@ -60,20 +60,22 @@ $(document).ready(function () {
 
   
   // Hover effect for submenu items
-  $cssMenu.find("li").hover(
 
-    $window.innerWidth() > 1199 ?
-    function () {
-      $targetElement.addClass("navigation-scrolled");
-    }:null,
-    $window.innerWidth() > 1199 ?
-
-    function () {
-      if ($window.scrollTop() === 0) {
-        $targetElement.removeClass("navigation-scrolled");
+  if ($(window).innerWidth() > 1199) {
+    // Add hover events
+    $cssMenu.find("li").add($targetElement.find("a")).hover(
+      function () {
+        // Hover in
+        $targetElement.addClass("navigation-scrolled");
+      },
+      function () {
+        // Hover out
+        if ($(window).scrollTop() === 0) {
+          $targetElement.removeClass("navigation-scrolled");
+        }
       }
-    }:null
-  );
+    );
+  }
 
 
   // Search bar toggle
