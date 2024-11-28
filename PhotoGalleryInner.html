@@ -369,7 +369,7 @@
             <div class="see-more-container mt-5">
                 <a href="">Show More</a>
             </div>
-           
+
 
         </section>
         <footer class="main-footer-container">
@@ -463,21 +463,25 @@
     </main>
 </body>
 <script>
-$(document).ready(function () {
-  Fancybox.bind('[data-fancybox]', {
-    Image: {
-      wheel: false // Disable zoom on scroll
-    },
-    toolbar: {
-      display: ["prev", "infobar", "next"] // Toolbar items to display
-    }
-  });
-});
+    $(document).ready(function () {
+        Fancybox.bind('[data-fancybox]', {
+            Image: {
+                click: false,
+                dblclick: false,
+                zoom: false, // Disable zoom on click
+                wheel: false // Disable zoom on scroll
+            },
+            toolbar: {
+                display: ["prev", "infobar", "next"] // Toolbar items to display
+            }
+        });
+    });
 
-  </script>
-  
-  
-  
+
+</script>
+
+
+
 
 
 

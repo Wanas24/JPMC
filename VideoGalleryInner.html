@@ -36,7 +36,7 @@
 </head>
 
 <body>
-  <main id="VideoGallery2">
+  <main id="VideoGalleryInner">
 
     <section class="main-stars-header">
       <div class=" container pt-5 main-stars-header-content">
@@ -194,6 +194,16 @@
   </main>
 </body>
 <script>
+  $(document).ready(function () {
+    Fancybox.bind('[data-fancybox]', {
+      Carousel: {
+        Navigation: false,
+      },
+    });
+  });
+
+
+</script>
 </script>
 
 </html>
