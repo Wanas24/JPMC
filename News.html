@@ -1,409 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="./css/bootstrap/bootstrap.min.css"
-      type="text/css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./js/slick-1.8.1/slick/slick.css"
-    />
-    <link rel="stylesheet" href="./js/slick-1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" href="./css/flatpickr.min.css" />
-    <link rel="stylesheet" href="./css/carousel.css" />
-    <link rel="stylesheet" href="./css/owl.carousel.css" />
-    <link rel="stylesheet" href="./css/intlTelInput.css" />
-    <link rel="stylesheet" href="./css/fancybox.css" />
-    <link href="./css/regular.css" rel="stylesheet" type="text/css" />
-    <link href="./css/solid.css" rel="stylesheet" type="text/css" />
-    <link href="./css/brands.css" rel="stylesheet" type="text/css" />
-    <link href="./css/fontawesome.css" rel="stylesheet" type="text/css" />
-    <link href="./css/news.css" rel="stylesheet" type="text/css" />
-    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
-    <link href="./css/Layout.css" rel="stylesheet" type="text/css" />
-    <link href="./css/menu.css" rel="stylesheet" type="text/css" />
-    <link href="./css/arabic-styles.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/animate.css" />
 
-    <script type="text/javascript" src="./js/fancybox.umd.js"></script>
-    <script type="text/javascript" src="./js/jquery-3.7.1.js"></script>
-    <script type="text/javascript" src="./js/flatpicker.js"></script>
-    <script
-      type="text/javascript"
-      src="./js/slick-1.8.1/slick/slick.min.js"
-    ></script>
-    <script type="text/javascript" src="./js/bootstrap/popper.min.js"></script>
-    <script
-      type="text/javascript"
-      src="./js/bootstrap/bootstrap.bundle.min.js"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./css/bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="./js/slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./js/slick-1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./css/flatpickr.min.css" />
+  <link rel="stylesheet" href="./css/carousel.css" />
+  <link rel="stylesheet" href="./css/owl.carousel.css" />
+  <link rel="stylesheet" href="./css/intlTelInput.css" />
+  <link rel="stylesheet" href="./css/fancybox.css" />
+  <link href="./css/regular.css" rel="stylesheet" type="text/css" />
+  <link href="./css/solid.css" rel="stylesheet" type="text/css" />
+  <link href="./css/brands.css" rel="stylesheet" type="text/css" />
+  <link href="./css/fontawesome.css" rel="stylesheet" type="text/css" />
+  <link href="./css/news.css" rel="stylesheet" type="text/css" />
+  <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="./css/Layout.css" rel="stylesheet" type="text/css" />
+  <link href="./css/menu.css" rel="stylesheet" type="text/css" />
+  <link href="./css/arabic-styles.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" />
 
-    <script src="./js/carousel.umd.js"></script>
-    <script src="./js/owl.carousel.js"></script>
-    <script src="./js/intlTelInput.min.js"></script>
-    <script src="./js/menu.js"></script>
-    <script src="./js/share-btn.js"></script>
-    <script src="./js/main.js"></script>
-    <title>Document</title>
-  </head>
+  <script type="text/javascript" src="./js/fancybox.umd.js"></script>
+  <script type="text/javascript" src="./js/jquery-3.7.1.js"></script>
+  <script type="text/javascript" src="./js/flatpicker.js"></script>
+  <script type="text/javascript" src="./js/slick-1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap/popper.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap/bootstrap.bundle.min.js"></script>
 
-  <body class="">
-    <main id="News">
-  
-      
-      <section class="main-stars-header">
-        <div
-          class="container pt-5 main-stars-header-content"
-        >
-          <h1>Latest News</h1>
+  <script src="./js/carousel.umd.js"></script>
+  <script src="./js/owl.carousel.js"></script>
+  <script src="./js/intlTelInput.min.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="./js/share-btn.js"></script>
+  <script src="./js/main.js"></script>
+  <title>Document</title>
+</head>
 
-          <nav
-            style="--bs-breadcrumb-divider: '>'"
-            aria-label="breadcrumb"
-            class="pt-2"
-          >
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Latest News
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <form class="row official-announcements-wrapper">
-            <div class="col-md-5 col-12">
-              <input
-                type="text"
-                class="form-control"
-                name="report-title"
-                id="report-title"
-                placeholder="Search by news title"
+<body class="">
+  <main id="News">
 
-                />
-            </div>
-            <div class="date-wrapper col-md-5 col-12">
-              <input
-                type="date"
-                class="form-control date-input"
-                 placeholder="By Date"
-              />
-              <span class="date-icon">
-                <picture
-                  ><img src="./Assets/Icons/CalendarBlank.svg" alt=""
-                /></picture>
+
+    <section class="main-stars-header">
+      <div class="container pt-5 main-stars-header-content">
+        <h1>Latest News</h1>
+
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb" class="pt-2">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Latest News
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <form class="row official-announcements-wrapper">
+          <div class="col-md-5 col-12">
+            <input type="text" class="form-control" name="report-title" id="report-title"
+              placeholder="Search by news title" />
+          </div>
+          <div class="date-wrapper col-md-5 col-12">
+            <input type="date" class="form-control date-input" placeholder="By Date" />
+            <span class="date-icon">
+              <picture><img src="./Assets/Icons/CalendarBlank.svg" alt="" /></picture>
+            </span>
+          </div>
+          <div class="col-md-2 col-12">
+            <a href="" class="hover-growing-links" data-hover-pos="start">
+              <span class="link"> Search </span>
+              <span class="arrow">
+                <picture><img src="./Assets/Icons/search-white.svg" alt="" /></picture>
               </span>
-            </div>
-            <div class="col-md-2 col-12">
-              <a href="" class="hover-growing-links" data-hover-pos="start">
-                <span class="link"> Search </span>
-                <span class="arrow">
-                  <picture
-                  ><img src="./Assets/Icons/search-white.svg" alt=""
-                /></picture>
-                </span>
-              </a>
-            </div>
-          </form>
-        </div>
-        <div class="latest-news-container container">
-          <div class="latest-news-card">
-            <div class="latest-news-card-content">
-              <span>04-08-2024</span>
-              <h3>
-                Phosphate obtains the Jordanian Quality Mark for its products
-              </h3>
-              <h5>
-                The Jordanian Phosphate Mines Company obtained the Jordanian
-                Quality Mark, which is awarded by the Jordanian Phosphate Mines
-                Company Jordanian specifications and standards for its aluminum
-                fluoride and binary fertilizer products ammonium phosphate
-                (DAP).
-              </h5>
-              <a href="" class="hover-growing-links" data-hover-pos="start">
-                <span class="link"> Read more </span>
-                <span class="arrow">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </span>
-              </a>
-            </div>
-            <picture>
-              <img src="./Assets/Inners/News/Rectangle 212.png" alt="" />
-            </picture>
+            </a>
           </div>
-          <div class="latest-news-card">
-            <div class="latest-news-card-content">
-              <span>04-08-2024</span>
-              <h3>
-                Jordan and the UAE sign documents to establish a railway
-                investment project With a value of $2.3 billion
-              </h3>
-              <h5>
-                Prime Minister: The project comes within the framework of the
-                package of investment projects signed by the two countries in
-                general The last meeting, worth $5.5 billion, was attended by
-                His Majesty King Abdullah II and his brother, His Highness
-                Sheikh Mohammed Bin Zayed Al Nahyan.
-              </h5>
-              <a href="" class="hover-growing-links" data-hover-pos="start">
-                <span class="link"> Read more </span>
-                <span class="arrow">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </span>
-              </a>
-            </div>
-            <picture>
-              <img src="./Assets/Inners/News/Rectangle 213.png" alt="" />
-            </picture>
-          </div>
-          <div class="latest-news-card">
-            <div class="latest-news-card-content">
-              <span>04-08-2024</span>
-              <h3>
-                Al-Thanibat and Abu Hadeeb stress the importance of the railway
-                investment project Railway to connect the port of Aqaba to the
-                phosphate and potash areas
-              </h3>
-              <h5>
-                Aqaba, September 4, 2024 (Petra) - Chairman of the Board of
-                Directors of the Phosphate and Potash Company, Dr. Muhammad
-                Al-Thanibat and Engineer Shehada Abu Hadeeb, the importance of
-                the railway investment project, Which Jordan and the sisterly
-                United Arab Emirates signed today, Wednesday.
-              </h5>
-              <a href="" class="hover-growing-links" data-hover-pos="start">
-                <span class="link"> Read more </span>
-                <span class="arrow">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </span>
-              </a>
-            </div>
-            <picture>
-              <img src="./Assets/Inners/News/Rectangle 214.png" alt="" />
-            </picture>
-          </div>
-          <div class="latest-news-card">
-            <div class="latest-news-card-content">
-              <span>04-08-2024</span>
-              <h3>
-                Works: Work begins on expanding and maintaining the
-                Ma’an-Al-Shidiya road, with funding of phosphate
-              </h3>
-              <h5>
-                The Ministry of Public Works and Housing announced the start of
-                work on the Ma’an-Mudawara Road Maintenance Project Al-Jafr
-                intersection all the way to Al-Sheidiya intersection and from
-                there towards Al-Sheidiya mines. According to a statement by the
-                ministry It includes works on the project extending
-                approximately 62 kilometers and funded by the Jordanian
-                Phosphate Mines Company.
-              </h5>
-              <a href="" class="hover-growing-links" data-hover-pos="start">
-                <span class="link"> Read more </span>
-                <span class="arrow">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </span>
-              </a>
-            </div>
-            <picture>
-              <img src="./Assets/Inners/News/Rectangle 215.png" alt="" />
-            </picture>
-          </div>
-          <div class="latest-news-card">
-            <div class="latest-news-card-content">
-              <span>04-08-2024</span>
-              <h3>
-                Phosphates support the establishment and sustainability of the
-                work of container and tangerine manufacturers in The city of
-                Ma'an, worth one million dinars
-              </h3>
-              <h5>
-                TThe Jordanian Phosphate Mines Company and the Ma'an
-                Municipality Industrial and Commercial Centers Company signed
-                Greater Ma'an today, Wednesday, a support agreement worth one
-                million dinars to contribute to its establishment and
-                sustainability Container and container factories operate in the
-                city, providing 90 job opportunities.
-              </h5>
-              <a href="" class="hover-growing-links" data-hover-pos="start">
-                <span class="link"> Read more </span>
-                <span class="arrow">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </span>
-              </a>
-            </div>
-            <picture>
-              <img src="./Assets/Inners/News/Rectangle 216.png" alt="" />
-            </picture>
-          </div>
-        </div>
-        <div class="pt-4 pagination-share-container container mb-3">
-          <nav aria-label="Page mt-0">
-            <ul
-              class="pagination justify-content-start gap-3 pagination-container mb-0"
-            >
-              <li class="page-item">
-                <a
-                  class="page-link rounded-circle"
-                  href="#"
-                  aria-label="Previous"
-                >
-                  <i class="fa-solid fa-angle-left"></i>
-                  <span class="sr-only">Previous</span>
-                </a>
-              </li>
-              <li class="page-item active">
-                <a class="page-link" href="#">1</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">...</a></li>
-              <li class="page-item"><a class="page-link" href="#">15</a></li>
-              <li class="page-item">
-                <a class="page-link rounded-circle" href="#" aria-label="Next">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <span class="sr-only">Next</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </section>
-
-      <footer class="main-footer-container">
-        <div class="container footer-section">
-          <div class="footer-item">
-            <div class="footer-item-header">
-              <a href="">
-                <picture>
-                  <img src="./Assets/Logo.png" alt="" />
-                </picture>
-              </a>
-            </div>
+        </form>
+      </div>
+      <div class="latest-news-container container">
+        <div class="latest-news-card">
+          <div class="latest-news-card-content">
+            <span>04-08-2024</span>
+            <h3>
+              Phosphate obtains the Jordanian Quality Mark for its products
+            </h3>
             <h5>
-              The Jordan Phosphate Mines Company is a Jordanian public limited
-              company, established in 1949 with a current capital of 247.5
-              million dinars.
+              The Jordanian Phosphate Mines Company obtained the Jordanian
+              Quality Mark, which is awarded by the Jordanian Phosphate Mines
+              Company Jordanian specifications and standards for its aluminum
+              fluoride and binary fertilizer products ammonium phosphate
+              (DAP).
             </h5>
+            <a href="" class="hover-growing-links" data-hover-pos="start">
+              <span class="link"> Read more </span>
+              <span class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
           </div>
-          <div class="footer-item">
-            <div class="footer-item-header">
-              <h4>About Phosphate</h4>
-              <button
-                class="toggleButton mobile-responsive"
-                data-target="about"
-              >
-                <i class="fa-solid fa-plus"></i>
-                <i class="fa-solid fa-minus" style="display: none"></i>
-              </button>
-            </div>
-            <ul id="about">
-              <li>
-                <a href="">About the Company</a>
-              </li>
-              <li><a href="">Our History</a></li>
-              <li><a href="">Awards and Achievements</a></li>
-              <li><a href="">Research and Quality Department</a></li>
-              <li><a href="">Strategic Framework</a></li>
-              <li><a href="">Industrial Complex</a></li>
-            </ul>
+          <picture>
+            <img src="./Assets/Inners/News/Rectangle 212.png" alt="" />
+          </picture>
+        </div>
+        <div class="latest-news-card">
+          <div class="latest-news-card-content">
+            <span>04-08-2024</span>
+            <h3>
+              Jordan and the UAE sign documents to establish a railway
+              investment project With a value of $2.3 billion
+            </h3>
+            <h5>
+              Prime Minister: The project comes within the framework of the
+              package of investment projects signed by the two countries in
+              general The last meeting, worth $5.5 billion, was attended by
+              His Majesty King Abdullah II and his brother, His Highness
+              Sheikh Mohammed Bin Zayed Al Nahyan.
+            </h5>
+            <a href="" class="hover-growing-links" data-hover-pos="start">
+              <span class="link"> Read more </span>
+              <span class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
           </div>
-          <div class="footer-item">
-            <div class="footer-item-header">
-              <h4>Our Products</h4>
-              <button
-                class="toggleButton mobile-responsive"
-                data-target="about"
-              >
-                <i class="fa-solid fa-plus"></i>
-                <i class="fa-solid fa-minus" style="display: none"></i>
-              </button>
-            </div>
-            <ul id="about">
-              <li>
-                <a href="">Phosphate</a>
-              </li>
-              <li><a href="">Dicalcium Phosphate Fertilizer</a></li>
-              <li><a href="">Ammonium</a></li>
-              <li><a href="">Phosphoric Acid</a></li>
-              <li><a href="">Sulfuric Acid</a></li>
-              <li><a href="">Ammonium Fluoride</a></li>
-            </ul>
+          <picture>
+            <img src="./Assets/Inners/News/Rectangle 213.png" alt="" />
+          </picture>
+        </div>
+        <div class="latest-news-card">
+          <div class="latest-news-card-content">
+            <span>04-08-2024</span>
+            <h3>
+              Al-Thanibat and Abu Hadeeb stress the importance of the railway
+              investment project Railway to connect the port of Aqaba to the
+              phosphate and potash areas
+            </h3>
+            <h5>
+              Aqaba, September 4, 2024 (Petra) - Chairman of the Board of
+              Directors of the Phosphate and Potash Company, Dr. Muhammad
+              Al-Thanibat and Engineer Shehada Abu Hadeeb, the importance of
+              the railway investment project, Which Jordan and the sisterly
+              United Arab Emirates signed today, Wednesday.
+            </h5>
+            <a href="" class="hover-growing-links" data-hover-pos="start">
+              <span class="link"> Read more </span>
+              <span class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
           </div>
+          <picture>
+            <img src="./Assets/Inners/News/Rectangle 214.png" alt="" />
+          </picture>
+        </div>
+        <div class="latest-news-card">
+          <div class="latest-news-card-content">
+            <span>04-08-2024</span>
+            <h3>
+              Works: Work begins on expanding and maintaining the
+              Ma’an-Al-Shidiya road, with funding of phosphate
+            </h3>
+            <h5>
+              The Ministry of Public Works and Housing announced the start of
+              work on the Ma’an-Mudawara Road Maintenance Project Al-Jafr
+              intersection all the way to Al-Sheidiya intersection and from
+              there towards Al-Sheidiya mines. According to a statement by the
+              ministry It includes works on the project extending
+              approximately 62 kilometers and funded by the Jordanian
+              Phosphate Mines Company.
+            </h5>
+            <a href="" class="hover-growing-links" data-hover-pos="start">
+              <span class="link"> Read more </span>
+              <span class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+          <picture>
+            <img src="./Assets/Inners/News/Rectangle 215.png" alt="" />
+          </picture>
+        </div>
+        <div class="latest-news-card">
+          <div class="latest-news-card-content">
+            <span>04-08-2024</span>
+            <h3>
+              Phosphates support the establishment and sustainability of the
+              work of container and tangerine manufacturers in The city of
+              Ma'an, worth one million dinars
+            </h3>
+            <h5>
+              TThe Jordanian Phosphate Mines Company and the Ma'an
+              Municipality Industrial and Commercial Centers Company signed
+              Greater Ma'an today, Wednesday, a support agreement worth one
+              million dinars to contribute to its establishment and
+              sustainability Container and container factories operate in the
+              city, providing 90 job opportunities.
+            </h5>
+            <a href="" class="hover-growing-links" data-hover-pos="start">
+              <span class="link"> Read more </span>
+              <span class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+          <picture>
+            <img src="./Assets/Inners/News/Rectangle 216.png" alt="" />
+          </picture>
+        </div>
+      </div>
+      <div class="pt-4 pagination-share-container container mb-3">
+        <nav aria-label="Page mt-0">
+          <ul class="pagination justify-content-start gap-3 pagination-container mb-0">
+            <li class="page-item">
+              <a class="page-link rounded-circle" href="#" aria-label="Previous">
+                <i class="fa-solid fa-angle-left"></i>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">15</a></li>
+            <li class="page-item">
+              <a class="page-link rounded-circle" href="#" aria-label="Next">
+                <i class="fa-solid fa-angle-right"></i>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
 
-          <div class="footer-item">
-            <div class="footer-item-header">
-              <h4>Quick Links</h4>
-              <button
-                class="toggleButton mobile-responsive"
-                data-target="about"
-              >
-                <i class="fa-solid fa-plus"></i>
-                <i class="fa-solid fa-minus" style="display: none"></i>
-              </button>
-            </div>
-            <ul id="about">
-              <li>
-                <a href="">Contact Us</a>
-              </li>
-              <li><a href="">Careers</a></li>
-              <li><a href="">Tenders</a></li>
-              <li><a href="">Annual Reports</a></li>
-              <li><a href="">Our Partners</a></li>
-              <li><a href="">Medical Claims Portal</a></li>
-            </ul>
+    <footer class="main-footer-container">
+      <div class="container footer-section">
+        <div class="footer-item">
+          <div class="footer-item-header">
+            <a href="">
+              <picture>
+                <img src="./Assets/Logo.png" alt="" />
+              </picture>
+            </a>
           </div>
+          <h5>
+            The Jordan Phosphate Mines Company is a Jordanian public limited
+            company, established in 1949 with a current capital of 247.5
+            million dinars.
+          </h5>
+        </div>
+        <div class="footer-item">
+          <div class="footer-item-header">
+            <h4>About Phosphate</h4>
+            <button class="toggleButton mobile-responsive" data-target="about">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-minus" style="display: none"></i>
+            </button>
+          </div>
+          <ul id="about">
+            <li>
+              <a href="">About the Company</a>
+            </li>
+            <li><a href="">Our History</a></li>
+            <li><a href="">Awards and Achievements</a></li>
+            <li><a href="">Research and Quality Department</a></li>
+            <li><a href="">Strategic Framework</a></li>
+            <li><a href="">Industrial Complex</a></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <div class="footer-item-header">
+            <h4>Our Products</h4>
+            <button class="toggleButton mobile-responsive" data-target="about">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-minus" style="display: none"></i>
+            </button>
+          </div>
+          <ul id="about">
+            <li>
+              <a href="">Phosphate</a>
+            </li>
+            <li><a href="">Dicalcium Phosphate Fertilizer</a></li>
+            <li><a href="">Ammonium</a></li>
+            <li><a href="">Phosphoric Acid</a></li>
+            <li><a href="">Sulfuric Acid</a></li>
+            <li><a href="">Ammonium Fluoride</a></li>
+          </ul>
         </div>
 
-        <div class="footer-copyright-container">
-          <div class="footer-copyright-container-centered container">
-            <div>
-              <a href="">Privacy Policy</a>
-              <a href="">Terms and Conditions</a>
-            </div>
-            <div>
-              <p>© 2024 Developed by Dot Jo. All rights reserved.</p>
-            </div>
+        <div class="footer-item">
+          <div class="footer-item-header">
+            <h4>Quick Links</h4>
+            <button class="toggleButton mobile-responsive" data-target="about">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-minus" style="display: none"></i>
+            </button>
+          </div>
+          <ul id="about">
+            <li>
+              <a href="">Contact Us</a>
+            </li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Tenders</a></li>
+            <li><a href="">Annual Reports</a></li>
+            <li><a href="">Our Partners</a></li>
+            <li><a href="">Medical Claims Portal</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-copyright-container">
+        <div class="footer-copyright-container-centered container">
+          <div>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms and Conditions</a>
+          </div>
+          <div>
+            <p>© 2024 Developed by Dot Jo. All rights reserved.</p>
           </div>
         </div>
-      </footer>
-    </main>
-    <script>
-      $(document).ready(function () {
-        const $dateWrapper = $(".date-wrapper");
-        const $dateInput = $dateWrapper.find(".date-input");
+      </div>
+    </footer>
+  </main>
+  <script>
+    $(document).ready(function () {
+      const $dateWrapper = $(".date-wrapper");
+      const $dateInput = $dateWrapper.find(".date-input");
 
-        $dateWrapper.on("click", function () {
-          $dateInput[0].showPicker(); // Open the date picker when the wrapper is clicked
-        });
+      $dateWrapper.on("click", function () {
+        $dateInput[0].showPicker(); // Open the date picker when the wrapper is clicked
       });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $(".date-input").each(function () {
-          const dateInput = $(this).flatpickr({
-            enableTime: false,
-            altInput: true,
-            disableMobile: true,
-            altFormat: "F j, Y",
-            dateFormat: "Y-m-d",
-            position: "below", // Open below the input
-          });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".date-input").each(function () {
+        const dateInput = $(this).flatpickr({
+          enableTime: false,
+          altInput: true,
+          disableMobile: true,
+          altFormat: "F j, Y",
+          dateFormat: "Y-m-d",
+          position: "below", // Open below the input
+        });
 
-          // Open Flatpickr when clicking the icon next to the input
-          $(".date-icon").on("click touchstart", function (e) {
+        // Open Flatpickr when clicking the icon next to the input
+        $(".date-icon").on("click touchstart", function (e) {
           e.preventDefault();
           dateInput.open();
         });
-        });
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
