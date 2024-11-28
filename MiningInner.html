@@ -342,54 +342,29 @@
     <section class="MiningInner-last-section">
       <h2>Exclusive photos of the Sheidiya mine</h2>
       <div class="container">
-        <picture  onclick="openPopup(0)">
-          <img src="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 219.png" alt="Image 1"
-            class="mines-img" data-caption="img name" />
-        </picture>
-        <picture  onclick="openPopup(1)">
-          <img src="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 222.png" alt="Image 1"
-            class="mines-img" data-caption="img name"/>
-        </picture>
-        <picture  onclick="openPopup(2)">
-          <img src="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 224.png" alt="Image 1"
-            class="mines-img" data-caption="img name"/>
-        </picture>
-        <picture  onclick="openPopup(3)">
-          <img src="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 226.png" alt="Image 1"
-            class="mines-img" data-caption="img name"/>
-        </picture>
-      </div>
-      <!-- Popup Modal -->
-      <div id="popup-modal" class="popup">
-        <div class="popup-controls">
-          <!-- Arrow Navigation -->
-          <a class="prev" onclick="changeSlide(-1)">
-            <picture>
-              <img src="./Assets/Icons/Vector.svg" alt="" srcset="" />
-            </picture>
-          </a>
-          <a class="next" onclick="changeSlide(1)">
-            <picture>
-              <img src="./Assets/Icons/Vector.svg" alt="" srcset="" />
-            </picture>
-          </a>
-        </div>
-        <div class="close-container">
-          <span class="close" onclick="closePopup()">
-            <i class="fa-solid fa-xmark"></i>
-          </span>
-        </div>
-        <div class="img-container">
-        <!-- Image Content -->
+        <a href="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 219.png" data-fancybox="mines-gallery" data-caption="Image 1">
           <picture>
-            <img class="popup-content" id="popup-img" />
+            <img src="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 219.png" alt="Image 1" class="mines-img" />
           </picture>
-
-          <div class="popup-footer">
-            <p id="caption"></p>
-          </div>
-        </div>
+        </a>
+        <a href="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 222.png" data-fancybox="mines-gallery" data-caption="Image 2">
+          <picture>
+            <img src="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 222.png" alt="Image 2" class="mines-img" />
+          </picture>
+        </a>
+        <a href="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 224.png" data-fancybox="mines-gallery" data-caption="Image 3">
+          <picture>
+            <img src="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 224.png" alt="Image 3" class="mines-img" />
+          </picture>
+        </a>
+        <a href="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 226.png" data-fancybox="mines-gallery" data-caption="Image 4">
+          <picture>
+            <img src="./Assets/Inners/Our Business _ Mining and Mines/Rectangle 226.png" alt="Image 4" class="mines-img" />
+          </picture>
+        </a>
+        
       </div>
+      
     </section>
     <section>
       <div class="container">
@@ -515,59 +490,7 @@
       </div>
     </footer>
   </main>
-  <script>
-    let currentSlideIndex = 0;
-    let images = document.querySelectorAll(".mines-img");
-
-    // Open the popup and show the current image
-    function openPopup(index) {
-      currentSlideIndex = index;
-      updatePopupContent();
-      document.getElementById("popup-modal").style.display = "block";
-      // Add no-scroll class to body to prevent scrolling
-      document.body.classList.add("no-scroll");
-    }
-
-    // Close the popup
-    function closePopup() {
-      document.getElementById("popup-modal").style.display = "none";
-      // Remove no-scroll class to enable scrolling
-      document.body.classList.remove("no-scroll");
-    }
-
-    // Change to the next or previous slide
-    function changeSlide(direction) {
-      currentSlideIndex += direction;
-
-      if (currentSlideIndex < 0) {
-        currentSlideIndex = images.length - 1; // Go to last image
-      } else if (currentSlideIndex >= images.length) {
-        currentSlideIndex = 0; // Go to first image
-      }
-
-      updatePopupContent();
-    }
-
-    // Update the popup content (image, caption, and download link)
-    function updatePopupContent() {
-      const image = images[currentSlideIndex];
-      const modalImg = document.getElementById("popup-img");
-      const captionText = document.getElementById("caption");
-
-      // Set the image source
-      modalImg.src = image.src;
-
-      // Set the caption (from data-caption)
-      captionText.innerHTML = image.getAttribute("data-caption");
-
-      // Set download link
-    }
-
-    // Initial image in the popup
-    window.onload = function () {
-      document.getElementById("popup-modal").style.display = "none";
-    };
-  </script>
+ <script></script>
 </body>
 
 </html>
