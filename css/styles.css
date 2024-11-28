@@ -730,6 +730,11 @@ input[type="date"]::-ms-clear {
   top: -3rem;
 }
 
+@media (max-width:767.8888px) {
+  .fancybox__button--close {
+    margin-top: 1rem;
+  }
+}
 /* ================================================================ */
 /* official-announcements-card */
 /* ================================================================ */
