@@ -23,77 +23,7 @@
   cursor: pointer;
   object-fit: contain;
 }
-/*  */
-/* fancybox custom */
-/*  */
-.fancybox__container {
-  z-index: 9999999;
-}
-/* remove un used btns */
-/* right toolbar */
-.fancybox__button--zoom
-,.fancybox__button--slideshow
-,.fancybox__button--fullscreen
-,.fancybox__button--thumbs{
-    display: none;
-}
-/* left toolbar */
-.fancybox__toolbar__items--left{
-    display: none;
-}
-/* remove fancybox thum  */
-.fancybox__thumbs{
-    display: none;
-}
-/* change arrows / x color  */
-.fancybox__button--close{
-    background-color: var(--main-color);  
-    margin-inline-end: 1.5rem;
 
-}
-.fancybox__button--close i {
-    color: #fff !important;
-}
-.carousel__button.is-next
-,.carousel__button.is-prev{
-    background-color: #fff;
-    background-image: url(../Assets/Icons/Vector.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.carousel__button.is-next{
-    transform: scaleX(-1);
-}
-.carousel__button.is-next svg
-,.carousel__button.is-prev svg{
-    display: none;
-}
-/* fancybox caption scroll  */
-.fancybox__caption {
-   height: 5rem;
-    overflow-y: auto; /* Default to no scrollbar */
-}
-
-.fancybox__caption::-webkit-scrollbar {
-    width: 10px;
-    /* Width of the scrollbar */
-  }
-  
-  .fancybox__caption::-webkit-scrollbar-track {
-    background: #e2ebe2;
-    /* Background color of the scrollbar track */
-    border-radius: 10px;
-    /* Rounding the track edges */
-  }
-  
-  .fancybox__caption::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
-    /* Scrollbar thumb color */
-    border-radius: 10px;
-    /* Rounding the thumb */
-    border: 3px solid #e2ebe2;
-    /* Creates space around the thumb */
-  }
 
 
 @media (max-width: 991.88888px) {
