@@ -393,10 +393,11 @@ header.main-navigation--container {
 
   #cssmenu.head_btm_menu>ul>li {
     align-self: center;
-    display: grid;
+    /* display: grid; */
     place-content: center;
     height: 100%;
-    padding-block: 1.5rem;
+    /* padding-block: 1.5rem; */
+    min-height: 3.25rem;
   }
 
   #cssmenu.head_btm_menu ul li a {
@@ -413,6 +414,7 @@ header.main-navigation--container {
 
   body:not(.arabic-version) #cssmenu.head_btm_menu ul li a {
     font-size: 0.85rem;
+    height: 100%;
   }
 
   .navigation-scrolled #cssmenu.head_btm_menu ul li a {
