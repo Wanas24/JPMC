@@ -74,7 +74,7 @@
 }
 
 .vacancy-form span {
-  color: #DD2C3E;
+  color: #dd2c3e;
 }
 
 ul li {
@@ -90,17 +90,49 @@ ul li {
   color: var(--main-color);
 }
 
-
 .vacancy-form form input::placeholder,
 .vacancy-form form input {
   color: #141414;
 }
 
 .vacancy-form form .file-form .arrow {
-  background-color: #ECAF65;
-  border: 1px solid #ECAF65;
+  background-color: #ecaf65;
+  border: 1px solid #ecaf65;
 }
 
 .vacancy-form form .file-form:hover[data-hover-pos="start"]::after {
-  background: #ECAF65;
+  background: #ecaf65;
+}
+.vacancy-form form input[type="file"] {
+  opacity: 0;
+}
+
+/* Hide the original file input */
+input[type="file"] {
+  display: none;
+}
+
+/* Style the custom label as a button */
+.custom-file-upload {
+  margin-block: 1rem;
+}
+.custom-file-upload label {
+  display: inline-block;
+  color: #ecaf65;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* Add hover effect */
+.custom-file-upload:hover label,
+.custom-file-upload label:hover {
+  color: #fff;
+}
+.custom-file-upload:hover label {
+  padding-inline-start: 1rem;
+}
+.file-form::after {
+  background-color: #ecaf65 !important;
 }
