@@ -14,22 +14,31 @@
     return this.each(function () {
       cssmenu.find("li ul").parent().addClass("has-sub");
       if (settings.format != "select") {
-        cssmenu.prepend('<div id="menu-button">' +  '<i class="fa-solid fa-bars"></i> ' +settings.title + "</div>");
+        cssmenu.prepend(
+          '<div id="menu-button">' +
+            '<i class="fa-solid fa-bars"></i> ' +
+            settings.title +
+            "</div>"
+        );
         $(this)
           .find("#menu-button")
           .on("click", function () {
             $(this).toggleClass("menu-opened");
             var mainmenu = $(this).siblings("ul"); // Change here to find sibling ul            console.log(mainmenu)
             if (mainmenu.hasClass("open")) {
-              mainmenu.hide().removeClass("open"); 
-            if ($(window).scrollTop() === 0 ) {
-              $(".main-navigation--container").removeClass("navigation-scrolled");
-            }
+              mainmenu.hide().removeClass("open");
+              if ($(window).scrollTop() === 0) {
+                $(".main-navigation--container").removeClass(
+                  "navigation-scrolled"
+                );
+              }
             } else {
-              mainmenu.show().addClass("open"); 
-            if ($(window).scrollTop() === 0 ) {
-              $(".main-navigation--container").addClass("navigation-scrolled");
-            }
+              mainmenu.show().addClass("open");
+              if ($(window).scrollTop() === 0) {
+                $(".main-navigation--container").addClass(
+                  "navigation-scrolled"
+                );
+              }
               if (settings.format === "dropdown") {
                 mainmenu.find("ul").show();
               }
@@ -64,31 +73,30 @@
           // Initialize menu
           updateMenu();
 
-            // cssmenu
-            //   .find(".has-sub")
-            //   .prepend('<span class="submenu-button"></span>');
-  
-            cssmenu.find(".submenu-button").on("click", function (e) {
-              e.stopPropagation();
-              var parentLi = $(this).closest("li");
-              var $submenu = $(this).siblings("ul");
-  
-              // Close all other submenus and reset icons
-              parentLi.siblings().find("ul").removeClass("open").slideUp();
-              parentLi
-                .siblings()
-                .find(".submenu-button i")
-                .removeClass("fa-minus")
-                .addClass("fa-plus");
-  
-              // Toggle the current submenu
-              $submenu.toggleClass("open").slideToggle();
-              $(this).toggleClass("submenu-opened");
-  
-  
-              var icon = $(this).find("i");
-              icon.toggleClass("fa-plus fa-minus");
-            });
+          // cssmenu
+          //   .find(".has-sub")
+          //   .prepend('<span class="submenu-button"></span>');
+
+          cssmenu.find(".submenu-button").on("click", function (e) {
+            e.stopPropagation();
+            var parentLi = $(this).closest("li");
+            var $submenu = $(this).siblings("ul");
+
+            // Close all other submenus and reset icons
+            parentLi.siblings().find("ul").removeClass("open").slideUp();
+            parentLi
+              .siblings()
+              .find(".submenu-button i")
+              .removeClass("fa-minus")
+              .addClass("fa-plus");
+
+            // Toggle the current submenu
+            $submenu.toggleClass("open").slideToggle();
+            $(this).toggleClass("submenu-opened");
+
+            var icon = $(this).find("i");
+            icon.toggleClass("fa-plus fa-minus");
+          });
         };
 
         if (settings.format === "multitoggle") multiTg();

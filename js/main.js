@@ -4,20 +4,19 @@ $(document).ready(function () {
     let scrolledValueWithoutDecimal = scrollValue.toFixed(0);
     let firstNavigationHight = $("div.main-navigation--container").height();
     if ($(window).innerWidth() > 1199) {
-      
-    if (scrolledValueWithoutDecimal > firstNavigationHight) {
-      $("div.navigation-container").css("top", `-${firstNavigationHight}px`);
-      // $("div.main-navigation--container").css(
-      //   "top",
-      //   `-${firstNavigationHight}px`
-      // );
-    } else {
-      $("div.navigation-container").css(
-        "top",
-        scrolledValueWithoutDecimal * -1
-      );
+      if (scrolledValueWithoutDecimal > firstNavigationHight) {
+        $("div.navigation-container").css("top", `-${firstNavigationHight}px`);
+        // $("div.main-navigation--container").css(
+        //   "top",
+        //   `-${firstNavigationHight}px`
+        // );
+      } else {
+        $("div.navigation-container").css(
+          "top",
+          scrolledValueWithoutDecimal * -1
+        );
+      }
     }
-  }
 
     // console.log("Scroll position:", scrollValue);
   });
@@ -41,12 +40,15 @@ $(document).ready(function () {
     if ($window.scrollTop() > 0) {
       $targetElement.addClass("navigation-scrolled");
       isScrolled = true;
-    } 
-    else if (($(window).scrollTop() === 0) && ($("#menu-button").hasClass("menu-opened"))) {
+    } else if (
+      $(window).scrollTop() === 0 &&
+      $("#menu-button").hasClass("menu-opened")
+    ) {
       isScrolled = true;
-      $targetElement.hasClass("navigation-scrolled") ? null : $targetElement.addClass("navigation-scrolled");
-    }
-    else if (isScrolled) {
+      $targetElement.hasClass("navigation-scrolled")
+        ? null
+        : $targetElement.addClass("navigation-scrolled");
+    } else if (isScrolled) {
       $targetElement.removeClass("navigation-scrolled");
       isScrolled = false;
     }
@@ -58,25 +60,26 @@ $(document).ready(function () {
 
   // Toggle navigation-scrolled on #menu-button click
 
-  
   // Hover effect for submenu items
 
   if ($(window).innerWidth() > 1199) {
     // Add hover events
-    $cssMenu.find("li").add($targetElement.find("a")).hover(
-      function () {
-        // Hover in
-        $targetElement.addClass("navigation-scrolled");
-      },
-      function () {
-        // Hover out
-        if ($(window).scrollTop() === 0) {
-          $targetElement.removeClass("navigation-scrolled");
+    $cssMenu
+      .find("li")
+      .add($targetElement.find("a"))
+      .hover(
+        function () {
+          // Hover in
+          $targetElement.addClass("navigation-scrolled");
+        },
+        function () {
+          // Hover out
+          if ($(window).scrollTop() === 0) {
+            $targetElement.removeClass("navigation-scrolled");
+          }
         }
-      }
-    );
+      );
   }
-
 
   // Search bar toggle
   $searchContainer.on("click", ".navigation-search", () => {
