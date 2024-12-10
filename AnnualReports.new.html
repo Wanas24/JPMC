@@ -592,44 +592,57 @@
     </footer>
     <!-- End Footer -->
   </main>
+
   <script>
-    $(".book-cover-slider").slick({
-      //   centerMode: true,
-      centerPadding: "0px",
-      slidesToShow: 3,
-      infinity: true,
-      nav: false,
-      arrows: false,
-      asNavFor: ".book-content-slider",
-      responsive: [
-        {
-          breakpoint: 767.8888888,
-          settings: {
+    $(document).ready(function () {
+        // Ensure minimum slides function
+        function ensureMinimumSlides(sliderSelector, minimumSlides) {
+            const $slider = $(sliderSelector);
+            const $slides = $slider.children();
+
+            if ($slides.length < minimumSlides) {
+                const currentSlideCount = $slides.length;
+                for (let i = 0; i < minimumSlides - currentSlideCount; i++) {
+                    $slider.append($slides.eq(i % currentSlideCount).clone());
+                }
+            }
+        }
+
+        // Ensure both sliders have at least 4 slides before initializing Slick
+        ensureMinimumSlides('.book-cover-slider', 4);
+        ensureMinimumSlides('.book-content-slider', 4);
+
+        // Initialize Slick sliders
+        $(".book-cover-slider").slick({
+            centerPadding: "0px",
+            slidesToShow: 3,
+            infinite: true,
+            arrows: false,
+            asNavFor: ".book-content-slider",
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    },
+                },
+            ],
+        });
+
+        $(".book-content-slider").slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
-          },
-        },
-      ],
+            swipe: true,
+            prevArrow: $("#prev"),
+            nextArrow: $("#next"),
+            asNavFor: ".book-cover-slider",
+        });
     });
-    $(".book-content-slider").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: true,
-      swipe: true,
-      prevArrow: $("#prev"),
-      nextArrow: $("#next"),
-      asNavFor: ".book-cover-slider",
-      // responsive: [
-      //   {
-      //     breakpoint: 767.88888888,
-      //     settings: {
-      //       arrows: false,
-      //     },
-      //   },
-      // ],
-    });
-  </script>
+</script>
+
 </body>
 
 </html>
