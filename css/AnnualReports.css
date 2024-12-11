@@ -210,7 +210,9 @@
     z-index: 500;
 
   }
-
+.book-content-slider .slick-track{
+  display: flex;
+}
   .arabic-version .book-single-content-slide .book-single-content-slide-writer img {
     order: 1;
   }
@@ -226,7 +228,9 @@
   }
 
  
-
+  .book-single-content-slide.slick-slide.slick-current.slick-active{
+    display: none !important; 
+  }
  
 
   /* .home-books-arrow:hover {

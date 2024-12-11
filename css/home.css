@@ -1105,7 +1105,16 @@ height: 400px;
 }
 
 .locations-container .location-card.active .clicked-img {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100%;
+  transition: all .5s ease-out;
+}
+.locations-container .location-card.active .clicked-img img {
+  height: 100%;
+  object-fit: cover;
+  transition: all .5s ease-out;
+
 }
 
 .locations-container .location-card.active .unclicked-img {
@@ -1113,7 +1122,9 @@ height: 400px;
 }
 
 .locations-container .location-card .clicked-img {
-  display: none;
+  display: grid;
+  grid-template-columns: 0fr;
+  transition: all .5s ease-out;
 }
 
 .locations-container .location-card .unclicked-img {
