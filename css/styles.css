@@ -1279,3 +1279,121 @@ input[type="date"]::-ms-clear {
     margin-inline: 20px;
   }
 }
+
+
+
+
+/* Dash-new */
+/* side nav  */
+.sidenav-logo-pic {
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-inline: 1rem;
+}
+.sidenav-logo-pic img {
+  width: 100%;
+}
+.nav-pills .nav-link {
+  width: calc(100% - 2rem);
+  padding: 0.8rem;
+  border-radius: 50px;
+  margin-inline: 1rem;
+}
+.nav-pills .nav-link.active {
+  background-color: var(--main-color);
+}
+.nav-pills .nav-link.active svg {
+  fill: #fff;
+}
+.nav-pills .nav-link.active span {
+  color: #fff;
+}
+.nav-pills .nav-link:hover {
+  transition: all 0.3s ease-out;
+  background-color: var(--main-color);
+}
+.nav-pills .nav-link:hover span {
+  transition: all 0.3s ease-out;
+  color: #ffffff;
+}
+.nav-pills .nav-link:hover svg {
+  transition: all 0.3s ease-out;
+  fill: #ffffff;
+}
+.nav-pills .nav-link span {
+  color: black;
+  transition: all 0.3s ease-out;
+
+}
+.nav-pills .nav-link svg {
+  transition: all 0.3s ease-out;
+  fill: black;
+}
+@media (max-width: 800px) {
+  .nav-pills .nav-link {
+  width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .nav-pills .nav-link {
+    width: unset;
+    padding: 0.4rem;
+  }
+  .sidenav-logo-pic {
+    display: none;
+  }
+}
+
+.language-nav-link {
+  margin-top: 8rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.349);
+  height: fit-content;
+  padding-top: 0.2rem;
+}
+.logout-nav-link{
+  border-top: 1px solid rgba(0, 0, 0, 0.349);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+  padding-block: 0.2rem;
+}
+
+.language-nav-link a:hover span {
+  color: #ffffff !important;
+}
+.language-nav-link a:hover svg {
+  fill: #ffffff !important;
+}
+.language-nav-link a span {
+  color: var(--main-color) !important;
+}
+.language-nav-link a svg {
+  fill: var(--main-color) !important;
+}
+.nav-pills .language-nav-link a:hover{
+  background-color: var(--main-color);
+}
+
+
+.logout-nav-link a:hover span {
+  color: #ffffff !important;
+}
+.logout-nav-link a:hover svg {
+  fill: #ffffff !important;
+}
+.logout-nav-link a span {
+  color: #DB1D11 !important;
+}
+.logout-nav-link a svg {
+  fill: #DB1D11 !important;
+}
+.nav-pills .logout-nav-link a:hover{
+  background-color: #DB1D11;
+}
+.header-container {
+  background-color: #ffffff;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.nav-pills li{
+  width: 100%;
+
+}

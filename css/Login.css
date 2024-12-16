@@ -1,0 +1,105 @@
+.login-header{
+    background-color: #ffffff;
+    padding: 0.5rem;
+    border-radius:10px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    
+}
+.login-header img{
+    height: 50px;
+}
+.login-header .main-btn {
+    background-color: transparent;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.login-header .main-btn svg{
+    fill: var(--main-color);
+}
+.login-header .main-btn:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+.login-header .main-btn:hover svg{
+  fill: white;
+}
+
+.Login-main{
+    background-image: url(../Assets/ImageDash/Rectangle\ 390.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92vh;
+}
+.login-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 8rem;
+    width: 60%;
+    padding: 0;
+    align-items: center;
+}
+/* .login-container picture{
+   height: 100%;
+} */
+.login-container img{
+    width: 100%;
+    object-fit: contain;
+}
+.login-container form{
+    padding: 1rem;
+}
+.login-container form p{
+    padding-top: .5rem;
+    color: #5B6579;
+}
+.login-container form input{
+    border: 1px solid #C6C8C7;
+    border-radius: 7px;
+    height: 50px;
+    text-indent: 50px;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1rem; 
+    position: relative;
+}
+.username-input{
+    background-image: url(../assets/Icons/DashIcons/IdentificationBadge.svg);
+    background-repeat: no-repeat;
+    background-position: center left 15px;
+}
+.pass-input{
+    background-image: url(../assets/icons/DashIcons/LockSimple.svg);
+    background-repeat: no-repeat;
+    background-position: center left 15px;
+}
+.arabic-version .username-input
+, .arabic-version .pass-input{
+    background-position: center right 15px;
+}
+.form-input svg{
+    position: absolute;
+    top: 55%;
+    inset-inline-end: 20px;
+    cursor: pointer;
+}
+@media (max-width:768px) {
+    .login-container{
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+    .login-container picture{
+        display: none;
+    }
+    .login-header{
+        flex-direction: column;
+    }
+}
