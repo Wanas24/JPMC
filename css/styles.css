@@ -1329,12 +1329,21 @@ input[type="date"]::-ms-clear {
   transition: all 0.3s ease-out;
   fill: black;
 }
-@media (max-width: 800px) {
-  .nav-pills .nav-link {
-  width: 100%;
-  }
+@media (max-width: 767px) {
+ .side-bar{
+  flex: 1.5;
+ }
+ .page-content{
+  flex: 3;
+ }
 }
 @media (max-width: 576px) {
+  .side-bar{
+    flex: unset;
+   }
+   .page-content{
+    flex: unset;
+   }
   .nav-pills .nav-link {
     width: unset;
     padding: 0.4rem;
