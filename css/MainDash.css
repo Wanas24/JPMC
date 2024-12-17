@@ -104,3 +104,8 @@
         grid-template-columns: 1fr;
     }
 }
+@media (max-width:575.99999999px) {
+    .main-dash-1st-section{
+        grid-template-columns: 1fr;
+    }
+}
