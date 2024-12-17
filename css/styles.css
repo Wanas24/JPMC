@@ -1329,7 +1329,7 @@ input[type="date"]::-ms-clear {
   transition: all 0.3s ease-out;
   fill: black;
 }
-@media (max-width: 767px) {
+@media (max-width: 767.999999999px) {
  .side-bar{
   flex: 1.5;
  }
@@ -1337,7 +1337,7 @@ input[type="date"]::-ms-clear {
   flex: 3;
  }
 }
-@media (max-width: 576px) {
+@media (max-width: 576.99999999px) {
   .side-bar{
     flex: unset;
    }
