@@ -1,0 +1,28 @@
+.Announcement-card-container {
+  border: 1.5px solid rgb(20 20 20 / 20%);
+  border-radius: 8px;
+}
+.Announcement-box h4 {
+  margin-bottom: 0;
+}
+.Announcement-card-container > span {
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
+}
+.Announcement-card-container .Announcement-desc > p {
+  margin-bottom: 0;
+  /* font-weight: 500;
+  font-size: 18px; */
+}
+.Announcement-box > span {
+  color: var(--main-color);
+}
+.back-btn {
+  color: var(--main-color);
+}
+.back-btn svg {
+  transform: scaleX(-1);
+}
+.arabic-version .back-btn svg {
+  transform: scaleX(1);
+}

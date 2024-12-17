@@ -23,7 +23,7 @@
     <link href="./css/arabic-styles.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/Dashboard.css" />
-    <link rel="stylesheet" href="css/SalaryStatement.css" />
+    <link rel="stylesheet" href="css/Announcement.css" />
 
     <script type="text/javascript" src="./js/fancybox.umd.js"></script>
     <script type="text/javascript" src="./js/jquery-3.7.1.js"></script>
@@ -39,7 +39,7 @@
 </head>
 
 <body class="arabic-version">
-    <main id="SalaryStatement">
+    <main id="AnnouncementTwo">
         <div class="container-fluid">
             <div class="row  flex-nowrap">
                 <div class="side-bar col-auto col-md-3 col-xl-2  px-0 ">
@@ -66,7 +66,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" data-bs-toggle="collapse" class="nav-link   align-middle">
+                                <a href="#" data-bs-toggle="collapse" class="nav-link active align-middle">
                                     <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_1177_12022)">
                                             <path
@@ -85,7 +85,7 @@
 
                             </li>
                             <li>
-                                <a href="#" class="nav-link active  align-middle">
+                                <a href="#" class="nav-link  align-middle">
                                     <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M18.5625 3.61523H18.3552V2.84213C18.3552 1.83323 17.5347 1.0127 16.5261 1.0127C15.5176 1.0127 14.6967 1.83323 14.6967 2.84213V3.61523H7.30331V2.84213C7.30331 1.83323 6.48244 1.0127 5.47388 1.0127C4.46531 1.0127 3.64478 1.83323 3.64478 2.84213V3.61523H3.4375C1.92122 3.61523 0.6875 4.84895 0.6875 6.36523V14.739C0.6875 16.2553 1.92122 17.489 3.4375 17.489H9.54594C9.87594 19.4704 11.5971 20.987 13.6709 20.987C15.7448 20.987 17.4656 19.4704 17.7956 17.489H18.5628C20.0791 17.489 21.3128 16.2553 21.3128 14.739V6.36523C21.3128 4.84895 20.0788 3.61523 18.5625 3.61523ZM16.0717 2.84213C16.0717 2.59154 16.2755 2.3877 16.5261 2.3877C16.7767 2.3877 16.9802 2.59154 16.9802 2.84213V3.61523H16.0713V2.84213H16.0717ZM5.01978 2.84213C5.01978 2.59154 5.22362 2.3877 5.47388 2.3877C5.72412 2.3877 5.92831 2.59154 5.92831 2.84213V3.61523H5.01944L5.01978 2.84213ZM3.4375 4.99023H18.5625C19.3208 4.99023 19.9375 5.60691 19.9375 6.36523V7.10188H2.0625V6.36523C2.0625 5.60691 2.67919 4.99023 3.4375 4.99023ZM13.6709 19.6123C12.1206 19.6123 10.8594 18.3511 10.8594 16.8008C10.8594 15.2505 12.1206 13.9893 13.6709 13.9893C15.2213 13.9893 16.4821 15.2505 16.4821 16.8008C16.4821 18.3511 15.2209 19.6123 13.6709 19.6123ZM18.5625 16.114H17.7956C17.4663 14.1319 15.7448 12.6143 13.6709 12.6143C11.5971 12.6143 9.87491 14.1319 9.54594 16.114H3.4375C2.67919 16.114 2.0625 15.4973 2.0625 14.739V8.47654H19.9375V14.739C19.9375 15.4973 19.3208 16.114 18.5625 16.114Z" />
@@ -117,7 +117,7 @@
                                     <span class="ms-1 d-none d-sm-inline">معلومات صندوق الإسكان </span></a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link  align-middle">
+                                <a href="#" class="nav-link align-middle">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_1177_11995)">
@@ -207,47 +207,33 @@
                     <section>
                         <div class="header-container container">
                             <div class="form-input ">
-                                <input class="Search-input" type="text" placeholder="ابحث هنا">
+                                <input class="Search-input" type="text" placeholder="Search here">
                             </div>
                         </div>
                     </section>
-                    <section class="SalaryStatement-section container mt-5">
-                        <div class="SalaryStatement-box p-3 bg-white">
-                            <h4 class="border-bottom pb-2">
-                                كشف الراتب
-                            </h4>
-                            <div class="row">
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="filter d-flex flex-column gap-2 mt-3">
-                                        <label for="">السنة</label>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>الكل</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="filter d-flex flex-column gap-2 mt-3">
-                                        <label for="">الشهر</label>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>الكل</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
+                    <section class="Announcement-section container mt-5">
+                        <div class="Announcement-box p-3 bg-white">
+                            <div
+                                class="heading border-bottom pb-2 mb-3 d-flex align-items-center justify-content-between ">
+                                <h4>
+                                    تعميم - اجراءات مغادرة المكاتب
+
+                                </h4>
+                                <div class="back-btn d-flex align-items-center gap-1">
+
+                                    رجوع
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.5156 10.6875C17.5142 12.0256 16.9821 13.3085 16.0359 14.2547C15.0897 15.2008 13.8068 15.733 12.4687 15.7344H5.93747C5.70126 15.7344 5.47473 15.6406 5.3077 15.4735C5.14068 15.3065 5.04684 15.08 5.04684 14.8438C5.04684 14.6076 5.14068 14.381 5.3077 14.214C5.47473 14.047 5.70126 13.9531 5.93747 13.9531H12.4687C13.3348 13.9531 14.1654 13.6091 14.7779 12.9967C15.3903 12.3842 15.7343 11.5536 15.7343 10.6875C15.7343 9.82141 15.3903 8.99079 14.7779 8.37836C14.1654 7.76594 13.3348 7.42188 12.4687 7.42188H4.52731L6.56981 9.46364C6.73713 9.63096 6.83112 9.85788 6.83112 10.0945C6.83112 10.3311 6.73713 10.558 6.56981 10.7254C6.4025 10.8927 6.17557 10.9867 5.93895 10.9867C5.70234 10.9867 5.47541 10.8927 5.30809 10.7254L1.74559 7.16286C1.66256 7.08012 1.59669 6.9818 1.55173 6.87354C1.50678 6.76529 1.48364 6.64922 1.48364 6.532C1.48364 6.41478 1.50678 6.29872 1.55173 6.19046C1.59669 6.0822 1.66256 5.98388 1.74559 5.90114L5.30809 2.33864C5.47541 2.17133 5.70234 2.07733 5.93895 2.07733C6.17557 2.07733 6.4025 2.17133 6.56981 2.33864C6.73713 2.50596 6.83112 2.73288 6.83112 2.9695C6.83112 3.20612 6.73713 3.43305 6.56981 3.60036L4.52731 5.64063H12.4687C13.8068 5.64221 15.0895 6.17443 16.0357 7.12057C16.9818 8.0667 17.514 9.34948 17.5156 10.6875Z"
+                                            fill="#488253" />
+                                    </svg>
                                 </div>
                             </div>
-                            <a href="" class="hover-growing-links d-flex align-items-center justify-content-center mt-4"
-                                data-hover-pos="start">
-                                <p class="link"> إظهار النتيجة
-                                </p>
-                                <span class="arrow">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </span>
-                            </a>
+                            <span>04-08-2024</span>
+                            <picture class="d-flex align-items-center justify-content-center mt-5">
+                                <img src="./Assets/ImageDash/تعميم_-_اجراءات_مغادرة_المكاتب 1.png" alt="">
+                            </picture>
                         </div>
                     </section>
                 </div>
