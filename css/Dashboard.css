@@ -3,10 +3,22 @@
   border-radius: 20px;
   border: 1px solid var(--Secondary-Secondary, #141414) !important;
 }
+@media (max-width: 400px) {
+  .filter select {
+    width: 50%;
+  }
+  .pagination .page-item:nth-child(4),
+  .pagination .page-item:nth-child(5) {
+    display: none;
+  }
+}
 .filter select:focus {
   box-shadow: unset;
   outline: unset;
 }
 .hover-growing-links:hover p {
   padding-inline-start: 1rem;
+}
+.hover-growing-links p {
+  margin-bottom: 0;
 }
