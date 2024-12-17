@@ -1391,9 +1391,36 @@ input[type="date"]::-ms-clear {
 .header-container {
   background-color: #ffffff;
   padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.header-container input{
+  padding-inline-start: 1.5rem;
+  border: 1px solid #14141433;
+  min-height: 2.2rem;
+  color: #14141489;
+  border-radius: 50px;
+  font-size: 0.85rem;
+}
+.header-container input:focus-visible {
+  outline: none;
+ 
+}
+.header-container input::placeholder {
+  opacity: 1;
+  color: #14141489;
+}
+.arabic-version .header-container input::placeholder {
+  font-size: 0.85rem;
+}
+.header-container input:focus {
+  box-shadow: none;
 }
 .nav-pills li{
   width: 100%;
 
+}
+.page-content{
+  background-color: #F2F4F7;
+  padding-inline: 0;
 }
