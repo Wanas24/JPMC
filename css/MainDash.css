@@ -108,4 +108,136 @@
     .main-dash-1st-section{
         grid-template-columns: 1fr;
     }
+    .employee-info-card-two {
+        display:grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+.main-dash-2nd-section{
+    border: 1px solid #14141433;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.main-dash-2nd-section h4{
+    padding-inline: 1rem;
+    position: relative;
+    margin-bottom: 1.3rem;
+}
+.main-dash-2nd-section h4::after{
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color:#14141433 ;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0.2rem;
+}
+.knowledge-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.knowledge-item{
+    display: flex;
+    justify-content: space-between;
+
+}
+.knowledge-item p {
+    margin-bottom: 0;
+}
+.knowledge-item button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--main-color);
+    border-radius: 12px;
+    padding: 0.7rem;
+    background-color: transparent;
+}
+.knowledge-item button svg {
+    fill: var(--main-color);
+}
+.knowledge-item button:hover{
+    background-color: var(--main-color);
+}
+.knowledge-item button:hover svg{
+    fill: white;
+}
+.main-dash-3rd-section{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.main-dash-3rd-section h4{
+    padding-inline: 1rem;
+    position: relative;
+    margin-block: 0.3rem;
+}
+
+.main-dash-table-wrapper{
+    border: 1px solid #14141433;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+.main-dash-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  .main-dash-table  thead {
+    border-bottom: 1px solid #14141433;
+  }
+  
+  .main-dash-table  th {
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    color: #141414;
+    opacity: 0.5;
+    text-align: center;
+  }
+  .main-dash-table  tr{
+    text-align: center;
+  }
+  .main-dash-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  .main-dash-table tr:last-child td{
+    border-bottom: none;
+  }
+  
+  .main-dash-table .status {
+    display: inline-block;
+    padding: 7px 10px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    width: 130px;
+    border-radius: 999px;
+  }
+  
+  .main-dash-table .status.approved {
+    background-color: var(--main-color); /* Green */
+  }
+  
+  .main-dash-table .status.under-review {
+    background-color: #FFBD00; /* Yellow */
+    color: #141414;
+  }
+  
+  .main-dash-table .status.rejected {
+    background-color: #DB1D11; /* Red */
+  }
+  
+  @media (max-width: 600.99999999px) {
+    .main-dash-table-wrapper{
+        overflow-x: scroll;
+    }
 }

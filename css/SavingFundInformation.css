@@ -1,3 +1,83 @@
-.saving-and-fund-section .link {
-  margin-bottom: 0;
+.SavingFund-table-wrapper {
+  border: 1px solid #14141433;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.SavingFund-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.SavingFund-table thead {
+  border-bottom: 1px solid #14141433;
+}
+
+.SavingFund-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  color: var(--main-color);
+  text-align: center;
+}
+.SavingFund-table tr {
+  text-align: center;
+}
+.SavingFund-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+.SavingFund-table tr:last-child td {
+  border-bottom: none;
+}
+
+.SavingFund-table .status {
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  width: 130px;
+  border-radius: 999px;
+}
+
+.SavingFund-table .status.approved {
+  background-color: var(--main-color); /* Green */
+}
+
+.SavingFund-table .status.under-review {
+  background-color: #ffbd00; /* Yellow */
+  color: #141414;
+}
+
+.SavingFund-table .status.rejected {
+  background-color: #db1d11; /* Red */
+}
+
+
+.SavingFund-main-container {
+  background-color: white;
+}
+.SavingFund-main-container {
+  margin: 1rem;
+  padding: 1rem;
+}
+.SavingFund-main-container h4 {
+  padding-inline: 1rem;
+  position: relative;
+  margin-bottom: 1.3rem;
+}
+.SavingFund-main-container h4::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #14141433;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0.2rem;
+}
+
+@media (max-width: 600.99999999px) {
+    .SavingFund-table-wrapper{
+        overflow-x: scroll;
+    }
 }
