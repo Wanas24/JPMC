@@ -26,3 +26,9 @@
 .arabic-version .back-btn svg {
   transform: scaleX(1);
 }
+.hover-growing-links {
+  padding-block: 5px;
+}
+.arabic-version .hover-growing-links {
+  padding-block: 0px;
+}
