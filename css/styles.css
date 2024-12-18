@@ -201,6 +201,16 @@ label {
   font-weight: 500;
   line-height: 1.6;
 }
+th {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+td {
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
 
 /* ar */
 .arabic-version h1 {
