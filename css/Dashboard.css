@@ -39,3 +39,121 @@ input:focus {
 label span {
   color: #dd2c3e;
 }
+
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+h5 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+th {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+td {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* ar */
+.arabic-version h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+.arabic-version h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.arabic-version h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.arabic-version h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.arabic-version h5 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+.arabic-version p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.arabic-version a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.arabic-version span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.arabic-version label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.arabic-version th {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.arabic-version td {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
