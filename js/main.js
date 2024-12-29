@@ -6,10 +6,6 @@ $(document).ready(function () {
     if ($(window).innerWidth() > 1199) {
       if (scrolledValueWithoutDecimal > firstNavigationHight) {
         $("div.navigation-container").css("top", `-${firstNavigationHight}px`);
-        // $("div.main-navigation--container").css(
-        //   "top",
-        //   `-${firstNavigationHight}px`
-        // );
       } else {
         $("div.navigation-container").css(
           "top",
@@ -17,8 +13,6 @@ $(document).ready(function () {
         );
       }
     }
-
-    // console.log("Scroll position:", scrollValue);
   });
 
   // Cached Selectors

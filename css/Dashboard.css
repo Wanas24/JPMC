@@ -227,3 +227,145 @@ input.form-control,
 .nav-pills .language-nav-link a:hover {
   padding: 0.5rem;
 }
+.mobile-bars-icon-container,
+.mobile-header-logo{
+  display: none;
+}
+.mobile-burger-menu-links ul,
+.mobile-burger-menu-links  {
+  display: none;
+  margin: 0;
+}
+@media (max-width:575px){
+  .mobile-burger-menu-links ul,
+.mobile-burger-menu-links  {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: all .3s ease-out;
+  
+  
+}
+  .side-bar {
+    display: none;
+  }
+  .mobile-header-logo{
+    display: block;
+    min-width: 125px;
+    max-width: 200px;
+    width: 100%;;
+   }
+    .mobile-header-logo img{
+      width: 100%;
+       object-fit: contain;
+  }
+  .header-container{
+    display: flex;
+    gap: 1rem;
+  }
+  .header-container .form-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container input{
+    height: 100%;
+    width: 100%;
+    max-height: 35px;
+    background-position: 4% 50%;  padding-inline-start: 2.5rem !important;
+  }
+  .mobile-bars-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 20px;
+  }
+  .mobile-bars-icon-container .bars-active .fa-bars{
+    visibility: visible;
+    opacity: 1; 
+    display: block;
+   animation: iconsToggleAnimationIn .3s ease-out  forwards;
+  }
+  .mobile-bars-icon-container .bars-active .fa-xmark{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    animation: iconsToggleAnimationIn .3s ease-out  forwards;
+  }
+  .mobile-bars-icon-container .xmark-active .fa-bars{
+    display: none;
+    visibility: hidden;
+    animation: iconsToggleAnimationIn .3s ease-out  forwards;
+    opacity: 0;
+  }
+  .mobile-bars-icon-container .xmark-active .fa-xmark{
+    visibility: visible;
+    opacity: 1; 
+    display: block;
+    
+    animation: iconsToggleAnimationIn .3s ease-out  forwards;
+  }
+  @keyframes  iconsToggleAnimationIn {
+    0%{
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+  
+    }
+    10%{
+      display: block;
+      visibility: hidden;
+      opacity: 0;  
+    }
+    100%{
+      display: block;
+      visibility: visible;
+      opacity: 1;  
+    }
+  }
+ 
+  .mobile-bars-icon-container i{
+    font-size: 1.5rem;
+  }
+  .mobile-burger-menu-links{
+    position: absolute;
+    width: 100%;
+    z-index: 100000;
+    background: #fff;
+  }
+ .header-container.burger-menu-open + .mobile-burger-menu-links ul ,
+ .header-container.burger-menu-open + .mobile-burger-menu-links  {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: all .3s ease-out;
+  }
+  .mobile-burger-menu-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .mobile-burger-menu-links ul li{
+    padding-block: .25rem;
+  }
+  .mobile-burger-menu-links ul li svg{
+    fill: #000;
+    transition: all .3s ease-out;
+  }
+  .mobile-burger-menu-links ul li:hover {
+    transition: all .3s ease-out;
+    background-color: var(--main-color);
+  }
+  .mobile-burger-menu-links ul li span{
+    transition: all .3s ease-out;
+    color: #000;
+  }
+  .mobile-burger-menu-links ul li:hover span{
+    transition: all .3s ease-out;
+    color: #fff;
+  }
+  .mobile-burger-menu-links ul li:hover svg{
+    fill: #fff;
+    transition: all .3s ease-out;
+  }
+  
+}
