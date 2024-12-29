@@ -40,7 +40,6 @@ label span {
   color: #dd2c3e;
 }
 
-
 h1 {
   font-size: 1.75rem;
   font-weight: 700;
@@ -62,13 +61,13 @@ h4 {
   line-height: 1.6;
 }
 h5 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.6;
 }
 p {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 0.9rem;
+  font-weight: 500;
   line-height: 1.6;
 }
 
@@ -89,12 +88,12 @@ label {
   line-height: 1.6;
 }
 th {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
 }
 td {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   line-height: 1.6;
 }
@@ -121,13 +120,13 @@ td {
   line-height: 1.6;
 }
 .arabic-version h5 {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.8;
 }
 .arabic-version p {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 0.9rem;
+  font-weight: 500;
   line-height: 1.6;
 }
 
@@ -138,7 +137,7 @@ td {
 }
 
 .arabic-version span {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   line-height: 1.6;
 }
@@ -148,12 +147,46 @@ td {
   line-height: 1.6;
 }
 .arabic-version th {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.6;
-}
-.arabic-version td {
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.6;
+}
+.arabic-version td {
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+/* ======= */
+.LessonsAndEducation-card-container .LessonsAndEducation-content > span,
+.arabic-version
+  .LessonsAndEducation-card-container
+  .LessonsAndEducation-content
+  > span,
+.Announcement-card-container > span,
+.arabic-version .Announcement-card-container > span {
+  font-size: 0.9rem;
+}
+/* Ticket 309 */
+.pagination-container .page-item .page-link {
+  font-size: 1rem;
+}
+/* ===== */
+.header-container input {
+  background-image: url("../Assets/Icons/DashIcons/MagnifyingGlass.svg");
+  background-repeat: no-repeat;
+  background-position: 1% 50%;
+  background-size: 20px;
+  padding-inline-start: 2rem !important;
+}
+.arabic-version .header-container input {
+  background-position: 99% 50%;
+}
+.nav-pills .nav-link span {
+  font-size: 0.9rem;
+}
+.language-nav-link a,
+.language-nav-link a span,
+.logout-nav-link a,
+.logout-nav-link a span {
+  font-size: 1rem !important;
 }
