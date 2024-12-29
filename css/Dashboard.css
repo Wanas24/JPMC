@@ -216,3 +216,14 @@ input.form-control,
 .SavingFund-main-container {
   border-radius: 10px;
 }
+.nav-pills .logout-nav-link a {
+  padding: 0.5rem;
+}
+.nav-pills .logout-nav-link a:hover {
+  background-color: #db1d11;
+  padding: 0.5rem;
+}
+.nav-pills .language-nav-link a,
+.nav-pills .language-nav-link a:hover {
+  padding: 0.5rem;
+}
