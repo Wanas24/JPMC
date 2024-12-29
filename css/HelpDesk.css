@@ -1,1 +1,6 @@
-
+.HelpDesk-box h4 {
+  color: #000;
+}
+.HelpDesk-box {
+  border-radius: 10px;
+}

@@ -33,11 +33,15 @@
 }
 .LessonsAndEducation-card-container .LessonsAndEducation-btn:hover .link {
   text-decoration: underline;
-  scale: 1.2;
-  transition: 0.3s ease-in-out;
-  padding-top: 3px;
 }
 .LessonsAndEducation-content {
   padding-block: 20px;
   flex: 0.9;
+}
+/* ==================== */
+.LessonsAndEducation-box {
+  border-radius: 10px;
+}
+.LessonsAndEducation-box h4 {
+  color: #000;
 }

@@ -190,3 +190,28 @@ td {
 .logout-nav-link a span {
   font-size: 1rem !important;
 }
+.filter select {
+  background-position: 96%;
+}
+.arabic-version .filter select {
+  background-position: 4%;
+  font-size: 0.85rem !important;
+  color: #141414;
+}
+.arabic-version .filter select::placeholder {
+  opacity: 40%;
+}
+textarea.form-control,
+input.form-control {
+  font-size: 0.85rem !important;
+  color: #141414;
+}
+.form-select {
+  padding: 0.375rem 0.75rem 0.375rem 0.75rem !important;
+}
+.main-dash-main-container,
+.SalaryStatement-box,
+.LessonsAndEducation-box,
+.SavingFund-main-container {
+  border-radius: 10px;
+}

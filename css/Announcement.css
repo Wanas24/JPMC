@@ -4,6 +4,7 @@
 }
 .Announcement-box h4 {
   margin-bottom: 0;
+  color: #000;
 }
 .Announcement-card-container > span {
   color: var(--main-color);
@@ -16,6 +17,7 @@
 }
 .Announcement-box > span {
   color: var(--main-color);
+  font-size: 0.9rem;
 }
 .back-btn {
   color: var(--main-color);
@@ -31,4 +33,13 @@
 }
 .arabic-version .hover-growing-links {
   padding-block: 0px;
+}
+.Announcement-box h5 {
+  color: #000;
+}
+.Announcement-box {
+  border-radius: 10px;
+}
+.back-btn {
+  font-size: 0.9rem;
 }
