@@ -202,7 +202,8 @@ td {
   opacity: 40%;
 }
 textarea.form-control,
-input.form-control {
+input.form-control,
+.form-select {
   font-size: 0.85rem !important;
   color: #141414;
 }

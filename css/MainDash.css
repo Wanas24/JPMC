@@ -245,3 +245,14 @@
   text-decoration: underline;
 }
 /* ===== */
+.main-dash-table th {
+  color: var(--main-color);
+}
+.main-dash-3rd-section h4,
+.main-dash-2nd-section h4,
+.holidays-main-box h4 {
+  padding-inline: 0rem;
+}
+.knowledge-item > div p {
+  opacity: 70%;
+}
