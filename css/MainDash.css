@@ -256,3 +256,9 @@
 .knowledge-item > div p {
   opacity: 70%;
 }
+/* Ticket 324 */
+@media (min-width: 2030px) {
+  .main-dash-table .status {
+    width: 170px;
+  }
+}

@@ -44,3 +44,7 @@
   font-size: 0.9rem;
   cursor: pointer;
 }
+/* ===== */
+.Announcement-box picture img {
+  max-width: 100% !important;
+}

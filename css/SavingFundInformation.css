@@ -70,7 +70,7 @@
   padding: 1rem;
 }
 .SavingFund-main-container h4 {
-  padding-inline: 1rem;
+  padding-inline: 0rem;
   position: relative;
   margin-bottom: 1.3rem;
 }
@@ -92,4 +92,9 @@
   .SavingFund-table-wrapper {
     overflow-x: scroll;
   }
+}
+
+/* Ticket 326 */
+.SavingFund-1st-section p {
+  margin-top: 2rem !important;
 }

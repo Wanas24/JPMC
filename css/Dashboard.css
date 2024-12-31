@@ -172,14 +172,14 @@ td {
 }
 /* ===== */
 .header-container input {
-  background-image: url("../Assets/Icons/DashIcons/MagnifyingGlass.svg");
+  background-image: url(../Assets/Icons/DashIcons/MagnifyingGlass.svg);
   background-repeat: no-repeat;
-  background-position: 1% 50%;
-  background-size: 20px;
-  padding-inline-start: 2rem !important;
+  background-position: 4% 50%;
+  background-size: 18px;
+  padding-inline-start: 2.4rem !important;
 }
 .arabic-version .header-container input {
-  background-position: 99% 50%;
+  background-position: 96% 50%;
 }
 .nav-pills .nav-link span {
   font-size: 0.9rem;
@@ -213,8 +213,10 @@ input.form-control,
 .main-dash-main-container,
 .SalaryStatement-box,
 .LessonsAndEducation-box,
-.SavingFund-main-container {
+.SavingFund-main-container,
+.Announcement-box {
   border-radius: 10px;
+  padding-bottom: 3rem !important;
 }
 .nav-pills .logout-nav-link a {
   padding: 0.5rem;
@@ -228,144 +230,261 @@ input.form-control,
   padding: 0.5rem;
 }
 .mobile-bars-icon-container,
-.mobile-header-logo{
+.mobile-header-logo {
   display: none;
 }
 .mobile-burger-menu-links ul,
-.mobile-burger-menu-links  {
+.mobile-burger-menu-links {
   display: none;
   margin: 0;
 }
-@media (max-width:575px){
+@media (max-width: 576px) {
   .mobile-burger-menu-links ul,
-.mobile-burger-menu-links  {
-  display: grid;
-  grid-template-rows: 0fr;
-  overflow: hidden;
-  transition: all .3s ease-out;
-  
-  
-}
+  .mobile-burger-menu-links {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+  }
   .side-bar {
     display: none;
   }
-  .mobile-header-logo{
+  .mobile-header-logo {
     display: block;
     min-width: 125px;
     max-width: 200px;
-    width: 100%;;
-   }
-    .mobile-header-logo img{
-      width: 100%;
-       object-fit: contain;
+    width: 100%;
   }
-  .header-container{
+  .mobile-header-logo img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .header-container {
     display: flex;
     gap: 1rem;
   }
-  .header-container .form-input{
+  .header-container .form-input {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .header-container input{
+  .header-container input {
     height: 100%;
     width: 100%;
     max-height: 35px;
-    background-position: 4% 50%;  padding-inline-start: 2.5rem !important;
+    background-position: 4% 50%;
+    padding-inline-start: 2.5rem !important;
   }
-  .mobile-bars-icon-container{
+  .mobile-bars-icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     width: 20px;
   }
-  .mobile-bars-icon-container .bars-active .fa-bars{
+  .mobile-bars-icon-container .bars-active .fa-bars {
     visibility: visible;
-    opacity: 1; 
+    opacity: 1;
     display: block;
-   animation: iconsToggleAnimationIn .3s ease-out  forwards;
+    animation: iconsToggleAnimationIn 0.3s ease-out forwards;
   }
-  .mobile-bars-icon-container .bars-active .fa-xmark{
+  .mobile-bars-icon-container .bars-active .fa-xmark {
     visibility: hidden;
     opacity: 0;
     display: none;
-    animation: iconsToggleAnimationIn .3s ease-out  forwards;
+    animation: iconsToggleAnimationIn 0.3s ease-out forwards;
   }
-  .mobile-bars-icon-container .xmark-active .fa-bars{
+  .mobile-bars-icon-container .xmark-active .fa-bars {
     display: none;
     visibility: hidden;
-    animation: iconsToggleAnimationIn .3s ease-out  forwards;
+    animation: iconsToggleAnimationIn 0.3s ease-out forwards;
     opacity: 0;
   }
-  .mobile-bars-icon-container .xmark-active .fa-xmark{
+  .mobile-bars-icon-container .xmark-active .fa-xmark {
     visibility: visible;
-    opacity: 1; 
-    display: block;
-    
-    animation: iconsToggleAnimationIn .3s ease-out  forwards;
+    opacity: 1;
+    display: none;
+
+    animation: iconsToggleAnimationIn 0.3s ease-out forwards;
   }
-  @keyframes  iconsToggleAnimationIn {
-    0%{
+  @keyframes iconsToggleAnimationIn {
+    0% {
       display: none;
       visibility: hidden;
       opacity: 0;
-  
     }
-    10%{
+    10% {
       display: block;
       visibility: hidden;
-      opacity: 0;  
+      opacity: 0;
     }
-    100%{
+    100% {
       display: block;
       visibility: visible;
-      opacity: 1;  
+      opacity: 1;
     }
   }
- 
-  .mobile-bars-icon-container i{
+
+  .mobile-bars-icon-container i {
     font-size: 1.5rem;
   }
-  .mobile-burger-menu-links{
+  .mobile-burger-menu-links {
     position: absolute;
     width: 100%;
     z-index: 100000;
     background: #fff;
   }
- .header-container.burger-menu-open + .mobile-burger-menu-links ul ,
- .header-container.burger-menu-open + .mobile-burger-menu-links  {
+  .header-container.burger-menu-open + .mobile-burger-menu-links ul,
+  .header-container.burger-menu-open + .mobile-burger-menu-links {
     display: grid;
     grid-template-rows: 1fr;
-    transition: all .3s ease-out;
+    transition: all 0.3s ease-out;
   }
   .mobile-burger-menu-links ul {
     list-style: none;
     padding: 0;
   }
-  .mobile-burger-menu-links ul li{
-    padding-block: .25rem;
+  .mobile-burger-menu-links ul li {
+    padding-block: 0.25rem;
   }
-  .mobile-burger-menu-links ul li svg{
+  .mobile-burger-menu-links ul li svg {
     fill: #000;
-    transition: all .3s ease-out;
+    transition: all 0.3s ease-out;
   }
   .mobile-burger-menu-links ul li:hover {
-    transition: all .3s ease-out;
+    transition: all 0.3s ease-out;
     background-color: var(--main-color);
   }
-  .mobile-burger-menu-links ul li span{
-    transition: all .3s ease-out;
+  .mobile-burger-menu-links ul li span {
+    transition: all 0.3s ease-out;
     color: #000;
   }
-  .mobile-burger-menu-links ul li:hover span{
-    transition: all .3s ease-out;
+  .mobile-burger-menu-links ul li:hover span {
+    transition: all 0.3s ease-out;
     color: #fff;
   }
-  .mobile-burger-menu-links ul li:hover svg{
+  .mobile-burger-menu-links ul li:hover svg {
     fill: #fff;
-    transition: all .3s ease-out;
+    transition: all 0.3s ease-out;
   }
-  
+  .header-container .form-input {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  .header-container .form-input {
+    display: block;
+  }
+  .navigation-last-content {
+    display: none;
+  }
+}
+/* Ticket 318 */
+.pagination-share-container {
+  padding-inline-start: 0 !important;
+}
+/* Big Screen */
+@media (min-width: 2560px) {
+  .container-fluid {
+    max-width: 100%;
+  }
+}
+/* ========= */
+.searchBarOpen {
+  display: none;
+}
+
+.searchBarOpen.search-active {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  background: var(--searchBarOpen-bg-color);
+  width: 100vw;
+  z-index: 1000000;
+  height: 100vh;
+}
+
+.searchBarOpen.search-active > .searchBarOpen--closeBtn {
+  inset-inline-end: 5rem;
+  top: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+}
+
+.searchBarOpen.search-active > .searchBarOpen--input {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.searchBarOpen.search-active > .searchBarOpen--input img {
+  width: 20px;
+  object-fit: contain;
+}
+
+.searchBarOpen.search-active > .searchBarOpen--input > div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.searchBarOpen.search-active > .searchBarOpen--input label {
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+
+.searchBarOpen.search-active > .searchBarOpen--input button {
+  border: none;
+  align-self: center;
+  padding: 0.5rem;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 10px;
+  width: 2.5rem;
+}
+
+.searchBarOpen.search-active > .searchBarOpen--input input {
+  background: #fff;
+  min-height: 30px;
+  border: none;
+  text-indent: 1rem;
+  outline: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 575.888px) {
+  .searchBarOpen.search-active > .searchBarOpen--input input {
+    width: 70%;
+  }
+
+  .searchBarOpen.search-active > .searchBarOpen--input > div {
+    justify-content: center;
+  }
+}
+.main-navigation-search-container .navigation-search span,
+.main-navigation-search-container .navigation-search:hover span,
+.main-navigation-search-container .navigation-search i {
+  color: #000;
+}
+.main-navigation-search-container {
+  margin-bottom: 0 !important;
+  list-style: none;
+}
+.main-navigation-search-container svg {
+  fill: #000;
+}
+.main-navigation-search-container a,
+.main-navigation-search-container span {
+  color: #000;
+}
+/*  */
+@media (min-width: 1200px) and (max-width: 1240px) {
+  .nav-pills .nav-link span {
+    font-size: 0.7rem;
+  }
 }

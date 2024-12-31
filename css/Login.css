@@ -15,6 +15,7 @@
   color: var(--main-color);
   cursor: pointer;
   font-size: 1rem;
+  font-weight: 500;
 }
 .login-header .main-btn svg {
   fill: var(--main-color);
@@ -72,12 +73,12 @@
   position: relative;
 }
 .username-input {
-  background-image: url(../assets/Icons/DashIcons/IdentificationBadge.svg);
+  background-image: url("../Assets/Icons/DashIcons/IdentificationBadge.svg");
   background-repeat: no-repeat;
   background-position: center left 15px;
 }
 .pass-input {
-  background-image: url(../assets/icons/DashIcons/LockSimple.svg);
+  background-image: url("../Assets/icons/DashIcons/LockSimple.svg");
   background-repeat: no-repeat;
   background-position: center left 15px;
 }
@@ -91,7 +92,7 @@
   inset-inline-end: 20px;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .login-container {
     grid-template-columns: 1fr;
     width: 80%;
@@ -112,8 +113,17 @@
 }
 .hover-growing-links span,
 .hover-growing-links {
-  font-size: 0.9rem;
+  font-size: 0.9rem !important;
 }
 .login-container form input {
   border-radius: 50px !important;
+}
+@media (max-width: 425px) {
+  .login-container {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+}
+.arabic-version .login-container img {
+  transform: scaleX(-1);
 }

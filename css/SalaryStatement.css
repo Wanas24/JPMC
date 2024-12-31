@@ -19,6 +19,27 @@
   padding-block: 20px;
   flex: 0.9;
 }
-.SalaryStatement-2nd-container {
+/* .SalaryStatement-2nd-container {
   width: fit-content;
+} */
+/* Ticket 319 */
+.SalaryStatement-2nd-container .imgae picture {
+  width: 100%;
+}
+.SalaryStatement-btn {
+  gap: 10px !important;
+}
+.SalaryStatement-2nd-container h4 {
+  margin-bottom: 1.4rem;
+}
+.SalaryStatement-box {
+  margin-bottom: 2rem;
+}
+@media (min-width: 2560px) {
+  .SalaryStatement-2nd-container .image picture {
+    width: 80%;
+  }
+  .SalaryStatement-2nd-container .image picture img {
+    width: 100%;
+  }
 }

@@ -1,10 +1,10 @@
 .LessonsAndEducation-card-container {
-  border: 1.5px solid rgb(20 20 20 / 20%);
+  border: 2.2px solid rgb(20 20 20 / 20%);
   padding: 10px 0;
   border-radius: 8px;
 }
 .LessonsAndEducation-card-container .image {
-  border-inline-end: 3px solid rgb(20 20 20 / 20%);
+  border-inline-end: 2.2px solid rgb(20 20 20 / 20%);
   height: 100%;
   display: flex;
   align-items: center;
